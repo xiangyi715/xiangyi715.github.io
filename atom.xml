@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://xiangyi715.github.io/</id>
     <title>Xiangyi&apos;s blog</title>
-    <updated>2020-01-03T08:00:31.397Z</updated>
+    <updated>2020-01-03T08:01:22.574Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://xiangyi715.github.io/"/>
     <link rel="self" href="https://xiangyi715.github.io/atom.xml"/>
@@ -10,15 +10,6 @@
     <logo>https://xiangyi715.github.io/images/avatar.png</logo>
     <icon>https://xiangyi715.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Xiangyi&apos;s blog</rights>
-    <entry>
-        <title type="html"><![CDATA[测试]]></title>
-        <id>https://xiangyi715.github.io/post/ce-shi</id>
-        <link href="https://xiangyi715.github.io/post/ce-shi">
-        </link>
-        <updated>2020-01-03T02:07:17.000Z</updated>
-        <content type="html"><![CDATA[<p>我的第一个通过Gride同步的文章。</p>
-]]></content>
-    </entry>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
         <id>https://xiangyi715.github.io/post/hello-gridea</id>
