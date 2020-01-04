@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://xiangyi715.github.io/</id>
     <title>Xiangyi&apos;s blog</title>
-    <updated>2020-01-04T09:40:38.674Z</updated>
+    <updated>2020-01-04T09:42:02.794Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://xiangyi715.github.io/"/>
     <link rel="self" href="https://xiangyi715.github.io/atom.xml"/>
@@ -30,7 +30,7 @@ sudo mkdir /var/lib/dpkg/info //再新建一个新的info文件夹
 sudo apt-get update
 apt-get -f install xxx
 sudo mv /var/lib/dpkg/info/* /var/lib/dpkg/info.bak
-//执行完上一步操作后会在新的info文件夹下生成一些文件，现将这些文件全部移到                  //info.bak文件夹下
+//执行完上一步操作后会在新的info文件夹下生成一些文件，现将这些文件全部移到info.bak文件夹下
 sudo rm -rf /var/lib/dpkg/info //把自己新建的info文件夹删掉
 sudo mv /var/lib/dpkg/info.bak /var/lib/dpkg/info //把以前的info文件夹重新改回名字  
 </code></pre>
