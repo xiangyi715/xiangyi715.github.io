@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>关于 | Xiangyi&#39;s blog</title>
+<title>ubuntu中小而致命的问题汇总 | Xiangyi&#39;s blog</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
@@ -24,13 +24,10 @@
 
 
 
-    <meta name="description" content="
-欢迎来到我的小站呀，很高兴遇见你！🤝
-
-🏠 关于本站: 这是Xiangyi的博客小站，在这里记录问题与答案
-👨‍💻 博主是谁: Xiangyi
-⛹ 兴趣爱好: 写Bug,除Bug&amp;羽毛球
-📬 联系我呀: 97827026..." />
+    <meta name="description" content="问题一：
+出现E: Sub-process /usr/bin/dpkg returned an error code
+当使用apt-get安装软件时有时会发生类似于
+Errors were encountered while process..." />
     <meta name="keywords" content="" />
   </head>
   <body>
@@ -103,23 +100,78 @@ target="_blank">My github</a> | <a class="rss" href="https://xiangyi715.github.i
       <div class="main-container">
         <div class="content-container" data-aos="fade-up">
           <div class="post-detail">
-            <h2 class="post-title">关于</h2>
-            <div class="post-date">2019-01-25</div>
-            
-              <div class="feature-container" style="background-image: url('https://xiangyi715.github.io//post-images/about.jpg')">
-              </div>
+            <h2 class="post-title">ubuntu中小而致命的问题汇总</h2>
+            <div class="post-date">2020-01-04</div>
             
             <div class="post-content" v-pre>
-              <blockquote>
-<p>欢迎来到我的小站呀，很高兴遇见你！🤝</p>
-</blockquote>
-<h2 id="关于本站-这是xiangyi的博客小站在这里记录问题与答案">🏠 关于本站: 这是Xiangyi的博客小站，在这里记录问题与答案</h2>
-<h2 id="博主是谁-xiangyi">👨‍💻 博主是谁: Xiangyi</h2>
-<h2 id="兴趣爱好-写bug除bug羽毛球">⛹ 兴趣爱好: 写Bug,除Bug&amp;羽毛球</h2>
-<h2 id="联系我呀-978270268qqcom">📬 联系我呀: 978270268@qq.com</h2>
+              <p><strong>问题一：</strong><br>
+出现E: Sub-process /usr/bin/dpkg returned an error code<br>
+当使用apt-get安装软件时有时会发生类似于<br>
+Errors were encountered while processing:<br>
+...(一些软件包)...</p>
+<p>E: Sub-process /usr/bin/dpkg returned an error code(1)的错误。<br>
+原因：<br>
+这是Ubuntu和其他基于 Debian 的发行版中的一个常见问题，你尝试更新系统或安装新软件包时会遇到类似 “Sub-process /usr/bin/dpkg returned an error code” 的错误。它告诉我们...(软件包)... 引发了问题<br>
+方法1、</p>
+<pre><code>sudo mv /var/lib/dpkg/info /var/lib/dpkg/info.bak //现将info文件夹更名
+sudo mkdir /var/lib/dpkg/info //再新建一个新的info文件夹
+sudo apt-get update
+apt-get -f install xxx
+sudo mv /var/lib/dpkg/info/* /var/lib/dpkg/info.bak
+//执行完上一步操作后会在新的info文件夹下生成一些文件，现将这些文件全部移到                     info.bak文件夹下
+sudo rm -rf /var/lib/dpkg/info //把自己新建的info文件夹删掉
+sudo mv /var/lib/dpkg/info.bak /var/lib/dpkg/info //把以前的info文件夹重新改回名字  
+</code></pre>
+<p>到此，一般这个方法可以解决问题了。<br>
+2、</p>
+<pre><code>for i in /usr/share/fonts/X11/* /usr/share/fonts/truetype/*
+do sudo touch &quot;$i&quot;
+done
+</code></pre>
+<p>3、</p>
+<pre><code>sudo apt-get update --fix-missing
+sudo apt-get autoremove &amp;&amp; sudo apt-get clean &amp;&amp; sudo apt-get install -f
+</code></pre>
+<p><strong>问题二：</strong><br>
+不能访问部分手机的存储。<br>
+方法：（使用jmtpfs）<br>
+安装：</p>
+<pre><code>sudo apt-get install mtp-tools jmtpfs
+</code></pre>
+<p>准备：</p>
+<pre><code>sudo mkdir /media/mtp
+sudo chmod 755 /media/mtp
+</code></pre>
+<p>挂载：</p>
+<pre><code>sudo jmtpfs -o allow_other /media/mtp
+</code></pre>
+<p>卸载：</p>
+<pre><code>sudo umount /media/mtp
+</code></pre>
+<p><strong>问题三：</strong><br>
+E: Could not get lock /var/lib/dpkg/lock - open (11: Resource temporarily unavailable)<br>
+E: Unable to lock the administration directory (/var/lib/dpkg/)<br>
+原因：<br>
+其实这是因为有另外一个程序在运行，导致锁不可用。原因可能是上次运行更新或安装没有正常完成。解决办法是杀死此进程。<br>
+方法：</p>
+<pre><code>sudo rm /var/cache/apt/archives/lock
+sudo rm /var/lib/dpkg/lock
+//这样可能还会出现问题，解决方案如下
+sudo dpkg --configure -a
+sudo apt-get update
+</code></pre>
 
             </div>
             
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://xiangyi715.github.io/post/hello-gridea">
+                  <h3 class="post-title">
+                    Hello Gridea
+                  </h3>
+                </a>
+              </div>
             
 
             
