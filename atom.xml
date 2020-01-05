@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://xiangyi715.github.io/</id>
     <title>Xiangyi&apos;s blog</title>
-    <updated>2020-01-04T12:00:27.026Z</updated>
+    <updated>2020-01-05T08:16:52.529Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://xiangyi715.github.io/"/>
     <link rel="self" href="https://xiangyi715.github.io/atom.xml"/>
@@ -71,6 +71,13 @@ sudo rm /var/lib/dpkg/lock
 //这样可能还会出现问题，解决方案如下
 sudo dpkg --configure -a
 sudo apt-get update
+</code></pre>
+<p>👉<strong>问题四:</strong><br>
+打开Ubuntu软件中心无图标，不显示软件。<br>
+方法：</p>
+<pre><code>sudo apt update
+sudo apt upgrade
+sudo systemctl reboot
 </code></pre>
 ]]></content>
     </entry>
