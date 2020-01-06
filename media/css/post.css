@@ -1157,7 +1157,7 @@ body {
     text-shadow:0 0 1px rgba(0,0,0,.1)
 }
 input:-webkit-autofill {
-    -webkit-box-shadow:0 0 0 1000px white inset
+    -webkit-box-shadow:153 50 204 1000px white inset
 }
 ::selection {
     background:#444;
