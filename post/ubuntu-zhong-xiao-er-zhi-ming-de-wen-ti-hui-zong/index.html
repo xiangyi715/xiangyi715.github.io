@@ -1,122 +1,103 @@
-<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" >
-
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>ubuntu中遇到的小问题汇总(不定期更新) | Xiangyi&#39;s blog</title>
-
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://xiangyi715.github.io//favicon.ico?v=1578224969128">
+<meta name="description" content="温故而知新" />
+<link rel="shortcut icon" href="https://xiangyi715.github.io//favicon.ico">
 <link rel="stylesheet" href="https://xiangyi715.github.io//styles/main.css">
 
-
-  
-    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
-  
-
-  
-
-
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-155350255-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-155350255-1');
-</script>
-
-
-    <meta name="description" content="👉问题一：
-出现E: Sub-process /usr/bin/dpkg returned an error code
-当使用apt-get安装软件时有时会发生类似于
-Errors were encountered while proce..." />
-    <meta name="keywords" content="原" />
+<script src="https://xiangyi715.github.io//media/js/jquery.min.js"></script>
+<script src="https://xiangyi715.github.io//media/js/masonry.pkgd.min.js"></script>
+<script src="https://xiangyi715.github.io//media/js/aos.js"></script>
+<script src="https://xiangyi715.github.io//media/js/pace.min.js"></script>
+<script src="https://xiangyi715.github.io//media/js/view-image.min.js"></script>
+<script src="https://xiangyi715.github.io//media/js/functions.js"></script>
+    <script src="https://xiangyi715.github.io//media/js/waterfall.min.js"></script>
+    <script src="https://xiangyi715.github.io//media/js/prism.min.js"></script>
+    
   </head>
   <body>
-    <div id="app" class="main">
+            <header id="header" class="grid-container">
+        <!-- start: .menu-wrapper -->
+        <div class="menu-mobile"> 
+          <i class="fa fa-reorder"></i>
+        </div>
+        <div class="menu-wrapper">
+          <div class="">
+            <div class="logo">
+              <a href="https://xiangyi715.github.io/"><img src="https://xiangyi715.github.io//media/images/logoo.png" alt=""></a>
+            </div>
+            <!-- start: .main-nav -->
 
-      <div class="sidebar" :class="{ 'full-height': menuVisible }">
-  <div class="top-container" data-aos="fade-right">
-    <div class="top-header-container">
-      <a class="site-title-container" href="https://xiangyi715.github.io/">
-        <img src="https://xiangyi715.github.io//images/avatar.png?v=1578224969128" class="site-logo">
-        <h1 class="site-title">Xiangyi&#39;s blog</h1>
-      </a>
-      <div class="menu-btn" @click="menuVisible = !menuVisible">
-        <div class="line"></div>
-      </div>
-    </div>
-    <div>
-      
-        
-          <a href="/" class="site-nav">
-            首页
-          </a>
-        
-      
-        
-          <a href="/archives" class="site-nav">
-            归档
-          </a>
-        
-      
-        
-          <a href="/tags" class="site-nav">
-            标签
-          </a>
-        
-      
-        
-          <a href="/post/about" class="site-nav">
-            关于
-          </a>
-        
-      
-    </div>
-  </div>
-  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
-    <div class="social-container">
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    </div>
-    <div class="site-description">
-      温故而知新
-    </div>
-    <div class="site-footer">
-      Link <a href="https://github.com/xiangyi715"
-target="_blank">My github</a> | <a class="rss" href="https://xiangyi715.github.io//atom.xml" target="_blank">RSS</a>
-    </div>
-  </div>
-</div>
+            <nav class="main-nav grid-container grid-parent">
+              <ul id="menu-header" class="menu gradient-effect">
+                
+                  <li class=""><a href="https://xiangyi715.github.io/" class="menu">首页</a></li>
+                
+                
+                  <li class="" >
+                    <a href="/" class="menu">
+                      首页
+                    </a>
+                  </li>
+                
+                  <li class="" >
+                    <a href="/archives" class="menu">
+                      归档
+                    </a>
+                  </li>
+                
+                  <li class="" >
+                    <a href="/tags" class="menu">
+                      标签
+                    </a>
+                  </li>
+                
+                  <li class="" >
+                    <a href="/post/about" class="menu">
+                      关于
+                    </a>
+                  </li>
+                
+              </ul>
+            </nav>
+            <!-- end: .main-nav -->
+            <div class="clear"></div>
+            <div class="border hide-on-tablet hide-on-mobile"></div>
+          </div>    
+          <div class="clear"></div>
+        </div>
+        <!-- end: .menu-wrapper -->
+        <div class="clear"></div>
+      </header>
 
+      <main id="single" class="main grid-container fullcover no-sidebar aos-init aos-animate" data-aos="fade">
 
-      <div class="main-container">
-        <div class="content-container" data-aos="fade-up">
-          <div class="post-detail">
-            <h2 class="post-title">ubuntu中遇到的小问题汇总(不定期更新)</h2>
-            <div class="post-date">2020-01-04</div>
-            
-              <div class="feature-container" style="background-image: url('https://xiangyi715.github.io//post-images/ubuntu-zhong-xiao-er-zhi-ming-de-wen-ti-hui-zong.jpg')">
+        <div class="center content">
+          <div class="featured-image cover" style="background-image: url('https://xiangyi715.github.io//post-images/ubuntu-zhong-xiao-er-zhi-ming-de-wen-ti-hui-zong.jpg');">
+            <div class="meta top"> 
+              <time class="meta-info" style="float:left;" datetime="2020-01-04"><i class="fa fa-calendar"></i><span class="lately">2 天前</span></time>
+               
+               
+            </div>
+            <div class="info">
+              <div class="tags ">
+                
+                      <a href="https://xiangyi715.github.io/tag/yLvwCCc7C" class="ctag ctag-0 ctag-yLvwCCc7C" aria-label="">原</a>
+                    
               </div>
-            
-            <div class="post-content" v-pre>
-              <p>👉<strong>问题一：</strong><br>
+              <h1 class="title ularge white bold">ubuntu中遇到的小问题汇总(不定期更新)</h1>
+            </div>
+          </div>
+        </div>  
+
+        <div class="epcl-page-wrapper">
+          <div class="left-content grid-70 np-mobile">
+            <article class="main-article post">
+              <section class="post-content">
+                <div class="text">
+                  <p>👉<strong>问题一：</strong><br>
 出现E: Sub-process /usr/bin/dpkg returned an error code<br>
 当使用apt-get安装软件时有时会发生类似于<br>
 Errors were encountered while processing:<br>
@@ -180,78 +161,200 @@ sudo apt upgrade
 sudo systemctl reboot
 </code></pre>
 
-            </div>
-            
-              <div class="tag-container">
+                </div>
+                <div class="clear"></div>
+              </section>
+            </article>
+            <div class="clear"></div>
+
+            <section class="related section">
+              
+              
+
+                <div class="clear"></div>
+            </section>
+
+              <div class="clear"></div>
+
+              <div id="comments" class="bg-white hosted ">
+
+              
                 
-                  <a href="https://xiangyi715.github.io/tag/yLvwCCc7C" class="tag">
-                    原
-                  </a>
-                
-              </div>
-            
-            
+                  <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
 
-            
-              
-                <div id="gitalk-container" data-aos="fade-in"></div>
-              
+<div id="gitalk-container"></div>
 
-              
-            
+<script>
 
-          </div>
+  var gitalk = new Gitalk({
+    clientID: 'ea982e465d4f33777c05',
+    clientSecret: 'fee0f2f467e25832ee6553982b23e340eb521a99',
+    repo: 'xiangyi715.github.io/',
+    owner: 'xiangyi715',
+    admin: ['xiangyi715'],
+    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+  })
 
-        </div>
-      </div>
-    </div>
-
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script type="application/javascript">
-
-AOS.init();
-
-var app = new Vue({
-  el: '#app',
-  data: {
-    menuVisible: false,
-  },
-})
+  gitalk.render('gitalk-container')
 
 </script>
 
+                
+                
+              
+                <div class="clear"></div>
+              </div>
 
-  <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-  <script>
-    hljs.initHighlightingOnLoad()
-  </script>
+              <div class="clear"></div>
+            </div>
+          </div>
+      </main>
 
+          <footer id="footer" class="grid-container">
+        <div class="widgets row gradient-effect">
+            <div class="default-sidebar border-effect">
+              <div class="grid-33 tablet-grid-50 mobile-grid-100">
+                <section id="tag_cloud-2" class="widget widget_epcl_posts_thumbs underline-effect">
+                  <h4 class="widget-title title white bordered">最新文章</h4>
+                  
+                  
+                  <article class="item post-0 post type-post status-publish format-standard has-post-thumbnail hentry">
+                    <a href="https://xiangyi715.github.io/post/ubuntu-zhong-xiao-er-zhi-ming-de-wen-ti-hui-zong" class="thumb hover-effect">
+                      <span class="fullimage cover" style="display: block;background-image: url('https://xiangyi715.github.io//post-images/ubuntu-zhong-xiao-er-zhi-ming-de-wen-ti-hui-zong.jpg');"></span>
+                    </a>
+                    <div class="info gradient-effect">
+                      <time datetime="2020-01-04">2020-01-04</time>
+                      <h4 class="title usmall">
+                        <a href="https://xiangyi715.github.io/post/ubuntu-zhong-xiao-er-zhi-ming-de-wen-ti-hui-zong">ubuntu中遇到的小问题汇总(不定期更新)</a>
+                      </h4>
+                    </div>
+                    <div class="clear"></div>
+                  </article>
+                  
+                  
+                  
+                  <article class="item post-1 post type-post status-publish format-standard has-post-thumbnail hentry">
+                    <a href="https://xiangyi715.github.io/post/about" class="thumb hover-effect">
+                      <span class="fullimage cover" style="display: block;background-image: url('https://xiangyi715.github.io//post-images/about.jpg');"></span>
+                    </a>
+                    <div class="info gradient-effect">
+                      <time datetime="2019-01-25">2019-01-25</time>
+                      <h4 class="title usmall">
+                        <a href="https://xiangyi715.github.io/post/about">关于</a>
+                      </h4>
+                    </div>
+                    <div class="clear"></div>
+                  </article>
+                  
+                  
+                  <div class="clear"></div>
+                </section>
+              </div>
 
+              <div class="grid-33 tablet-grid-50 mobile-grid-100">
+                <section id="tag_cloud-2" class="widget widget_tag_cloud underline-effect">
+                  <h4 class="widget-title title white bordered">标签云</h4>
+                  <div class="tagcloud">
+                    
+                      <a href="https://xiangyi715.github.io/tag/yLvwCCc7C" class="ctag ctag-0 ctag-yLvwCCc7C" aria-label="">原</a>
+                    
+                  </div>
+                  <div class="clear"></div>
+                </section>
+              </div>
 
+              <div class="grid-33 tablet-grid-50 mobile-grid-100">
+                <section id="epcl_about-2" class="widget widget_epcl_about underline-effect">
+                  <h4 class="widget-title title white bordered">关于我</h4>
+                  <div class="avatar">
+                    <a href="" class="translate-effect thumb"><span class="fullimage cover" style="background-image: url(https://xiangyi715.github.io//images/avatar.png);"></span></a>
+                  </div>
+                  <div class="info">
+                    <h4 class="title small author-name gradient-effect no-margin"><a href="">Xiangyi&#39;s blog</a></h4>
+                    <p class="founder">温故而知新</p>
+                    <div class="social">
+                      
+                        
+                      
+                        
+                      
+                        
+                      
+                        
+                      
+                        
+                      
+                    </div> 
+                  </div>
+                  <div class="clear"></div>
+                  </section>
+              </div>
 
-  
-    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
-    <script>
+            </div>
+            <div class="clear"></div>
+        </div>
 
-      var gitalk = new Gitalk({
-        clientID: 'ea982e465d4f33777c05',
-        clientSecret: 'fee0f2f467e25832ee6553982b23e340eb521a99',
-        repo: 'xiangyi715.github.io/',
-        owner: 'xiangyi715',
-        admin: ['xiangyi715'],
-        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
-        distractionFreeMode: false  // Facebook-like distraction free mode
-      })
+        <div class="logo">
+          <a href="https://xiangyi715.github.io/"><img class="" src="https://xiangyi715.github.io//media/images/logo.png" alt=""></a>
+        </div>
+        <p class="published border-effect">
+          ©2019 共 2 篇文章
+          <br/>
+          Theme <a href="https://gridea.dev/" target="_blank">「breek」</a> Powered by <a href="https://gridea.dev/" target="_blank">「Gridea」</a>
+        </p>
+        
+        <a href="javascript:void(0)" id="back-to-top" class="epcl-button dark" style="display:none">
+          <i class="fa fa-arrow"></i>
+        </a>
+    </footer>
+    <div class="clear"></div>
 
-      gitalk.render('gitalk-container')
+      <script type="text/javascript">
+       jQuery(document).ready(function($){
+          $("photos img").each(function(){
+              var _a = $("<a></a>").attr("href",this.src);
+              $(this).wrap("<div class='photo'></div>").wrap(_a);
+          })
+          $("figure img").each(function(){
+              var _b = $("<a></a>").attr("href",this.src);
+              $(this).wrap(_b);
+          })
+          isImgLoad(function(){
+            var photos = document.querySelector('photos');
+            if(photos){
+              waterfall(photos);
+            }
+            $(window).resize(function() {
+             if(photos){
+                  waterfall(photos);
+            }
+          });
+        });
+        var t_img;
+        var isLoad = true;
+        function isImgLoad(callback){
+          $('photos img').each(function(){
+            if(this.height === 0){
+              isLoad = false;
+              return false;
+            }
+          });
+          if(isLoad){
+            clearTimeout(t_img);
+            callback();
+          }else{
+            isLoad = true;
+            t_img = setTimeout(function(){
+              isImgLoad(callback);
+            },500);
+          }
+        }
+      });
+      </script>
 
-    </script>
-  
-
-  
-
-
-
-
+    </div>
+    <!-- end: #wrapper -->
   </body>
 </html>
