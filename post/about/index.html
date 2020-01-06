@@ -2,7 +2,7 @@
   <head>
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>ubuntu中遇到的小问题汇总(不定期更新) | Xiangyi&#39;s blog</title>
+<title>关于 | Xiangyi&#39;s blog</title>
 <meta name="description" content="温故而知新" />
 <link rel="shortcut icon" href="https://xiangyi715.github.io//favicon.ico">
 <link rel="stylesheet" href="https://xiangyi715.github.io//styles/main.css">
@@ -75,19 +75,17 @@
       <main id="single" class="main grid-container fullcover no-sidebar aos-init aos-animate" data-aos="fade">
 
         <div class="center content">
-          <div class="featured-image cover" style="background-image: url('https://xiangyi715.github.io//post-images/ubuntu-zhong-xiao-er-zhi-ming-de-wen-ti-hui-zong.jpg');">
+          <div class="featured-image cover" style="background-image: url('https://xiangyi715.github.io//post-images/about.jpg');">
             <div class="meta top"> 
-              <time class="meta-info" style="float:left;" datetime="2020-01-04"><i class="fa fa-calendar"></i><span class="lately">2 天前</span></time>
+              <time class="meta-info" style="float:left;" datetime="2020-01-05"><i class="fa fa-calendar"></i><span class="lately">1 天前</span></time>
                
                
             </div>
             <div class="info">
               <div class="tags ">
                 
-                      <a href="https://xiangyi715.github.io/tag/yLvwCCc7C" class="ctag ctag-0 ctag-yLvwCCc7C" aria-label="">原</a>
-                    
               </div>
-              <h1 class="title ularge white bold">ubuntu中遇到的小问题汇总(不定期更新)</h1>
+              <h1 class="title ularge white bold">关于</h1>
             </div>
           </div>
         </div>  
@@ -97,69 +95,13 @@
             <article class="main-article post">
               <section class="post-content">
                 <div class="text">
-                  <p>👉<strong>问题一：</strong><br>
-出现E: Sub-process /usr/bin/dpkg returned an error code<br>
-当使用apt-get安装软件时有时会发生类似于<br>
-Errors were encountered while processing:<br>
-...(一些软件包)...</p>
-<p>E: Sub-process /usr/bin/dpkg returned an error code(1)的错误。<br>
-原因：<br>
-这是Ubuntu和其他基于 Debian 的发行版中的一个常见问题，你尝试更新系统或安装新软件包时会遇到类似 “Sub-process /usr/bin/dpkg returned an error code” 的错误。它告诉我们...(软件包)... 引发了问题<br>
-方法1、</p>
-<pre><code>sudo mv /var/lib/dpkg/info /var/lib/dpkg/info.bak //现将info文件夹更名
-sudo mkdir /var/lib/dpkg/info //再新建一个新的info文件夹
-sudo apt-get update
-apt-get -f install xxx
-sudo mv /var/lib/dpkg/info/* /var/lib/dpkg/info.bak
-//执行完上一步操作后会在新的info文件夹下生成一些文件，现将这些文件全部移到info.bak文件夹下
-sudo rm -rf /var/lib/dpkg/info //把自己新建的info文件夹删掉
-sudo mv /var/lib/dpkg/info.bak /var/lib/dpkg/info //把以前的info文件夹重新改回名字  
-</code></pre>
-<p>到此，一般这个方法可以解决问题了。<br>
-2、</p>
-<pre><code>for i in /usr/share/fonts/X11/* /usr/share/fonts/truetype/*
-do sudo touch &quot;$i&quot;
-done
-</code></pre>
-<p>3、</p>
-<pre><code>sudo apt-get update --fix-missing
-sudo apt-get autoremove &amp;&amp; sudo apt-get clean &amp;&amp; sudo apt-get install -f
-</code></pre>
-<p>👉<strong>问题二：</strong><br>
-不能访问部分手机的存储。<br>
-方法：（使用jmtpfs）<br>
-安装：</p>
-<pre><code>sudo apt-get install mtp-tools jmtpfs
-</code></pre>
-<p>准备：</p>
-<pre><code>sudo mkdir /media/mtp
-sudo chmod 755 /media/mtp
-</code></pre>
-<p>挂载：</p>
-<pre><code>sudo jmtpfs -o allow_other /media/mtp
-</code></pre>
-<p>卸载：</p>
-<pre><code>sudo umount /media/mtp
-</code></pre>
-<p>👉<strong>问题三：</strong><br>
-E: Could not get lock /var/lib/dpkg/lock - open (11: Resource temporarily unavailable)<br>
-E: Unable to lock the administration directory (/var/lib/dpkg/)<br>
-原因：<br>
-其实这是因为有另外一个程序在运行，导致锁不可用。原因可能是上次运行更新或安装没有正常完成。解决办法是杀死此进程。<br>
-方法：</p>
-<pre><code>sudo rm /var/cache/apt/archives/lock
-sudo rm /var/lib/dpkg/lock
-//这样可能还会出现问题，解决方案如下
-sudo dpkg --configure -a
-sudo apt-get update
-</code></pre>
-<p>👉<strong>问题四:</strong><br>
-打开Ubuntu软件中心无图标，不显示软件。<br>
-方法：</p>
-<pre><code>sudo apt update
-sudo apt upgrade
-sudo systemctl reboot
-</code></pre>
+                  <blockquote>
+<p>欢迎来到我的小站呀，很高兴遇见你！🤝</p>
+</blockquote>
+<h2 id="️-关于本站这是xiangyi的博客小站在这里记录问题与答案还有生活">⛪️ 关于本站：这是Xiangyi的博客小站，在这里记录问题与答案，还有生活。</h2>
+<h2 id="博主是谁xiangyi">👨‍💻 博主是谁：Xiangyi</h2>
+<h2 id="兴趣爱好写bug除bug-羽毛球">⛹ 兴趣爱好：写Bug,除Bug &amp; 羽毛球🏸</h2>
+<h2 id="联系我呀xuxiangyi1993gmailcom">📬 联系我呀：xuxiangyi1993@gmail.com</h2>
 
                 </div>
                 <div class="clear"></div>
@@ -169,19 +111,19 @@ sudo systemctl reboot
 
             <section class="related section">
               
-              <article class="prev grid-50 tablet-grid-50 grid-parent">
-                <div class="thumb cover lazy loaded" style="background-image: url('https://xiangyi715.github.io//post-images/about.jpg');"></div>
-                 <a href="https://xiangyi715.github.io/post/about" class="full-link"></a>
+              
+              <article class="next grid-50 tablet-grid-50 grid-parent">
+                <div class="thumb cover lazy loaded" style="background-image: url('https://xiangyi715.github.io//post-images/ubuntu-zhong-xiao-er-zhi-ming-de-wen-ti-hui-zong.jpg');"></div>
+                 <a href="https://xiangyi715.github.io/post/ubuntu-zhong-xiao-er-zhi-ming-de-wen-ti-hui-zong" class="full-link"></a>
                  <div class="info">
-                  <time datetime="2020-01-05">2020-01-05</time>
-                  <h4 class="title white no-margin">关于</h4>
+                  <time datetime="2020-01-04">2020-01-04</time>
+                  <h4 class="title white no-margin">ubuntu中遇到的小问题汇总(不定期更新)</h4>
                 </div>
                  <span class="epcl-button red">
-                  <img src="https://xiangyi715.github.io//media/images/left-arrow.svg" width="15" alt="Left Arrow">
+                  <img src="https://xiangyi715.github.io//media/images/right-arrow.svg" width="15" alt="Left Arrow">
                 </span>
                 <div class="overlay"></div>
               </article>
-              
               
 
                 <div class="clear"></div>
