@@ -1157,7 +1157,7 @@ body {
     text-shadow:0 0 1px rgba(0,0,0,.1)
 }
 input:-webkit-autofill {
-    -webkit-box-shadow:153 50 204 1000px white inset
+    -webkit-box-shadow:0 0 0 1000px white inset
 }
 ::selection {
     background:#444;
@@ -1849,7 +1849,7 @@ a:hover,a:active {
     font-size:14px;
     padding:8px 18px;
     text-transform:none;
-    color:#545454
+    color:#87CEFA
 }
 .site-main {
     padding:40px 0 0;
