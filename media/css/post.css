@@ -1849,7 +1849,7 @@ a:hover,a:active {
     font-size:14px;
     padding:8px 18px;
     text-transform:none;
-    color:#87CEFA
+    color:#545454
 }
 .site-main {
     padding:40px 0 0;
@@ -1905,7 +1905,7 @@ a:hover,a:active {
     font-size:20px;
     font-weight:400;
     line-height:50px;
-    margin:0 0 0 17%;
+    margin:135 206 250 17%;
     position:relative;
     z-index:1;
     display:inline-block;
