@@ -46,7 +46,7 @@
 }
 
 .focusinfo .header-tou img {
-    box-shadow: inset 0 0 10px #000;
+    box-shadow: inset 0 0 10px #fff;
     padding: 5px;
     opacity: 1;
     transform: rotate(0deg);
