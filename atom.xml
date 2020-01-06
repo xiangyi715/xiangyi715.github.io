@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://xiangyi715.github.io/</id>
     <title>Xiangyi&apos;s blog</title>
-    <updated>2020-01-06T02:32:47.950Z</updated>
+    <updated>2020-01-06T02:35:08.021Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://xiangyi715.github.io/"/>
     <link rel="self" href="https://xiangyi715.github.io/atom.xml"/>
@@ -10,21 +10,6 @@
     <logo>https://xiangyi715.github.io/images/avatar.png</logo>
     <icon>https://xiangyi715.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Xiangyi&apos;s blog</rights>
-    <entry>
-        <title type="html"><![CDATA[关于]]></title>
-        <id>https://xiangyi715.github.io/post/about</id>
-        <link href="https://xiangyi715.github.io/post/about">
-        </link>
-        <updated>2020-01-05T02:08:05.000Z</updated>
-        <content type="html"><![CDATA[<blockquote>
-<p>欢迎来到我的小站呀，很高兴遇见你！🤝</p>
-</blockquote>
-<h2 id="️-关于本站这是xiangyi的博客小站在这里记录问题与答案还有生活">⛪️ 关于本站：这是Xiangyi的博客小站，在这里记录问题与答案，还有生活。</h2>
-<h2 id="博主是谁xiangyi">👨‍💻 博主是谁：Xiangyi</h2>
-<h2 id="兴趣爱好写bug除bug-羽毛球">⛹ 兴趣爱好：写Bug,除Bug &amp; 羽毛球🏸</h2>
-<h2 id="联系我呀xuxiangyi1993gmailcom">📬 联系我呀：xuxiangyi1993@gmail.com</h2>
-]]></content>
-    </entry>
     <entry>
         <title type="html"><![CDATA[ubuntu中遇到的小问题汇总(不定期更新)]]></title>
         <id>https://xiangyi715.github.io/post/ubuntu-zhong-xiao-er-zhi-ming-de-wen-ti-hui-zong</id>
