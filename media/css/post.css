@@ -228,7 +228,7 @@ ol {
 }
 .wp-block-cover,.wp-block-cover-image {
     position:relative;
-    background-color:#000;
+    background-color:#fff;
     background-size:cover;
     background-position:50%;
     min-height:430px;
