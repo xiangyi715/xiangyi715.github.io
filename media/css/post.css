@@ -1349,7 +1349,7 @@ pre {
     overflow:auto;
     padding:1.6em;
     text-shadow:none;
-    color:#fff
+    color:#000
 }
 code,kbd,tt,var {
     font-family:Monaco,Consolas,"Andale Mono","DejaVu Sans Mono",monospace;
@@ -1960,7 +1960,7 @@ i.iconfont.hotpost {
     color:#666
 }
 .post-more i:hover {
-    color:#000
+    color:#fff
 }
 .info-meta {
     margin-top:10px;
