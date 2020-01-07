@@ -1,243 +1,365 @@
-<!DOCTYPE html>
 <html>
-  <head lang="zh">
-  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"/>
-<meta content="yes" name="apple-mobile-web-app-capable"/>
-<meta content="black" name="apple-mobile-web-app-status-bar-style"/>
-<meta content="telephone=no" name="format-detection"/>
-<meta name="renderer" content="webkit">
-<meta name="description" content="温故而知新">
-<meta http-equiv="Access-Control-Allow-Origin" content="*">
 
-<title>ubuntu中遇到的小问题汇总(不定期更新) | Xiangyi&#39;s blog</title>
-<link href="https://xiangyi715.github.io//styles/main.css" type="text/css" rel="stylesheet"/>
-<link rel="stylesheet" href="//cdn.bootcss.com/KaTeX/0.10.2/katex.min.css"/>
-<script src="//cdn.bootcss.com/KaTeX/0.10.2/katex.min.js"></script>
-<script src="//cdn.bootcss.com/KaTeX/0.10.2/contrib/auto-render.min.js"></script>
-<script type="text/javascript" src="https://xiangyi715.github.io//media/scripts/jquery.js"></script>
-<script type="text/javascript" src="https://xiangyi715.github.io//media/scripts/jquery.pjax.min.js"></script>
-<script type="text/javascript" src="https://xiangyi715.github.io//media/scripts/basic.js"></script>
-<script type="text/javascript" src="//cdn.bootcss.com/gitalk/1.5.0/gitalk.min.js"></script>
-<script src="//cdn.bootcss.com/highlight.js/9.15.10/highlight.min.js"></script>
-<script async type="text/javascript" src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-<script type="text/javascript" src="https://cdn.bootcss.com/lightgallery/1.6.12/js/lightgallery.min.js"></script>
-<script src="https://cdn.bootcss.com/tocbot/4.8.1/tocbot.js"></script>
+<head>
+	<script src="../../prism.js"></script>
+	<link href="../../prism.css" rel="stylesheet" />
+	<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>Xiangyi&#39;s blog</title>
+<link rel="shortcut icon" href="https://xiangyi715.github.io//favicon.ico?v=1578381547048">
+<script src="../../prism.js" ></script>
+<link href="../../prism.css" rel="stylesheet" />
+<link href="../../snow.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://xiangyi715.github.io//styles/main.css">
+<meta name="description" content="温故而知新" />
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
 
-  </head>
-  <body>
-     <div class="header">
-      <div class="logo_title">
-		  
-        <div class="title animated fadeInDown"><img id="img1" alt="logo" style="display:inline-block;" src="https://xiangyi715.github.io//images/avatar.png"/>
-<script>
-var r = 0;
-    window.onload = function(){
-        var current = 0;
-        document.getElementById('img1').onclick = function(){
-            current = (current+90)%360;
-            this.style.transform = 'rotate('+current+'deg)';
-        }
-    };
-</script>
+<link rel="stylesheet" href="/media/fonts/iconfont.css">
+<link href="//fonts.googleapis.com/css?family=Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Rosario:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
 
-          <h1 title="Xiangyi&#39;s blog" class="weaklink"><a  href="/">Xiangyi&#39;s blog</a>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.ui.min.js"></script>
 
-          </h1>
-	  
+</head>
 
-          <div class="navbar weaklink">
-            <div class="normal_nav">
-
-<div class="bitcron_nav_container">
+<body>
+	
 
 
-  <div class="bitcron_nav">
-    <div class="mixed_site_nav_wrap site_nav_wrap">
-		
-      <ul class="mixed_site_nav site_nav sm sm-base">
-	  
- 
-  <li><a id="d2ef19af68cc211e98f8a0242ac110003" href="/" class="selected active current nav__item" >首页</a>
-  </li>
-  
- 
-  <li><a id="d2ef19af68cc211e98f8a0242ac110003" href="/archives" class="selected active current nav__item" >归档</a>
-  </li>
-  
- 
-  <li><a id="d2ef19af68cc211e98f8a0242ac110003" href="/tags" class="selected active current nav__item" >标签</a>
-  </li>
-  
- 
-  <li><a id="d2ef19af68cc211e98f8a0242ac110003" href="https://xiangyi715.github.io/post/about" class="selected active current nav__item" >关于</a>
-  </li>
-  
- 
- <li>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
 
-      </ul>
-	  
+	<div class="head-top-line"></div>
+	<div class="header-box">
+		<header class="header">
 
-      <div class="clear clear_nav_inline_end"></div>
-    </div>
-
-  </div>
-
-
-
-  <div class="clear clear_nav_end"></div>
-
-</div>
-
-            </div>
-			
-			<div class="hamberger"><i class="fa fa-bars"></i>
-<i class="fa fa-times"></i>
-
+	<div class="blog-header" id="header">
+		<div class="section-layout-wrapper">
+			<div class="site-meta">
+				<div class="nav-toggle" id="nav_toggle">
+					<div class="toggle-box">
+						<div class="line line-top"></div>
+						<div class="line line-center"></div>
+						<div class="line line-bottom"></div>
+					</div>
+				</div>
+				<div class="site-title">
+					<a href="/" class="brand">
+						<span>Xiangyi&#39;s blog</span>
+					</a>
+				</div>
+				<p class="subtitle"></p>
+				<nav class="site-nav" id="site_nav">
+					
+					<li class="nav-item ">
+						<a href="/">
+							<!-- <i class="iconfont icon-home"></i> -->
+							首页
+						</a>
+					</li>
+					
+					<li class="nav-item ">
+						<a href="/archives">
+							<!-- <i class="iconfont icon-home"></i> -->
+							归档
+						</a>
+					</li>
+					
+					<li class="nav-item ">
+						<a href="/tags">
+							<!-- <i class="iconfont icon-home"></i> -->
+							标签
+						</a>
+					</li>
+					
+					<li class="nav-item ">
+						<a href="https://xiangyi715.github.io/post/about">
+							<!-- <i class="iconfont icon-home"></i> -->
+							关于
+						</a>
+					</li>
+					
+				</nav>
+				<input type="serch" id="serch" placeholder="搜索其实很简单">
 			</div>
 
-          </div>
-
-        </div>
-
-      </div>
-
-      <div class="hidden_nav animated fadeInDown">
-
-<div class="bitcron_nav_container">
-
-
-  <div class="bitcron_nav">
-    <div class="mixed_site_nav_wrap site_nav_wrap">
-      <ul class="mixed_site_nav site_nav sm sm-base">
-	
-  <li><a id="d2ef19af68cc211e98f8a0242ac110003" href="/" class="selected active current nav__item" >首页</a>
-
-  </li>
+		</div>
+	</div>
+<!-- <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?3e11339a177ba7e34848b1f198c46e5c";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script> -->
 
 
-  <li><a id="d2ef19af68cc211e98f8a0242ac110003" href="/archives" class="selected active current nav__item" >归档</a>
+</header>
+<script type="text/javascript">
 
-  </li>
+	let showNav = true;
 
+	let navToggle = document.querySelector('#nav_toggle'),
+		siteNav = document.querySelector('#site_nav');
 
-  <li><a id="d2ef19af68cc211e98f8a0242ac110003" href="/tags" class="selected active current nav__item" >标签</a>
-
-  </li>
-
-
-  <li><a id="d2ef19af68cc211e98f8a0242ac110003" href="https://xiangyi715.github.io/post/about" class="selected active current nav__item" >关于</a>
-
-  </li>
-
-
-
-
-      </ul>
-
-      <div class="clear clear_nav_inline_end"></div>
-    </div>
-
-  </div>
-
-
-
-  <div class="clear clear_nav_end"></div>
-
-</div>
-
-      </div>
-
-    </div>
-
-
-    <div class="main" id="pjax-container">
-      <div class="main-inner">
-<div class="content">
-<style>.toc{overflow-y:auto}.toc>.toc-list{overflow:hidden;position:relative}.toc>.toc-list li{list-style:none}.toc-list{margin:0;padding-left:10px}a.toc-link{color:currentColor;height:100%}.is-collapsible{max-height:1000px;overflow:hidden;transition:all 300ms ease-in-out}.is-collapsed{max-height:0}.is-position-fixed{position:fixed !important;top:0}.is-active-link{font-weight:700}.toc-link::before{background-color:#EEE;content:' ';display:inline-block;height:inherit;left:0;margin-top:-1px;position:absolute;width:2px}.is-active-link::before{background-color:#54BC4B}</style>
-  <div class="post_page" >
-<div class="post">
-  <div class="post_title sm_margin">
-    <h2><a>ubuntu中遇到的小问题汇总(不定期更新)</a>
-    </h2>
-  </div>
-<script>
-function lan(){
-	if (document.getElementById("lan").innerText == "繁"){
-		var s=document.getElementById("tongwenlet_cn");
-		if(s != null){
-		document.body.removeChild(s);
-		}
-		var s = document.createElement("script");
-		s.language = "javascript";
-		s.type = "text/javascript";
-		s.src = "https://git.oschina.net/runningcheese/JiathisQR.js/raw/master/bookmarklet_tw.js";
-		s.id = "tongwenlet_cn";
-		document.body.appendChild(s);
-		document.getElementById("lan").innerHTML = "简"
+	function navClick() {
+		navToggle.classList.toggle('nav-toggle-active');
+		siteNav.classList.toggle('nav-menu-active');
 	}
-	else if(document.getElementById("lan").innerText == "簡"){
-		var s=document.getElementById("tongwenlet_cn");
-		if(s != null){
-		document.body.removeChild(s);
-		}
-		var s = document.createElement("script");
-		s.language = "javascript";
-		s.type = "text/javascript";
-		s.src = "https://git.oschina.net/runningcheese/JiathisQR.js/raw/master/bookmarklet_cn.js";
-		s.id = "tongwenlet_cn";
-		document.body.appendChild(s);
-		document.getElementById("lan").innerHTML = "繁"
-		}
-}
 
-function change(){	
-    var rand = Math.random()*1+1;
-    var num = window.getComputedStyle(document.getElementsByName("show")[0],undefined).fontSize;
-	num = num.slice(0,-2); 
-    document.getElementById("show").style.fontSize = num - rand +'px';
-}
+	navToggle.addEventListener('click', navClick);  
 </script>
-  <div class="post_details">
-    <div class="info"><i class="fa fa-calendar"></i>
-<span class="date_info">2020-01-04</span>
-<i class="fa fa-eye"></i>
-<span class="date_info"><span id="busuanzi_value_page_pv"></span> Views</span>
-<i class="fa fa-bookmark-o"></i>
-<span class="tags_info weaklink">
-	
-	<a href="https://xiangyi715.github.io/tag/yLvwCCc7C" class="tag">原</a>
+	</div>
+	<div class="main-continer">
+		<div class="section-layout">
+			<div class="section-layout-wrapper">
 
-</span>
-<i class="fa fa-anchor"></i>
-<span style="margin-right:15px">
-528字
-</span>
-<i class="fa fa-clock-o"></i>
-<span style="margin-right:15px">
-3 min read
-</span>
-<span style="margin-right:15px">
-<i class="fa fa-share"></i>
-<a title="QR code" target="_blank" href="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://xiangyi715.github.io/post/ubuntu-zhong-xiao-er-zhi-ming-de-wen-ti-hui-zong"><i class="fa fa-qrcode"></i></a>
-<a title="qq share" target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://xiangyi715.github.io/post/ubuntu-zhong-xiao-er-zhi-ming-de-wen-ti-hui-zong&sharesource=qzone&title=ubuntu中遇到的小问题汇总(不定期更新)&pics=https://blog.blinkstar.cn/images/avatar.png&summary="><i class="fa fa-qq"></i></a>
-<a title="weibo share" target="_blank" href="https://service.weibo.com/share/share.php?url=https://xiangyi715.github.io/post/ubuntu-zhong-xiao-er-zhi-ming-de-wen-ti-hui-zong&sharesource=weibo&title=ubuntu中遇到的小问题汇总(不定期更新) + " - " + &pic="https://blog.blinkstar.cn/images/avatar.png"><i class="fa fa-weibo"></i></a>
-</span>
-<span style="margin-right:15px">
-<a id="daxiao" href="javascript:void(0);" onclick="change();" title="调整字体大小"><i class="fa fa-font"></i></a>
-</span>
-<span style="margin-right:15px">
-<a id="lan" href="javascript:void(0);" onclick="lan();" title="调整简繁体">繁</a>
-</span>
-</div>
+				<!-- <div class="section-box"> -->
+				<div class="section post">
+					<section class="section-items">
+						<div class="article-box">
+    <header class="post-header">
+  <h1 class="post-title">
+    <a class="post-title-link" href="https://xiangyi715.github.io/post/ubuntu-zhong-xiao-er-zhi-ming-de-wen-ti-hui-zong">
+      ubuntu中遇到的小问题汇总(不定期更新)
+    </a>
+  </h1>
+  <div class="post-meta">
+    <span class="meta-item">
+      <i class="iconfont icon-calendar_empty"></i>
+      <span class="pc-show">发布于</span>
+      <span>2020-01-04</span>
+    </span>
+    
+      <span class="meta-item">
+        <span class="post-meta-divider">|</span>
+        <i class="iconfont icon-folder_open_alt"></i>
+        <span class="pc-show">分类于</span>
+        
+          
+            <a href="https://xiangyi715.github.io/tag/yLvwCCc7C">
+              <span>原</span>
+            </a>
+          
+        
+      </span>
+    
+    <span class="meta-item">
+      <span class="post-meta-divider">|</span>
+      <i class="iconfont icon-time"></i>
+      <span>3分钟</span>
+    </span>
+    <span class="meta-item">
+      <span class="post-meta-divider">|</span>
+      <i class="iconfont icon-keyboard"></i>
+      <span class="pc-show">528字数</span>
+    </span>
   </div>
-
-    <div class="post_content markdown">
-	
-	<div style="background-image: url('https://xiangyi715.github.io//post-images/ubuntu-zhong-xiao-er-zhi-ming-de-wen-ti-hui-zong.jpg');background-repeat: no-repeat;background-size:100% auto;margin-top:32px;padding-bottom: 50%;"></div>
-	
-    <div name="show" id="show">
-	<p class="md_block"><span class="md_line md_line_start md_line_end"><p>👉<strong>问题一：</strong><br>
+</header>
+</div>
+						<div class="post-body" id="post_body">
+							<p>👉<strong>问题一：</strong><br>
 出现E: Sub-process /usr/bin/dpkg returned an error code<br>
 当使用apt-get安装软件时有时会发生类似于<br>
 Errors were encountered while processing:<br>
@@ -300,149 +422,452 @@ sudo apt-get update
 sudo apt upgrade
 sudo systemctl reboot
 </code></pre>
-</span></p></div><div id = "warn"></div>
-	<br>
-	<hr>
-<div style="color: #ccc;font-size:14px;"><i class="fa fa-user"></i>本文由<a rel="license" href="/">Xiangyi&#39;s blog</a>创作</div>	
-<div style="color: #ccc;font-size:14px;"><i class="fa fa-cc"></i>该文章采用<a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可。转载请注明出处！</div>
-<div style="color: #ccc;font-size:14px;"><i class="fa fa-clock-o"></i>发布时间为：2020-01-04</div>    
-<p class="md_block">
-<div class="reward"><div class="reward-button">赏 <span class="reward-code"> <span class="alipay-code"> <img class="alipay-img" alt = "support" src="https://xiangyi715.github.io//media/images/alipay.png"><b>支付宝扫码打赏</b> </span> <span class="wechat-code"> <img alt ="support" class="wechat-img" src="https://xiangyi715.github.io//media/images/wechat.png"><b>微信打赏</b> </span> </span></div></div>
-<div style="text-align:center;color: #ccc;font-size:14px;">如果觉得这篇文章对您有帮助，可以请作者喝一杯饮料哦🥤</div>    
-</p> 
+
+						</div>
+						<div class="post-footer">
+  <ul class="post-copyright">
+    <li class="post-copyright-author">
+      <strong>本文作者：</strong>
+      Xiangyi&#39;s blog
+    </li>
+    <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="https://xiangyi715.github.io/post/ubuntu-zhong-xiao-er-zhi-ming-de-wen-ti-hui-zong" title="ubuntu中遇到的小问题汇总(不定期更新)">https://xiangyi715.github.io/post/ubuntu-zhong-xiao-er-zhi-ming-de-wen-ti-hui-zong</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>版权声明： </strong>
+      本博客所有文章除特别声明外,转载请注明出处！
+    </li>
+  </ul>
+  <div class="tags">
+    
+      <a href="https://xiangyi715.github.io/tag/yLvwCCc7C"># 原</a>
+    
+  </div>
+  <div class="nav">
+    <div class="nav-prev">
+      
+        <i class="iconfont icon-angle_left"></i>
+        <a class="nav-pc-next" href="https://xiangyi715.github.io/post/ge-ren-duan-ju-ji">个人短句集</a class="nav-pc-next">
+        <a class="nav-mobile-prev" href="https://xiangyi715.github.io/post/ge-ren-duan-ju-ji">上一篇</a>
+      
+    </div>
+    <div class="nav-next">
+      
+    </div>
+  </div>
 </div>
-</div>
+						
+						<div class="comment"></div>
+					</section>
 
-<style type="text/css">
-#mememe {
-	border:3px;
-	border-radius:5px;
-    background-repeat: no-repeat;
-    height: 100%;
-	width: 100%;
-	display: inline-block;
-	border-radius:5px; 
-}
-</style>
-
-<div style="width:100%;overflow:hidden">
-
-
-
-          <div style="float:left;text-align:left;color:#ccc;font-size:18px;width:50%;">
-            上一篇
-            <a href="https://xiangyi715.github.io/post/ge-ren-duan-ju-ji">
-              <p class="post-title">
-                <b>个人短句集</b>
-              </p>
-            </a>
-          </div>
-
-</div>
-
-<div class="doc_comments">
-
-</div>
-<script>
-var link="";$("img").each((i,o)=>{var o=$(o);if(o.attr("src").indexOf("sinaimg")>0||o.attr("src").indexOf("qpic")>0||o.attr("src").indexOf("baidu")>0||o.attr("src").indexOf("sinaimg")>0){o.attr("referrerpolicy","no-referrer");link=o.attr("src");o.attr("src",link);}});
-imgList = document.querySelectorAll('img')
-imgList.forEach(img => {
-  if (img.alt !== "logo" && img.alt !== "featureimg"){
-  let div1 = document.createElement('div')
-  let div = document.createElement('div')
-  div.className='back';
-  div.setAttribute("data-src",img.src)
-  var figuration = document.createElement("figcaption")
-  figuration.innerHTML = '<a href="' + img.src + '">' + img.alt + '</a>'
-  img.replaceWith(div1)
-  div1.appendChild(div)
-  div.appendChild(img)
-  div1.appendChild(figuration)}
-})
-$('img').on('error',function(){$(this).prop('src','https://xiangyi715.github.io//media/images/broken.jpg')});$("a").attr("rel","external nofollow");$("a[rel='external nofollow']").attr("target","_blank");$("a[href^='#']").removeAttr("target");$("a.ex").removeAttr("rel");$("a.ex").removeAttr("target");
-content="<div class='warn'>本文最后更新于2020-01-04，已超过 1 年没有更新，涉及的内容可能已经失效！</div>";var date1="2020-01-04 16:05:13";date1=date1.replace("-","/");var date2=new Date();var date3=date2.getTime()-new Date(date1).getTime();var days=Math.floor(date3/(24*3600*1000));if(days>=365){document.getElementById("warn").innerHTML=content};
-$('#pjax-container').lightGallery({
-    selector: '.back'
-});
-tocbot.init({
-	tocSelector: '.toc',
-	contentSelector: '.main-inner',
-	headingSelector: 'h1, h2, h3, h4, h5',
-	positionFixedSelector: ".toc",
-	scrollSmooth: true,
-	fixedSidebarOffset: 'auto',
-    scrollSmoothOffset: -80,
-    headingsOffset: -500
-});
-</script>
+				</div>
+				<div class="sidebar">
+    <div class="sidebar-wrapper">
+  <div class="sidebar-item">
+    <p class="site-author-name">关于博主</p>
+    <img class="site-author-image" src="https://xiangyi715.github.io//images/avatar.png"/>
+    <p class="site-description">Memory</p>
+    <p class="site-description">温故而知新</p>
+  </div>
+  <div class="sidebar-item side-item-stat">
+    <div class="sidebar-item-box">
+      <a href="/archives/">
+        <span class="site-item-stat-count">3</span>
+        <span class="site-item-stat-name">日志</span>
+      </a>
+    </div>
+    <div class="sidebar-item-box">
+      <a href="">
+        <span class="site-item-stat-count">2</span>
+        <span class="site-item-stat-name">分类</span>
+      </a>
+    </div>
+    <div class="sidebar-item-box">
+      <a href="/tags/">
+        <span class="site-item-stat-count">2</span>
+        <span class="site-item-stat-name">标签</span>
+      </a>
+    </div>
+  </div>
+  <div class="sidebar-item">
+    <span class="site-item-rss">
+        <i class="iconfont icon-rss"></i>
+        <a href="https://xiangyi715.github.io//atom.xml" target="_blank">RSS</a>
+    </span>
+  </div>
+  <div class="sidebar-item sidebar-item-social">
+    <div class="social-item">
+      <a href="https://www.github.com/memorypro">
+        <i class="iconfont icon-github"></i> GitHub
+      </a>
+      <a href="">
+        <i class="iconfont icon-twitter"></i> Twitter
+      </a>
+    </div>
+    <div class="social-item">
+      <a href="">
+        <i class="iconfont icon-globe"></i> 豆瓣
+      </a>
+      <a href="">
+        <i class="iconfont icon-globe"></i> 知乎
+      </a>
+    </div>
   </div>
 </div>
 
+<div class="sidebar-wrapper">
+  <div class="sidebar-item">
+    <p class="site-author-name">文章分类</p>
+  </div>
+  <div>
+    <ul class="site-meta-tags">
+      
+        <li >
+          <a  href="https://xiangyi715.github.io/tag/gjkeBIXxE">
+            短句
+          </a>
+        </li>
 
-      </div>
-<div class="toc-container">
+      
+        <li >
+          <a  href="https://xiangyi715.github.io/tag/yLvwCCc7C">
+            原
+          </a>
+        </li>
+
+      
+    </ul>
+     
+  </div>
 
 </div>
-    </div>
-	
-   <div class="footer">
-<div class="site_footer_wrap"><div class="site_footer">
 
-      <div class="mysocials"><div class="my_socials">
-		   
-			   
+
+<div class="sidebar-wrapper">
+  <div class="sidebar-item">
+    <p class="site-author-name">友情链接</p>
+  </div>
+  <div class="social-item">
+    <ul style=" list-style: none; margin-left: -10px;" >
     
-			   
-    
-			   
-    
-			   
-    
-			   
-    
-			   
-    
+      
+        <li >
+          <a  href="https://xiangyi715.github.io/tag/gjkeBIXxE">
+            短句
+          </a>
+        </li>
+
+      
+        <li >
+          <a  href="https://xiangyi715.github.io/tag/yLvwCCc7C">
+            原
+          </a>
+        </li>
+
+      
+
+      <li > <a  href="">链接1</a></li>
+      <li > <a  href="">链接1</a></li>
+      <li > <a  href="">链接1</a></li>
+      <li > <a  href="">链接1</a></li>
+
+    </ul>
+     
+  </div>
+
 </div>
-      </div>
 
-      <div class="copyright" id="copyright">
-	  <script>
-		var date=new Date;
-		var year=date.getFullYear(); 
-		document.write("Copyright © "+year+" " + "Xiangyi&#39;s blog. ");
-		</script>
-		Powered by Gridea.
-		<br>
-		本站已稳定运行了
-		<strong><script type="text/javascript">
-		var urodz= new Date("10/28/2018");
-		var now = new Date();
-		var ile = now.getTime() - urodz.getTime();
-		var dni = Math.floor(ile / (1000 * 60 * 60 * 24));
-		document.write(+dni)
-		</script>
-		</strong>天
-		<br>
-		本站总访问量为 <strong><span id="busuanzi_value_site_uv"></span></strong> 次
-	  Link <a href="https://github.com/xiangyi715"
-target="_blank">My github</a>
-      </div>
-	  <img src="https://xiangyi715.github.io//media/images/font.svg">
-
+</div>
+				<!-- 
+<div class="sidebar">
+    <div class="sidebar-wrapper" id="sidebar">
+      
+      <div class="sidebar-body" id="sidebar_body">
+        
+          <div class="sidebar-wrapper">
+  <div class="sidebar-item">
+    <p class="site-author-name">关于博主</p>
+    <img class="site-author-image" src="https://xiangyi715.github.io//images/avatar.png"/>
+    <p class="site-description">Memory</p>
+    <p class="site-description">温故而知新</p>
+  </div>
+  <div class="sidebar-item side-item-stat">
+    <div class="sidebar-item-box">
+      <a href="/archives/">
+        <span class="site-item-stat-count">3</span>
+        <span class="site-item-stat-name">日志</span>
+      </a>
     </div>
+    <div class="sidebar-item-box">
+      <a href="">
+        <span class="site-item-stat-count">2</span>
+        <span class="site-item-stat-name">分类</span>
+      </a>
+    </div>
+    <div class="sidebar-item-box">
+      <a href="/tags/">
+        <span class="site-item-stat-count">2</span>
+        <span class="site-item-stat-name">标签</span>
+      </a>
+    </div>
+  </div>
+  <div class="sidebar-item">
+    <span class="site-item-rss">
+        <i class="iconfont icon-rss"></i>
+        <a href="https://xiangyi715.github.io//atom.xml" target="_blank">RSS</a>
+    </span>
+  </div>
+  <div class="sidebar-item sidebar-item-social">
+    <div class="social-item">
+      <a href="https://www.github.com/memorypro">
+        <i class="iconfont icon-github"></i> GitHub
+      </a>
+      <a href="">
+        <i class="iconfont icon-twitter"></i> Twitter
+      </a>
+    </div>
+    <div class="social-item">
+      <a href="">
+        <i class="iconfont icon-globe"></i> 豆瓣
+      </a>
+      <a href="">
+        <i class="iconfont icon-globe"></i> 知乎
+      </a>
+    </div>
+  </div>
+</div>
 
-<script type="text/javascript" src="https://xiangyi715.github.io//media/scripts/love.js"></script>
-<script type="text/javascript" src="https://xiangyi715.github.io//media/scripts/darkmode.js"></script>
+<div class="sidebar-wrapper">
+  <div class="sidebar-item">
+    <p class="site-author-name">文章分类</p>
+  </div>
+  <div>
+    <ul class="site-meta-tags">
+      
+        <li >
+          <a  href="https://xiangyi715.github.io/tag/gjkeBIXxE">
+            短句
+          </a>
+        </li>
+
+      
+        <li >
+          <a  href="https://xiangyi715.github.io/tag/yLvwCCc7C">
+            原
+          </a>
+        </li>
+
+      
+    </ul>
+     
+  </div>
+
+</div>
+
+
+<div class="sidebar-wrapper">
+  <div class="sidebar-item">
+    <p class="site-author-name">友情链接</p>
+  </div>
+  <div class="social-item">
+    <ul style=" list-style: none; margin-left: -10px;" >
+    
+      
+        <li >
+          <a  href="https://xiangyi715.github.io/tag/gjkeBIXxE">
+            短句
+          </a>
+        </li>
+
+      
+        <li >
+          <a  href="https://xiangyi715.github.io/tag/yLvwCCc7C">
+            原
+          </a>
+        </li>
+
+      
+
+      <li > <a  href="">链接1</a></li>
+      <li > <a  href="">链接1</a></li>
+      <li > <a  href="">链接1</a></li>
+      <li > <a  href="">链接1</a></li>
+
+    </ul>
+     
+  </div>
+
+</div>
+
+        
+      </div>
+    </div>
+</div>
 <script>
-new Darkmode({label: '🌓',backgroundColor: '#f7f7f7',time: '0.5s'}).showWidget();
-console.clear();
-console.log("\n %c \u26a1Theme: Bitcron-pro Author's Blog:https://blog.blinkstar.cn  Writen By Serence  \n\n", "color: #ffffff; background: rgba(49, 49, 49, 0.85); padding:5px 0;border-radius:5px;", );
-</script>
+  const SIDEBAR_TITLE_ACTIVE = 'sidebar-title-active';
+  const SIDEBAR_BODY_ACTIVE = 'sidebar-body-active';
+  const SLIDE_UP_IN = 'slide-up-in';
+
+  let sidebar = document.querySelector('#sidebar'),
+  tocSideBar = document.querySelector('#tocSideBar'),
+  metaSideBar = document.querySelector('#metaSideBar'),
+  postToc = document.querySelector('#post_toc'),
+  postSiteMeta = document.querySelector('#post_side_meta'),
+  sidebarTitle = document.querySelector('.sidebar-title'),
+  sidebarBody = document.querySelector('#sidebar_body');
+
+  tocSideBar.addEventListener('click', (e) => {
+    toggleSidebar(e);
+  });
+
+  metaSideBar.addEventListener('click', (e) => {
+    toggleSidebar(e);
+  });
+
+  function toggleSidebar(e) {
+    let currentTitle = document.querySelector("."+SIDEBAR_TITLE_ACTIVE);
+    if (currentTitle == e.srcElement) {
+      return ;
+    }
+    let current, showElement, hideElement;
+    if (e.srcElement == metaSideBar) {
+      showElement = postSiteMeta;
+      hideElement = postToc;
+    } else if (e.srcElement == tocSideBar){
+      showElement = postToc;
+      hideElement = postSiteMeta;
+    }
+    currentTitle.classList.remove(SIDEBAR_TITLE_ACTIVE);
+    e.srcElement.classList.add(SIDEBAR_TITLE_ACTIVE);
+
+    window.Velocity(hideElement, 'stop');
+    window.Velocity(hideElement, 'transition.slideUpOut', {
+      display: 'none',
+      duration: 200,
+      complete: function () {
+        window.Velocity(showElement, 'transition.slideDownIn', {
+          duration: 200
+        });
+      }
+    })
+    hideElement.classList.remove(SIDEBAR_BODY_ACTIVE);
+    showElement.classList.add(SIDEBAR_BODY_ACTIVE);
+
+  }
+
+  postToc.addEventListener('transitionend', function() {
+    this.classList.remove(SLIDE_UP_IN);
+  });
+
+  let limitTop = sidebar.offsetTop;
+  let hasFix = false;
+  window.addEventListener('scroll', function(e) {
+    if (document.body.scrollTop >= limitTop) {
+      if (!hasFix) {
+        sidebar.classList.add('sidebar-fixed');
+        hasFix = true;
+      }
+    } else {
+      if (hasFix) {
+        sidebar.classList.remove('sidebar-fixed');
+        hasFix = false;
+      }
+    }
+  });
+</script> -->
+				<!-- </div> -->
+			</div>
+
+		</div>
+		<div class="footer-box">
+  <footer class="footer">
+    <div class="copyright">
+      © 2019-2020 <i class="iconfont icon-heart"></i> Memory
+    </div>
+    <div class="poweredby">
+      <div class="power-left">Power By<a href="https://github.com/memorypro/"> Memory</a></div>
+      <div>Copy<a href="https://github.com/hsxyhao/gridea-theme-next"> Gridea NexT Theme</a></div>
+      <div>Copy<a href="https://github.com/iissnan/hexo-theme-next"> Hexo Next Theme</a></div>
+    </div>
+  </footer>
+  <div class="back-to-top" id="back_to_top">
+    <i class="iconfont icon-arrow_up"></i>
+    <span class="scrollpercent">
+      <span id="back_to_top_text">100</span>%
+    </span>
+  </div>
+</div>
+
 <script>
-hljs.initHighlightingOnLoad();
+
+  let body = document.body;
+
+  let back2Top = document.querySelector('#back_to_top'),
+  back2TopText = document.querySelector('#back_to_top_text');
+
+  function scrollAnimation(currentY, targetY) {
+   
+    let needScrollTop = targetY - currentY
+    let _currentY = currentY
+    setTimeout(() => {
+      const dist = Math.ceil(needScrollTop / 10)
+      _currentY += dist
+      window.scrollTo(_currentY, currentY)
+      if (needScrollTop > 10 || needScrollTop < -10) {
+        scrollAnimation(_currentY, targetY)
+      } else {
+        window.scrollTo(_currentY, targetY)
+      }
+    }, 1)
+  }
+
+  back2Top.addEventListener("click", function(e) {
+    scrollAnimation(body.scrollTop, 0);
+    e.stopPropagation();
+    return false;
+  });
+  
+  window.addEventListener('scroll', function(e) {
+    let percent = body.scrollTop / (body.scrollHeight - body.clientHeight) * 100;
+    if (percent > 1 && !back2Top.classList.contains('back-top-active')) {
+      back2Top.classList.add('back-top-active');
+    }
+    if (percent == 0) {
+      back2Top.classList.remove('back-top-active');
+    }
+    back2TopText.textContent = Math.floor(percent);
+  });
+
+  // 代码高亮
+  hljs.initHighlightingOnLoad();
 </script>
 
+	</div>
+	<!--载入js，在</body>之前插入即可-->
+	<!--Leancloud 操作库:-->
+	<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+	<!--Valine 的核心代码库-->
+	<script src="/media/scripts/Valine.min.js"></script>
+
+	<script>
+		
+		var uid = 'PJrodUAmdHhn80brO2RK5krO-gzGzoHsz' 
+		var ukey = 'E0NkdD8su2j25GMaM7qxvwLV' 
+		new Valine({
+			// AV 对象来自上面引入av-min.js(老司机们不要开车➳♡゛扎心了老铁)
+			av: AV,
+			el: '.comment',
+			lang: 'zh-cn',//设置评论语言
+			emoticon_url: 'https://cloud.panjunwen.com/alu',
+			emoticon_list: ["狂汗.png", "不说话.png", "汗.png", "坐等.png", "献花.png", "不高兴.png", "中刀.png", "害羞.png", "皱眉.png", "小眼睛.png", "暗地观察.png"],
+			app_id:uid,
+			app_key: ukey,
+			placeholder: '评论留言'
+		});
+	</script>
 
 </body>
+<script src="/media/js/motion.js"></script>
 
 </html>
