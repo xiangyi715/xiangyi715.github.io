@@ -228,7 +228,7 @@ ol {
 }
 .wp-block-cover,.wp-block-cover-image {
     position:relative;
-    background-color:#fff;
+    background-color:#000;
     background-size:cover;
     background-position:50%;
     min-height:430px;
@@ -1349,7 +1349,7 @@ pre {
     overflow:auto;
     padding:1.6em;
     text-shadow:none;
-    color:#000
+    color:#fff
 }
 code,kbd,tt,var {
     font-family:Monaco,Consolas,"Andale Mono","DejaVu Sans Mono",monospace;
