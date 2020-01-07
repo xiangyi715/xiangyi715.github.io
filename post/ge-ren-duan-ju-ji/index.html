@@ -1,139 +1,118 @@
-<!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Xiangyi&#39;s blog</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<meta name="description" content="温故而知新"/>
-<meta name="keywords" content="温故而知新"/>
-<link rel="shortcut icon" href="https://xiangyi715.github.io//favicon.ico">
+<meta name="description" content="温故而知新" />
+<link rel="shortcut icon" href="https://xiangyi715.github.io//favicon.ico?v=1578382187976">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link href="https://cdn.remixicon.com/releases/v1.3.1/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
 <link rel="stylesheet" href="https://xiangyi715.github.io//styles/main.css">
-
-
-<!-- Comment -->
-
-
-<link href="https://cdn.bootcss.com/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
+<link rel="alternate" type="application/atom+xml" title="Xiangyi&#39;s blog - Atom Feed" href="https://xiangyi715.github.io//atom.xml">
 
 
 
-</head>
-<body class="post-template">
-<div id="page" class="site">
+  </head>
+  <body>
+    <div id="app" class="main px-4 flex flex-col lg:flex-row">
+      <div id="sidebar" class="sidebar-wrapper lg:static lg:w-1/4">
+  <div class="lg:sticky top-0">
+    <div class="sidebar-content">
+      <div class="flex lg:block p-4 lg:px-0 items-center fixed lg:static lg:block top-0 right-0 left-0 bg-white z-50">
+        <i class="remixicon-menu-2-line lg:mt-4 text-2xl cursor-pointer animated fadeIn" onclick="openMenu()"></i>
+        <a href="https://xiangyi715.github.io/">
+          <img class="animated fadeInLeft avatar rounded-lg mx-4 lg:mt-32 lg:mx-0 mt-0 lg:w-24 lg:h-24 w-12 w-12" src="https://xiangyi715.github.io//images/avatar.png?v=1578382187976" alt="">
+        </a>
+        <h1 class="animated fadeInLeft lg:text-4xl font-extrabold lg:mt-8 mt-0 text-xl" style="animation-delay: 0.2s">Xiangyi&#39;s blog</h1>
+        <link
+  href="https://cdn.bootcss.com/aplayer/1.10.1/APlayer.min.css"
+  rel="stylesheet"
+/>
+<div id="aplayer" class="animated fadeInLeft mx-4" style="animation-delay: 0.6s"></div>
+<script src="https://cdn.bootcss.com/aplayer/1.10.1/APlayer.min.js"></script>
+<script>
+  var container = document.getElementById("aplayer");
+  var APlayer = new APlayer({
+    container: container,
+    autoplay: true,
+    fixed: true,
+    audio: [
+      {
+        name: "Stay With Me（Cover：Punch/朴灿烈）",
+        artist: "KCJIN锦",
+        url: "/media/bgm.mp3",
+        cover: "/media/cover.jpg"
+      }
+    ]
+  });
+</script>
 
-    <header class="site-header">
-    <h1 class="site-title"><a href="https://xiangyi715.github.io/">Xiangyi&#39;s blog</a></h1>
-    <a class="sidebar-toggle"><span class="screen-reader-text">Menu</span><span class="icon" aria-hidden="true"></span></a>
-</header>
-
-<aside class="sidebar">
-    <div class="sidebar-scrollable">
-        <div class="inner">
-            <div class="widget-area">
-                <!-- 菜单 -->
-                <nav class="site-navigation">
-                    <h2>Xiangyi&#39;s blog</h2>
-                    <ul class="menu">
-                        
-                            <li class="menu-item home current-menu-item">
-                                <a href="/"
-                                
-                                >首页</a>
-                            </li>
-                        
-                            <li class="menu-item home current-menu-item">
-                                <a href="/archives"
-                                
-                                >归档</a>
-                            </li>
-                        
-                            <li class="menu-item home current-menu-item">
-                                <a href="/tags"
-                                
-                                >标签</a>
-                            </li>
-                        
-                            <li class="menu-item home current-menu-item">
-                                <a href="https://xiangyi715.github.io/post/about"
-                                
-                                >关于</a>
-                            </li>
-                        
-                    </ul>
-                </nav>
-
-                <section class="widget widget-about">
-                    <h2 class="widget-title">关于</h2>
-                    <p>温故而知新</p>
-                </section>
-
-                <section class="widget widget-tags">
-                    <h2 class="widget-title">标签</h2>
-                    <div class="tagcloud">
-                        
-                            <a href="https://xiangyi715.github.io/tag/gjkeBIXxE" class="button">
-                                短句
-                                <span aria-hidden="true"><span class="line left"></span><span class="line top"></span><span class="line right"></span><span class="line bottom"></span></span>
-                            </a>
-                        
-                            <a href="https://xiangyi715.github.io/tag/yLvwCCc7C" class="button">
-                                原
-                                <span aria-hidden="true"><span class="line left"></span><span class="line top"></span><span class="line right"></span><span class="line bottom"></span></span>
-                            </a>
-                        
-                    </div>
-                </section>
-
-            </div>
-            <a class="sidebar-toggle"><span class="screen-reader-text">Close</span><span class="icon" aria-hidden="true"></span></a>
+      </div>
+      
+        <div class="animated fadeInLeft" style="animation-delay: 0.4s">
+          <p class="my-4 text-gray-600 font-light hidden lg:block">
+            文章目录
+          </p>
+          <div class="toc-container hidden lg:block">
+            
+          </div>
         </div>
+      
     </div>
-</aside>
+  </div>
+</div>
 
+<div class="menu-container">
+  <i class="remixicon-arrow-left-line text-2xl cursor-pointer animated fadeIn close-menu-btn" onclick="closeMenu()"></i>
+  <div>
+    
+      
+        <a href="/" class="menu" style="animation-delay: 0s">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu" style="animation-delay: 0.2s">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu" style="animation-delay: 0.4s">
+          标签
+        </a>
+      
+    
+      
+        <a href="https://xiangyi715.github.io/post/about" class="menu" style="animation-delay: 0.6000000000000001s">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="site-footer">
+    <div class="py-4 text-gray-700">Link <a href="https://github.com/xiangyi715"
+target="_blank">My github</a></div>
+    <a class="rss" href="https://xiangyi715.github.io//atom.xml" target="_blank">RSS</a>
+  </div>
+</div>
+<div class="mask" onclick="closeMenu()">
+</div>
 
-    <main class="site-main">
-        <div class="site-content">
-            <article class="post tag-getting-started">
-                <header class="cover post-header">
-                    <div class="cover-bg" >
-
-                        
-                            <img srcset="https://xiangyi715.github.io//post-images/ge-ren-duan-ju-ji.jpeg 300w, https://xiangyi715.github.io//post-images/ge-ren-duan-ju-ji.jpeg 600w, https://xiangyi715.github.io//post-images/ge-ren-duan-ju-ji.jpeg 800w, https://xiangyi715.github.io//post-images/ge-ren-duan-ju-ji.jpeg 1600w, https://xiangyi715.github.io//post-images/ge-ren-duan-ju-ji.jpeg 2000w"
-                                 sizes="100vw" src="https://xiangyi715.github.io//post-images/ge-ren-duan-ju-ji.jpeg" alt="个人短句集"/>
-                        
-
-                    </div>
-                    <div class="cover-content">
-                        <div class="inner">
-                            <div class="post-tags">
-                                
-                                    
-                                        <a href="https://xiangyi715.github.io/tag/gjkeBIXxE">短句&nbsp;&nbsp;</a>
-                                    
-                                        <a href="https://xiangyi715.github.io/tag/yLvwCCc7C">原&nbsp;&nbsp;</a>
-                                    
-                                
-                            </div>
-                            <h1 class="post-title">个人短句集</h1>
-                            <div class="post-meta">
-                                <span class="post-meta-wrap">
-                                    <img class="author-avatar"
-                                         srcset="https://xiangyi715.github.io//media/images/avatar.png, https://xiangyi715.github.io//media/images/avatar.png 2x"
-                                         src="https://xiangyi715.github.io//media/images/avatar.png" alt=""/>
-                                    <span class="post-author">1793字</span>
-                                    <time class="published" datetime="2020-01-05">2020-01-05</time>
-                                </span>
-                                <div>7 min read</div>
-                            </div>
-                            <a href="#post-content" class="arrow-down" data-scroll><span class="screen-reader-text">Scroll Down</span></a>
-                        </div>
-                    </div>
-                </header>
-                <div class="inner">
-
-                    <div id="post-content" class="post-content">
-                        <p><strong>追求</strong><br>
+      <div class="content-wrapper py-32 lg:p-8 lg:w-3/4 post-detail animated fadeIn">
+        <h1 class="text-3xl font-bold lg:mt-16">个人短句集</h1>
+        <div class="text-sm text-gray-700 lg:my-8">
+          2020-01-05 / 7 min read
+        </div>
+        
+          <img class="post-feature-image rounded-lg mx-auto my-4" src="https://xiangyi715.github.io//post-images/ge-ren-duan-ju-ji.jpeg" alt="">
+        
+        <div class="post-content yue">
+          <p><strong>追求</strong><br>
 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>                        </mtext></mrow><annotation encoding="application/x-tex">~~~~~~~~~~~~~~~~~~~~~~~~</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0em;vertical-align:0em;"></span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span></span></span></span>——2009年7月以前<br>
 仰望苍穹席九州，<br>
 俯观品类尽自由，<br>
@@ -411,88 +390,137 @@
 待到春风柳香来，<br>
 化作寒光蝶雁黄。</p>
 
-                    </div>
+        </div>
 
-                </div>
-            </article>
-
-            <section class="comments-area">
-    <div class="inner">
-        <h2 class="screen-reader-text">评论</h2>
         
+          <a class="animated fadeInUp p-2 items-center text-sm text-gray-700 border hover:bg-gray-300 leading-none rounded-full flex lg:inline-flex m-4 " href="https://xiangyi715.github.io/tag/gjkeBIXxE">
+            <span class="flex-auto">短句</span>
+          </a>
+        
+          <a class="animated fadeInUp p-2 items-center text-sm text-gray-700 border hover:bg-gray-300 leading-none rounded-full flex lg:inline-flex m-4 " href="https://xiangyi715.github.io/tag/yLvwCCc7C">
+            <span class="flex-auto">原</span>
+          </a>
+        
+
+
+        <div class="flex justify-between py-8">
+          
+
+          
+            <div class="next-post">
+              <a href="https://xiangyi715.github.io/post/ubuntu-zhong-xiao-er-zhi-ming-de-wen-ti-hui-zong">
+                <h3 class="post-title">
+                  ubuntu中遇到的小问题汇总(不定期更新)
+                  <i class="remixicon-arrow-right-line"></i>
+                </h3>
+              </a>
+            </div>
+          
+        </div>
+
+        
+
+      </div>
     </div>
-</section>
+
+    <script src="https://xiangyi715.github.io//media/prism.js"></script>  
+<script>
+
+Prism.highlightAll()
+
+let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+// This should probably be throttled.
+// Especially because it triggers during smooth scrolling.
+// https://lodash.com/docs/4.17.10#throttle
+// You could do like...
+// window.addEventListener("scroll", () => {
+//    _.throttle(doThatStuff, 100);
+// });
+// Only not doing it here to keep this Pen dependency-free.
+
+window.addEventListener("scroll", event => {
+  let fromTop = window.scrollY;
+
+  mainNavLinks.forEach((link, index) => {
+    let section = document.getElementById(decodeURI(link.hash).substring(1));
+    let nextSection = null
+    if (mainNavLinks[index + 1]) {
+      nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+    }
+    if (section.offsetTop <= fromTop) {
+      if (nextSection) {
+        if (nextSection.offsetTop > fromTop) {
+          link.classList.add("current");
+        } else {
+          link.classList.remove("current");    
+        }
+      } else {
+        link.classList.add("current");
+      }
+    } else {
+      link.classList.remove("current");
+    }
+  });
+});
 
 
-            
-                <nav class="post-navigation">
-                    <h2 class="screen-reader-text">Post navigation</h2>
-                    <div class="nav-links">
-                        <a href="https://xiangyi715.github.io/post/ubuntu-zhong-xiao-er-zhi-ming-de-wen-ti-hui-zong" class="nav-previous">
-                            <div class="nav-bg" >
-                                
-                                    <img srcset="https://xiangyi715.github.io//post-images/ubuntu-zhong-xiao-er-zhi-ming-de-wen-ti-hui-zong.jpg 300w, https://xiangyi715.github.io//post-images/ubuntu-zhong-xiao-er-zhi-ming-de-wen-ti-hui-zong.jpg 600w, https://xiangyi715.github.io//post-images/ubuntu-zhong-xiao-er-zhi-ming-de-wen-ti-hui-zong.jpg 800w, https://xiangyi715.github.io//post-images/ubuntu-zhong-xiao-er-zhi-ming-de-wen-ti-hui-zong.jpg 1600w, https://xiangyi715.github.io//post-images/ubuntu-zhong-xiao-er-zhi-ming-de-wen-ti-hui-zong.jpg 2000w" sizes="(max-width: 800px) 100vw, 50vw" src="https://xiangyi715.github.io//post-images/ubuntu-zhong-xiao-er-zhi-ming-de-wen-ti-hui-zong.jpg" alt="图裂了"/>
-                                
-                            </div>
-                            <div class="nav-inside">
-                                <span class="nav-before">下一篇</span>
-                                <span class="nav-title">ubuntu中遇到的小问题汇总(不定期更新)</span>
-                                <span class="nav-date">2020-01-04</span>
-                            </div>
-                        </a>
-                    </div>
-                </nav>
-            
+document.addEventListener("DOMContentLoaded", function() {
+  var lazyImages = [].slice.call(document.querySelectorAll(".post-feature-image.lazy"));
 
-        </div>
-    </main>
+  if ("IntersectionObserver" in window) {
+    let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          let lazyImage = entry.target
+          lazyImage.style.backgroundImage = `url(${lazyImage.dataset.bg})`
+          lazyImage.classList.remove("lazy")
+          lazyImageObserver.unobserve(lazyImage)
+        }
+      });
+    });
 
-    <footer class="site-footer">
-    <div class="inner">
-        <!-- 社交 -->
-        <div class="offsite-links">
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-        </div>
+    lazyImages.forEach(function(lazyImage) {
+      lazyImageObserver.observe(lazyImage)
+    })
+  } else {
+    // Possibly fall back to a more compatible method here
+  }
+});
 
-        <div class="site-info">
-            THEME BY <a href="https://github.com/GalaxySuze/gridea-theme-subtle-galaxy">Subtle Galaxy</a>, REFERENCE FROM <a href="https://subtle.justgoodthemes.com/">Subtle</a><br/>
-            Link <a href="https://github.com/xiangyi715"
-target="_blank">My github</a>
-        </div>
-        <a href="#page" class="arrow-up" data-scroll><span class="screen-reader-text">Back to the top</span></a>
-    </div>
-</footer>
+const menuContainer = document.querySelector('.menu-container')
+const menus = document.querySelectorAll('.menu-container .menu')
+const mask = document.querySelector('.mask')
+const contentWrapper = document.querySelector('.content-wrapper')
+const latestArticle = document.querySelector('.latest-article')
+const readMore = document.querySelector('.read-more')
+const indexPage = document.querySelector('.index-page')
 
+const isHome = location.pathname === '/'
+if (latestArticle) {
+  latestArticle.style.display = isHome ? 'block' : 'none'
+  readMore.style.display = isHome ? 'block' : 'none'
+  indexPage.style.display = isHome ? 'none' : 'block'
+}
 
-</div>
+const openMenu = () => {
+  menuContainer.classList.add('open')
+  menus.forEach(menu => {
+    menu.classList.add('animated', 'fadeInLeft')
+  })
+  mask.classList.add('open')
+  contentWrapper.classList.add('is-second')
+}
 
-<script src="https://xiangyi715.github.io//media/scripts/_core/plugins.js"></script>
-<script src="https://xiangyi715.github.io//media/scripts/_core/custom.js"></script>
-
-<!-- highlight -->
-<script src="https://cdn.bootcss.com/highlight.js/9.15.8/highlight.min.js"></script>
-<!-- Md5 Min JS -->
-<script src="https://xiangyi715.github.io//media/scripts/_vendors/md5.min.js"></script>
-
-<script type="application/javascript">
-    // 代码高亮
-    hljs.initHighlightingOnLoad();
-
+const closeMenu = () => {
+  menuContainer.classList.remove('open')
+  menus.forEach(menu => {
+    menu.classList.remove('animated', 'fadeInLeft')
+  })
+  mask.classList.remove('open')
+  contentWrapper.classList.remove('is-second')
+}
 </script>
-
-
-
-
-
-</body>
+  
+  </body>
 </html>
