@@ -1,143 +1,320 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Xiangyi&#39;s blog</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-    <meta name="renderer" content="webkit">
-    <meta http-equiv="Cache-Control" content="no-siteapp"/>
-    <link rel="stylesheet" href="/styles/main.css">
-    <link rel="stylesheet" href="//cdnjs.loli.net/ajax/libs/mdui/0.4.3/css/mdui.min.css">
-    <link rel="stylesheet" href="/media/live2d/css/live2d.css" />
-</head>
-<body class=" mdui-appbar-with-toolbar  mdui-theme-primary-pink mdui-theme-accent-pink">
-        <header class="mdui-toolbar mdui-color-blue mdui-appbar-fixed mdui-appbar-scroll-toolbar-hide" style="z-index: 1000">
-    <a href="javascript:;" mdui-drawer="{target: '#left-drawer',overlay:true}" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">menu</i></a>
-    <span class="mdui-typo-title">Xiangyi&#39;s blog</span>
-    <div class="mdui-toolbar-spacer"></div>
-<!--    <a href="javascript:history.go(0);" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">search</i></a>-->
-    <a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">more_vert</i></a>
-</header>
 
-        <div class="mdui-drawer mdui-color-white mdui-drawer-full-height mdui-drawer-close" id="left-drawer">
-    <ul class="mdui-list">
-        <li class="mdui-subheader">菜单</li>
-        
-        <li class="mdui-list-item mdui-ripple">
-            <a href="/" class="mdui-list-item-content">首页</a>
-        </li>
-        
-        <li class="mdui-list-item mdui-ripple">
-            <a href="/archives" class="mdui-list-item-content">归档</a>
-        </li>
-        
-        <li class="mdui-list-item mdui-ripple">
-            <a href="/tags" class="mdui-list-item-content">标签</a>
-        </li>
-        
-        <li class="mdui-list-item mdui-ripple">
-            <a href="https://xiangyi715.github.io/post/about" class="mdui-list-item-content">关于</a>
-        </li>
-        
-    </ul>
-</div>
+<html>
+<head lang="zh">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"/>
+<meta content="yes" name="apple-mobile-web-app-capable"/>
+<meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+<meta content="telephone=no" name="format-detection"/>
+<meta name="renderer" content="webkit">
+<meta name="description" content="温故而知新">
+<meta http-equiv="Access-Control-Allow-Origin" content="*">
 
-        <div class="mdui-container">
-            <div class="mdui-row mdui-row-gapless">
-                <div class="k-container">
-                    <div class="head_card-offset"></div>
-                    
-    <div class="mdui-card">
-        <div class="mdui-card-media">
-            <img src="https://xiangyi715.github.io//post-images/ge-ren-duan-ju-ji.jpeg"/>
-            <div class="mdui-card-media-covered">
-                <div class="mdui-card-primary">
-                    <div class="mdui-card-primary-title">个人短句集</div>
-                    <div class="mdui-card-primary-subtitle"></div>
-                </div>
-                <div class="mdui-card-actions" style="float:right;">
-                    <a href="https://xiangyi715.github.io/post/ge-ren-duan-ju-ji" class="mdui-btn mdui-ripple mdui-ripple-white">点击查看</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="head_card-offset"></div>
+<title>Xiangyi&#39;s blog</title>
+<link href="https://xiangyi715.github.io//styles/main.css" type="text/css" rel="stylesheet"/>
+<link rel="stylesheet" href="//cdn.bootcss.com/KaTeX/0.10.2/katex.min.css"/>
+<script src="//cdn.bootcss.com/KaTeX/0.10.2/katex.min.js"></script>
+<script src="//cdn.bootcss.com/KaTeX/0.10.2/contrib/auto-render.min.js"></script>
+<script type="text/javascript" src="https://xiangyi715.github.io//media/scripts/jquery.js"></script>
+<script type="text/javascript" src="https://xiangyi715.github.io//media/scripts/jquery.pjax.min.js"></script>
+<script type="text/javascript" src="https://xiangyi715.github.io//media/scripts/basic.js"></script>
+<script type="text/javascript" src="//cdn.bootcss.com/gitalk/1.5.0/gitalk.min.js"></script>
+<script src="//cdn.bootcss.com/highlight.js/9.15.10/highlight.min.js"></script>
+<script async type="text/javascript" src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<script type="text/javascript" src="https://cdn.bootcss.com/lightgallery/1.6.12/js/lightgallery.min.js"></script>
+<script src="https://cdn.bootcss.com/tocbot/4.8.1/tocbot.js"></script>
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
 
-    <div class="mdui-card">
-        <div class="mdui-card-media">
-            <img src="https://xiangyi715.github.io//post-images/ubuntu-zhong-xiao-er-zhi-ming-de-wen-ti-hui-zong.jpg"/>
-            <div class="mdui-card-media-covered">
-                <div class="mdui-card-primary">
-                    <div class="mdui-card-primary-title">ubuntu中遇到的小问题汇总(不定期更新)</div>
-                    <div class="mdui-card-primary-subtitle"></div>
-                </div>
-                <div class="mdui-card-actions" style="float:right;">
-                    <a href="https://xiangyi715.github.io/post/ubuntu-zhong-xiao-er-zhi-ming-de-wen-ti-hui-zong" class="mdui-btn mdui-ripple mdui-ripple-white">点击查看</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="head_card-offset"></div>
+  </head>
 
-
-                </div>
-            </div>
-            <div class="mdui-row mdui-row-gapless">
-                <div class="k-container">
-                    
-
-                </div>
-            </div>
-        </div>
-        <footer class="mdui-container footer ">
-    <div class="head_card-offset"></div>
-    <div class="mdui-row mdui-row-gapless">
-        <div class="k-container">
-            <img width="100%" src="/media/img/skirt.png">
-        </div>
-    </div>
-
-    <div class="site-info">
-        Link <a href="https://github.com/xiangyi715"
-target="_blank">My github</a>
-    </div>
-</footer>
-<div id="landlord" style="left:5px;bottom:0px;">
-    <div class="message" style="opacity:0"></div>
-    <canvas id="live2d" width="500" height="560" class="live2d"></canvas>
-    <div class="live_talk_input_body">
-        <div class="live_talk_input_name_body">
-            <input name="name" type="text" class="live_talk_name white_input" id="AIuserName" autocomplete="off" placeholder="你的名字" />
-        </div>
-        <div class="live_talk_input_text_body">
-            <input name="talk" type="text" class="live_talk_talk white_input" id="AIuserText" autocomplete="off" placeholder="要和我聊什么呀？"/>
-            <button type="button" class="live_talk_send_btn" id="talk_send">发送</button>
-        </div>
-    </div>
-    <input name="live_talk" id="live_talk" value="1" type="hidden" />
-    <div class="live_ico_box">
-        <div class="live_ico_item type_info" id="showInfoBtn"></div>
-        <div class="live_ico_item type_talk" id="showTalkBtn"></div>
-        <div class="live_ico_item type_music" id="musicButton"></div>
-        <div class="live_ico_item type_youdu" id="youduButton"></div>
-        <div class="live_ico_item type_quit" id="hideButton"></div>
-        <input name="live_statu_val" id="live_statu_val" value="0" type="hidden" />
-        <audio src="" style="display:none;" id="live2d_bgm" data-bgm="0" preload="none"></audio>
-        <input name="live2dBGM" value="https://img.apa70.com/123.mp3" type="hidden">
-        <input id="duType" value="douqilai,l2d_caihong" type="hidden">
-    </div>
-</div>
-<div id="open_live2d">召唤伊斯特瓦尔</div>
+  <body>
+    <div class="header">
+      <div class="logo_title">
+		  
+        <div class="title animated fadeInDown"><img id="img1" alt="logo" style="display:inline-block;" src="https://xiangyi715.github.io//images/avatar.png"/>
 <script>
-    var message_Path = '/media/live2d/';//资源目录，如果目录不对请更改
-    var talkAPI = "";//如果有类似图灵机器人的聊天接口请填写接口路径
+var r = 0;
+    window.onload = function(){
+        var current = 0;
+        document.getElementById('img1').onclick = function(){
+            current = (current+90)%360;
+            this.style.transform = 'rotate('+current+'deg)';
+        }
+    };
 </script>
-<!--<script src="/media/js/jquery-3.3.1.min.js"></script>-->
-<script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
-<script type="text/javascript" src="/media/live2d/js/live2d.js"></script>
-<script type="text/javascript" src="/media/live2d/js/message.js"></script>
 
-    </body>
-<script src="//cdnjs.loli.net/ajax/libs/mdui/0.4.3/js/mdui.min.js"></script>
+          <h1 title="Xiangyi&#39;s blog" class="weaklink"><a  href="/">Xiangyi&#39;s blog</a>
+
+          </h1>
+	  
+<style>.santa-body{float:left;margin:10.5px 7.5px 0px 0px;font-size:20px;color:#f91047;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;width:1em;height:1em;background-color:currentColor;-webkit-box-shadow:inset 0 -0.25em rgba(0,0,0,0.1);box-shadow:inset 0 -0.25em rgba(0,0,0,0.1);border-radius:50%;-webkit-transform-origin:center bottom;-ms-transform-origin:center bottom;transform-origin:center bottom;-webkit-animation:balance alternate infinite 2s ease-in-out;animation:balance alternate infinite 2s ease-in-out;}.santa-head{font-size:.4em;width:1em;height:1.9em;background-color:white;border-radius:.5em;-webkit-transform:translateY(-1em);-ms-transform:translateY(-1em);transform:translateY(-1em);position:relative;}.santa-head::before{content:'';width:1em;height:.375em;display:block;background-color:#ff9876;position:absolute;left:0;top:.65em;}.santa-ear{background-color:#fc8363;width:.1em;height:.3em;position:absolute;top:.75em;}.santa-ear:nth-of-type(1){border-radius:.05em 0 0 .05em;left:-0.1em;}.santa-ear:nth-of-type(2){border-radius:0 .05em .05em 0;right:-0.1em;}.santa-hat{content:'';width:1em;height:.15em;position:absolute;-webkit-transform:scale(1.1);-ms-transform:scale(1.1);transform:scale(1.1);top:.5em;left:0;background-color:white;}.santa-hat::before{content:'';display:block;width:1em;height:.5em;background:#f91047;border-radius:.5em .5em 0 0;z-index:2;position:absolute;top:-0.5em;}.santa-hat::after{content:'';width:.25em;height:.25em;display:block;background-color:white;border-radius:50%;position:absolute;z-index:0;top:-0.72em;right:0;-webkit-box-shadow:-0.2em .2em 0 .12em rgba(0,0,0,0.2),-0.2em .2em 0 .12em #f91047;box-shadow:-0.2em .2em 0 .12em rgba(0,0,0,0.2),-0.2em .2em 0 .12em #f91047;}.santa-eye{width:.12em;height:.12em;background-color:black;border-radius:50%;position:absolute;top:.76em;left:.2em;}.santa-eye+.santa-eye{left:auto;right:.2em;}.santa-nose{width:.12em;height:.22em;background-color:#f24c4c;border-radius:0 0 .12em .12em;position:absolute;top:.84em;left:50%;-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%);}.santa-mouth{width:.18em;height:.1em;border-bottom-right-radius:5vw;border-bottom-left-radius:5vw;margin-top:.3em;background-color:black;position:absolute;left:50%;top:50%;-webkit-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);transform:translate(-50%,-50%);-webkit-animation:hohoho 4s linear forwards infinite;animation:hohoho 4s linear forwards infinite;}@-webkit-keyframes hohoho{0%,10%,20%,40%,100%{width:.18em;height:.1em;border-bottom-right-radius:1vw;border-bottom-left-radius:1vw;}5%,15%,25%,35%{width:.15em;height:.2em;border-radius:50%;}}@keyframes hohoho{0%,10%,20%,40%,100%{width:.18em;height:.1em;border-bottom-right-radius:1vw;border-bottom-left-radius:1vw;}5%,15%,25%,35%{width:.15em;height:.2em;border-radius:50%;}}@-webkit-keyframes balance{from{-webkit-transform:rotate(-4deg);transform:rotate(-4deg);}to{-webkit-transform:rotate(4deg);transform:rotate(4deg);}}@keyframes balance{from{-webkit-transform:rotate(-4deg);transform:rotate(-4deg);}to{-webkit-transform:rotate(4deg);transform:rotate(4deg);}}</style>
+<div class="santa"><div class="santa-body"><div class="santa-head"><div class="santa-ear"></div><div class="santa-ear"></div><div class="santa-hat"></div><div class="santa-eye"></div><div class="santa-eye"></div><div class="santa-nose"></div><div class="santa-mouth"></div></div></div></div>
+
+
+          <div class="navbar weaklink">
+            <div class="normal_nav">
+
+<div class="bitcron_nav_container">
+
+
+  <div class="bitcron_nav">
+    <div class="mixed_site_nav_wrap site_nav_wrap">
+		
+      <ul class="mixed_site_nav site_nav sm sm-base">
+	  
+ 
+  <li><a id="d2ef19af68cc211e98f8a0242ac110003" href="/" class="selected active current nav__item" >首页</a>
+  </li>
+  
+ 
+  <li><a id="d2ef19af68cc211e98f8a0242ac110003" href="/archives" class="selected active current nav__item" >归档</a>
+  </li>
+  
+ 
+  <li><a id="d2ef19af68cc211e98f8a0242ac110003" href="/tags" class="selected active current nav__item" >标签</a>
+  </li>
+  
+ 
+  <li><a id="d2ef19af68cc211e98f8a0242ac110003" href="https://xiangyi715.github.io/post/about" class="selected active current nav__item" >关于</a>
+  </li>
+  
+ 
+ <li>
+
+      </ul>
+	  
+
+      <div class="clear clear_nav_inline_end"></div>
+    </div>
+
+  </div>
+
+
+
+  <div class="clear clear_nav_end"></div>
+
+</div>
+
+            </div>
+			
+			<div class="hamberger"><i class="fa fa-bars"></i>
+<i class="fa fa-times"></i>
+
+			</div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="hidden_nav animated fadeInDown">
+
+<div class="bitcron_nav_container">
+
+
+  <div class="bitcron_nav">
+    <div class="mixed_site_nav_wrap site_nav_wrap">
+      <ul class="mixed_site_nav site_nav sm sm-base">
+	
+  <li><a id="d2ef19af68cc211e98f8a0242ac110003" href="/" class="selected active current nav__item" >首页</a>
+
+  </li>
+
+
+  <li><a id="d2ef19af68cc211e98f8a0242ac110003" href="/archives" class="selected active current nav__item" >归档</a>
+
+  </li>
+
+
+  <li><a id="d2ef19af68cc211e98f8a0242ac110003" href="/tags" class="selected active current nav__item" >标签</a>
+
+  </li>
+
+
+  <li><a id="d2ef19af68cc211e98f8a0242ac110003" href="https://xiangyi715.github.io/post/about" class="selected active current nav__item" >关于</a>
+
+  </li>
+
+
+
+
+      </ul>
+
+      <div class="clear clear_nav_inline_end"></div>
+    </div>
+
+  </div>
+
+
+
+  <div class="clear clear_nav_end"></div>
+
+</div>
+
+      </div>
+
+    </div>
+
+
+    <div class="main" id="pjax-container">
+      <div class="main-inner">
+
+<div class="content">
+
+
+
+
+
+
+  <div class="post_list" >
+
+	
+<div class="post">
+  <div class="post_title weaklink">
+    <h2><a href="https://xiangyi715.github.io/post/ge-ren-duan-ju-ji">个人短句集</a>
+    </h2>
+  </div>
+  <div class="post_content markdown"><div class="p_part"><p></p></div></div>
+  <div class="post_footer">
+    <div class="info weaklink"><i class="fa fa-clock-o"></i>
+<span class="date_info">2020-01-05</span>
+
+<i class="fa fa-bookmark-o"></i>
+	
+<span class="tags_info weaklink">
+	
+	<a href="https://xiangyi715.github.io/tag/gjkeBIXxE" class="tag">短句</a>
+
+
+	<a href="https://xiangyi715.github.io/tag/yLvwCCc7C" class="tag">原</a>
+
+
+
+</span>
+
+
+    </div>
+
+  </div>
+
+</div>
+	
+
+	
+<div class="post">
+  <div class="post_title weaklink">
+    <h2><a href="https://xiangyi715.github.io/post/ubuntu-zhong-xiao-er-zhi-ming-de-wen-ti-hui-zong">ubuntu中遇到的小问题汇总(不定期更新)</a>
+    </h2>
+  </div>
+  <div class="post_content markdown"><div class="p_part"><p></p></div></div>
+  <div class="post_footer">
+    <div class="info weaklink"><i class="fa fa-clock-o"></i>
+<span class="date_info">2020-01-04</span>
+
+<i class="fa fa-bookmark-o"></i>
+	
+<span class="tags_info weaklink">
+	
+	<a href="https://xiangyi715.github.io/tag/yLvwCCc7C" class="tag">原</a>
+
+
+
+</span>
+
+
+    </div>
+
+  </div>
+
+</div>
+	
+	
+
+<div class="paginator pager pagination" >
+	
+
+	
+
+
+    <div style="clear:both;height:0;"></div>
+  </div>
+
+</div>
+
+
+
+  </div>
+</div>
+
+
+
+      </div>
+    </div>
+
+   <div class="footer">
+<div class="site_footer_wrap"><div class="site_footer">
+
+      <div class="mysocials"><div class="my_socials">
+		   
+			   
+    
+			   
+    
+			   
+<a href="https://www.weibo.com/xiangyicandy" title="weibo"><i class="fa fa-weibo"></i></a>
+
+    
+			   
+    
+			   
+    
+			   
+    
+</div>
+      </div>
+
+      <div class="copyright" id="copyright">
+	  <script>
+		var date=new Date;
+		var year=date.getFullYear(); 
+		document.write("Copyright © "+year+" " + "Xiangyi&#39;s blog. ");
+		</script>
+		Powered by Gridea.
+		<br>
+		本站已稳定运行了
+		<strong><script type="text/javascript">
+		var urodz= new Date("01/03/2020");
+		var now = new Date();
+		var ile = now.getTime() - urodz.getTime();
+		var dni = Math.floor(ile / (1000 * 60 * 60 * 24));
+		document.write(+dni)
+		</script>
+		</strong>天
+		<br>
+		<!--本站总访问量为 <strong><span id="busuanzi_value_site_uv"></span></strong> 次
+	  Link <a href="https://github.com/xiangyi715"
+target="_blank">My github</a>-->
+      </div>
+	  <img src="https://xiangyi715.github.io//media/images/font.svg">
+
+    </div>
+
+<script type="text/javascript" src="https://xiangyi715.github.io//media/scripts/love.js"></script>
+<script type="text/javascript" src="https://xiangyi715.github.io//media/scripts/darkmode.js"></script>
+<script>
+new Darkmode({label: '🌓',backgroundColor: '#f7f7f7',time: '0.5s'}).showWidget();
+console.clear();
+console.log("\n %c \u26a1Theme: Bitcron-pro(alter) Author's Blog:https://xiangyi715.github.io/ \n\n", "color: #ffffff; background: rgba(49, 49, 49, 0.85); padding:5px 0;border-radius:5px;", );
+</script>
+<script>
+hljs.initHighlightingOnLoad();
+</script>
+
+<script type="text/javascript">(function($){$.fn.snow=function(options){var $flake=$('<div id="snowbox" />').css({'position':'absolute','z-index':'9999','top':'-50px'}).html('❄'),documentHeight=$(document).height(),documentWidth=$(document).width(),defaults={minSize:10,maxSize:20,newOn:1000,flakeColor:"#AFDAEF"},options=$.extend({},defaults,options);var interval=setInterval(function(){var startPositionLeft=Math.random()*documentWidth-100,startOpacity=0.5+Math.random(),sizeFlake=options.minSize+Math.random()*options.maxSize,endPositionTop=documentHeight-200,endPositionLeft=startPositionLeft-500+Math.random()*500,durationFall=documentHeight*10+Math.random()*5000;$flake.clone().appendTo('body').css({left:startPositionLeft,opacity:startOpacity,'font-size':sizeFlake,color:options.flakeColor}).animate({top:endPositionTop,left:endPositionLeft,opacity:0.2},durationFall,'linear',function(){$(this).remove()})},options.newOn)}})(jQuery);$(function(){$.fn.snow({minSize:5,maxSize:20,newOn:300})});</script>
+
+
+
+<script src="//instant.page/3.0.0" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
+</body>
+
 </html>
