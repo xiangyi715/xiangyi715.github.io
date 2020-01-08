@@ -22,6 +22,7 @@
 <script async type="text/javascript" src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 <script type="text/javascript" src="https://cdn.bootcss.com/lightgallery/1.6.12/js/lightgallery.min.js"></script>
 <script src="https://cdn.bootcss.com/tocbot/4.8.1/tocbot.js"></script>
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
 
   </head>
   <body>
@@ -381,6 +382,14 @@ tocbot.init({
   </div>
 </div>
 
+<div id="vcomments"></div>
+    <script>
+        new Valine({
+            el: '#vcomments',
+            appId: 'id',
+            appKey: 'key'
+        })
+    </script>
 
       </div>
 <div class="toc-container">
