@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://xiangyi715.github.io/</id>
-    <title>Xiangyi&apos;s blog</title>
-    <updated>2020-01-09T10:27:15.378Z</updated>
+    <title>祥义的博客</title>
+    <updated>2020-01-09T11:58:16.191Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://xiangyi715.github.io/"/>
     <link rel="self" href="https://xiangyi715.github.io/atom.xml"/>
     <subtitle>Knowledge is power</subtitle>
     <logo>https://xiangyi715.github.io/images/avatar.png</logo>
     <icon>https://xiangyi715.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2020, Xiangyi&apos;s blog</rights>
+    <rights>All rights reserved 2020, 祥义的博客</rights>
     <entry>
         <title type="html"><![CDATA[个人短句集]]></title>
         <id>https://xiangyi715.github.io/post/ge-ren-duan-ju-ji</id>
