@@ -310,10 +310,16 @@ sudo systemctl reboot
             appKey: 'E0NkdD8su2j25GMaM7qxvwLV',
             avatar:'mm',
             notify:true,
-            placeholder: '：D'
+            placeholder: ':D'
         })-->
-	 new Valine({
-        el: '#vcomments',
+	 $('vcomments').bind('DOMNodeInserted',()=>{
+        $('vcomments').unbind()
+
+        $('.vbtn').addClass(' mdui-btn mdui-color-theme-accent mdui-ripple')
+    })
+
+    let valine = new Valine({
+        el: 'vcomments',
         
         app_id: 'PJrodUAmdHhn80brO2RK5krO-gzGzoHsz',
         
