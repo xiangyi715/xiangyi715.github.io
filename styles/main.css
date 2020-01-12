@@ -88,6 +88,66 @@
   overflow: hidden;
   line-height: 24px;
 }
+/*Toc*/
+.post-toc .markdownIt-TOC {
+  position: sticky;
+  top: 32px;
+  font-size: 12px;
+  list-style: none;
+  padding: 1px 0px 0px 0px;
+}
+.post-toc .markdownIt-TOC:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 8px;
+  bottom: 0;
+  width: 1px;
+  background-color: #ebedef;
+  opacity: 0.5;
+}
+.post-toc ul {
+  list-style: none;
+}
+.post-toc li {
+  padding-left: 16px;
+}
+.post-toc li a {
+  padding: 4px;
+  display: block;
+  transition: all 0.3s;
+}
+.post-toc li a:hover {
+  border-radius: 5px;
+  color: #2d96bd;
+  font-size: larger;
+  background: #33333333;
+}
+.post-toc li a:hover,
+.post-toc li a .dark-theme {
+  border-radius: 5px;
+  color: #2d96bd;
+  font-size: larger;
+  background: #ffffff33;
+}
+.post-toc li a.current {
+  color: #2d96bd;
+  border-radius: 5px;
+  font-size: larger;
+  background: #33333333;
+}
+.post-toc li a.current,
+.post-toc li a .dark-theme {
+  color: #2d96bd;
+  border-radius: 5px;
+  font-size: larger;
+  background: #ffffff33;
+}
+@media (max-width: 1150px) {
+  .post-toc {
+    display: none;
+  }
+}
 @media screen and (max-width: 780px) {
   .Like {
     left: -80%;
@@ -112,8 +172,8 @@
   }
 }
 
-        .en{
+        .zh{
           display:none;
         }
-        #menu-toggle-en {display:none;}
+        #menu-toggle-zh {display:none;}
     
