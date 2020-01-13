@@ -70,8 +70,7 @@ function scroll() {
 }
 
 function loadlive2d() {
-    //const home_Path = document.getElementById('home_path').innerHTML + '/media/live2d/tororo/assets/tororo.model_';
-    const home_Path = 'https://cdn.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic@latest/assets/media/live2d/tororo/assets/tororo.model_';
+    const home_Path = document.getElementById('home_path').innerHTML + '/media/live2d/tororo/assets/tororo.model_';
     var currentTheme = window.localStorage && window.localStorage.getItem('theme');
     const superSample_ = 2.0;
     const opacityDefault_ = 1;
@@ -86,6 +85,7 @@ function loadlive2d() {
     const motion_ = true;
     const config_light = {
         tagMode: false,
+        debug: false,
         model: {
             jsonPath: home_Path + `light.json`,
         },
@@ -106,11 +106,11 @@ function loadlive2d() {
             opacityDefault: opacityDefault_,
             opacityOnHover: opacityOnHover_,
         },
-        log: false,
-        debug: false
+        log: false
     };
     const config_dark = {
         tagMode: false,
+        debug: false,
         model: {
             jsonPath: home_Path + `dark.json`,
         },
@@ -131,8 +131,7 @@ function loadlive2d() {
             opacityDefault: opacityDefault_,
             opacityOnHover: opacityOnHover_,
         },
-        log: false,
-        debug: false
+        log: false
     };
     $("#live2d-widget").remove();
     if (currentTheme == "dark") {
