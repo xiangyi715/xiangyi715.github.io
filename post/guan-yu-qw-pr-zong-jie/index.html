@@ -1,258 +1,222 @@
 <!DOCTYPE html>
 <html>
-  <head lang="zh">
-  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"/>
-<meta content="yes" name="apple-mobile-web-app-capable"/>
-<meta content="black" name="apple-mobile-web-app-status-bar-style"/>
-<meta content="telephone=no" name="format-detection"/>
-<meta name="renderer" content="webkit">
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title>Justin</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
 <meta name="description" content="自己的事 全力以赴
 别人的事 尊重和理解
-老天的事 好好配合">
-<meta http-equiv="Access-Control-Allow-Origin" content="*">
+老天的事 好好配合"/>
+<meta name="keywords" content="自己的事 全力以赴
+别人的事 尊重和理解
+老天的事 好好配合"/>
 
-<title>关于QW-PR的一部分总结 | Justin</title>
-<link href="https://xiangyi715.github.io//styles/main.css" type="text/css" rel="stylesheet"/>
-<link rel="stylesheet" href="//cdn.bootcss.com/KaTeX/0.10.2/katex.min.css"/>
-<script src="//cdn.bootcss.com/KaTeX/0.10.2/katex.min.js"></script>
-<script src="//cdn.bootcss.com/KaTeX/0.10.2/contrib/auto-render.min.js"></script>
-<script type="text/javascript" src="https://xiangyi715.github.io//media/scripts/jquery.js"></script>
-<script type="text/javascript" src="https://xiangyi715.github.io//media/scripts/jquery.pjax.min.js"></script>
-<script type="text/javascript" src="https://xiangyi715.github.io//media/scripts/basic.js"></script>
-<script type="text/javascript" src="//cdn.bootcss.com/gitalk/1.5.0/gitalk.min.js"></script>
-<script src="//cdn.bootcss.com/highlight.js/9.15.10/highlight.min.js"></script>
-<script async type="text/javascript" src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-<script type="text/javascript" src="https://cdn.bootcss.com/lightgallery/1.6.12/js/lightgallery.min.js"></script>
-<script src="https://cdn.bootcss.com/tocbot/4.8.1/tocbot.js"></script>
+<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+<link rel="shortcut icon" href="https://xiangyi715.github.io//favicon.ico">
+
+<link rel="stylesheet" href="https://xiangyi715.github.io//styles/main.css">
+<!--Valine 评论-->
 <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
 
-  </head>
-  <body>
-     <div class="header">
-      <div class="logo_title">
-		  
-        <div class="title animated fadeInDown"><img id="img1" alt="logo" style="display:inline-block;" src="https://xiangyi715.github.io//images/avatar.png"/>
-<script>
-var r = 0;
-    window.onload = function(){
-        var current = 0;
-        document.getElementById('img1').onclick = function(){
-            current = (current+90)%360;
-            this.style.transform = 'rotate('+current+'deg)';
-        }
-    };
+<!-- Modernizr JS -->
+<script src="https://xiangyi715.github.io//media/scripts/modernizr-2.6.2.min.js"></script>
+<!-- FOR IE9 below -->
+<!--[if lt IE 9]>
+<scripts src="https://xiangyi715.github.io//media/scripts/respond.min.js"></scripts>
+<![endif]-->
+
+<!-- Comment -->
+
+
+
+<!-- katex -->
+<!--<link href="https://cdn.bootcss.com/KaTeX/0.11.1/katex.min.css" rel="stylesheet">-->
+
+<link href="https://cdn.bootcss.com/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
+
+
+    <!-- 百度统计 -->
+    <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?1764db0338b3f4daa201a10f8a0cd76f";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
 </script>
 
-          <h1 title="Justin" class="weaklink"><a  href="/">Justin</a>
-
-          </h1>
-	  
-<style>.santa-body{float:left;margin:10.5px 7.5px 0px 0px;font-size:20px;color:#f91047;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;width:1em;height:1em;background-color:currentColor;-webkit-box-shadow:inset 0 -0.25em rgba(0,0,0,0.1);box-shadow:inset 0 -0.25em rgba(0,0,0,0.1);border-radius:50%;-webkit-transform-origin:center bottom;-ms-transform-origin:center bottom;transform-origin:center bottom;-webkit-animation:balance alternate infinite 2s ease-in-out;animation:balance alternate infinite 2s ease-in-out;}.santa-head{font-size:.4em;width:1em;height:1.9em;background-color:white;border-radius:.5em;-webkit-transform:translateY(-1em);-ms-transform:translateY(-1em);transform:translateY(-1em);position:relative;}.santa-head::before{content:'';width:1em;height:.375em;display:block;background-color:#ff9876;position:absolute;left:0;top:.65em;}.santa-ear{background-color:#fc8363;width:.1em;height:.3em;position:absolute;top:.75em;}.santa-ear:nth-of-type(1){border-radius:.05em 0 0 .05em;left:-0.1em;}.santa-ear:nth-of-type(2){border-radius:0 .05em .05em 0;right:-0.1em;}.santa-hat{content:'';width:1em;height:.15em;position:absolute;-webkit-transform:scale(1.1);-ms-transform:scale(1.1);transform:scale(1.1);top:.5em;left:0;background-color:white;}.santa-hat::before{content:'';display:block;width:1em;height:.5em;background:#f91047;border-radius:.5em .5em 0 0;z-index:2;position:absolute;top:-0.5em;}.santa-hat::after{content:'';width:.25em;height:.25em;display:block;background-color:white;border-radius:50%;position:absolute;z-index:0;top:-0.72em;right:0;-webkit-box-shadow:-0.2em .2em 0 .12em rgba(0,0,0,0.2),-0.2em .2em 0 .12em #f91047;box-shadow:-0.2em .2em 0 .12em rgba(0,0,0,0.2),-0.2em .2em 0 .12em #f91047;}.santa-eye{width:.12em;height:.12em;background-color:black;border-radius:50%;position:absolute;top:.76em;left:.2em;}.santa-eye+.santa-eye{left:auto;right:.2em;}.santa-nose{width:.12em;height:.22em;background-color:#f24c4c;border-radius:0 0 .12em .12em;position:absolute;top:.84em;left:50%;-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%);}.santa-mouth{width:.18em;height:.1em;border-bottom-right-radius:5vw;border-bottom-left-radius:5vw;margin-top:.3em;background-color:black;position:absolute;left:50%;top:50%;-webkit-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);transform:translate(-50%,-50%);-webkit-animation:hohoho 4s linear forwards infinite;animation:hohoho 4s linear forwards infinite;}@-webkit-keyframes hohoho{0%,10%,20%,40%,100%{width:.18em;height:.1em;border-bottom-right-radius:1vw;border-bottom-left-radius:1vw;}5%,15%,25%,35%{width:.15em;height:.2em;border-radius:50%;}}@keyframes hohoho{0%,10%,20%,40%,100%{width:.18em;height:.1em;border-bottom-right-radius:1vw;border-bottom-left-radius:1vw;}5%,15%,25%,35%{width:.15em;height:.2em;border-radius:50%;}}@-webkit-keyframes balance{from{-webkit-transform:rotate(-4deg);transform:rotate(-4deg);}to{-webkit-transform:rotate(4deg);transform:rotate(4deg);}}@keyframes balance{from{-webkit-transform:rotate(-4deg);transform:rotate(-4deg);}to{-webkit-transform:rotate(4deg);transform:rotate(4deg);}}</style>
-<div class="santa"><div class="santa-body"><div class="santa-head"><div class="santa-ear"></div><div class="santa-ear"></div><div class="santa-hat"></div><div class="santa-eye"></div><div class="santa-eye"></div><div class="santa-nose"></div><div class="santa-mouth"></div></div></div></div>
 
 
-          <div class="navbar weaklink">
-            <div class="normal_nav">
 
-<div class="bitcron_nav_container">
+    <link rel="stylesheet" href="https://xiangyi715.github.io//media/live2d/css/live2d.css" />
+</head>
+<body>
+    <div id="fh5co-offcanvas">
+    <a href="#!" class="fh5co-close-offcanvas js-fh5co-close-offcanvas">
+        <span><i class="icon-cross3"></i> <span>Close</span></span>
+    </a>
+    <div class="fh5co-bio">
+        <figure>
+            <img src="https://xiangyi715.github.io//images/avatar.png" alt="Justin"
+                 class="img-responsive">
 
-
-  <div class="bitcron_nav">
-    <div class="mixed_site_nav_wrap site_nav_wrap">
-		
-      <ul class="mixed_site_nav site_nav sm sm-base">
-	  
- 
-  <li><a id="d2ef19af68cc211e98f8a0242ac110003" href="/" class="selected active current nav__item" >首页</a>
-  </li>
-  
- 
-  <li><a id="d2ef19af68cc211e98f8a0242ac110003" href="/posts" class="selected active current nav__item" >文章列表</a>
-  </li>
-  
- 
-  <li><a id="d2ef19af68cc211e98f8a0242ac110003" href="/archives" class="selected active current nav__item" >归档</a>
-  </li>
-  
- 
-  <li><a id="d2ef19af68cc211e98f8a0242ac110003" href="/tags" class="selected active current nav__item" >标签</a>
-  </li>
-  
- 
-  <li><a id="d2ef19af68cc211e98f8a0242ac110003" href="/post/about" class="selected active current nav__item" >关于</a>
-  </li>
-  
- 
- <li>
-
-      </ul>
-	  
-
-      <div class="clear clear_nav_inline_end"></div>
+        </figure>
+        <a href="https://xiangyi715.github.io//post/about/"><h3 class="heading">ABOUT ME</h3></a>
+        <h2>Justin</h2>
+        <p>自己的事 全力以赴
+别人的事 尊重和理解
+老天的事 好好配合</p>
+        <ul class="fh5co-social">
+            
+                <li>
+                    
+                </li>
+            
+                <li>
+                    
+                </li>
+            
+                <li>
+                    
+                        <a href="https://www.weibo.com/xiangyicandy/" target="_blank">
+                            <i class="fab fa-weibo"></i>
+                        </a>
+                    
+                </li>
+            
+                <li>
+                    
+                        <a href="https://www.zhihu.com/people/xiangyi715/activities" target="_blank">
+                            <i class="fab fa-zhihu"></i>
+                        </a>
+                    
+                </li>
+            
+                <li>
+                    
+                </li>
+            
+                <li>
+                    
+                        <a href="https://space.bilibili.com/171970006/" target="_blank">
+                            <i class="fab fa-bilibili"></i>
+                        </a>
+                    
+                </li>
+            
+        </ul>
     </div>
 
-  </div>
+    <div class="fh5co-menu">
 
-
-
-  <div class="clear clear_nav_end"></div>
-
-</div>
-
-            </div>
-			
-			<div class="hamberger"><i class="fa fa-bars"></i>
-<i class="fa fa-times"></i>
-
-			</div>
-
-          </div>
-
+        <!-- 标签 -->
+        <div class="fh5co-box">
+            <a href="https://xiangyi715.github.io//tags/"><h3 class="heading">👉标签</h3></a>
+            <ul>
+                
+                    <li><a href="https://xiangyi715.github.io/tag/yLvwCCc7C">原</a></li>
+                
+                    <li><a href="https://xiangyi715.github.io/tag/gjkeBIXxE">短句</a></li>
+                
+            </ul>
         </div>
-
-      </div>
-
-      <div class="hidden_nav animated fadeInDown">
-
-<div class="bitcron_nav_container">
-
-
-  <div class="bitcron_nav">
-    <div class="mixed_site_nav_wrap site_nav_wrap">
-      <ul class="mixed_site_nav site_nav sm sm-base">
-	
-  <li><a id="d2ef19af68cc211e98f8a0242ac110003" href="/" class="selected active current nav__item" >首页</a>
-
-  </li>
-
-
-  <li><a id="d2ef19af68cc211e98f8a0242ac110003" href="/posts" class="selected active current nav__item" >文章列表</a>
-
-  </li>
-
-
-  <li><a id="d2ef19af68cc211e98f8a0242ac110003" href="/archives" class="selected active current nav__item" >归档</a>
-
-  </li>
-
-
-  <li><a id="d2ef19af68cc211e98f8a0242ac110003" href="/tags" class="selected active current nav__item" >标签</a>
-
-  </li>
-
-
-  <li><a id="d2ef19af68cc211e98f8a0242ac110003" href="/post/about" class="selected active current nav__item" >关于</a>
-
-  </li>
-
-
-
-
-      </ul>
-
-      <div class="clear clear_nav_inline_end"></div>
     </div>
-
-  </div>
-
-
-
-  <div class="clear clear_nav_end"></div>
-
 </div>
 
-      </div>
-
+<header id="fh5co-header">
+    <div class="container-fluid">
+        <div class="row">
+            <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
+            <ul class="fh5co-social">
+                
+                    <li>
+                        <a href="/"
+                        
+                        >
+                            首页
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/posts"
+                        
+                        >
+                            文章列表
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/archives"
+                        
+                        >
+                            归档
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/tags"
+                        
+                        >
+                            标签
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/post/about"
+                        
+                        >
+                            关于
+                        </a>
+                    </li>
+                
+            </ul>
+            <div class="col-lg-12 col-md-12 text-center">
+                <h1 id="fh5co-logo">
+                    <a href="https://xiangyi715.github.io/">Justin </a>
+                </h1>
+            </div>
+        </div>
     </div>
+</header>
 
 
-    <div class="main" id="pjax-container">
-      <div class="main-inner">
-<div class="content">
-<style>.toc{overflow-y:auto}.toc>.toc-list{overflow:hidden;position:relative}.toc>.toc-list li{list-style:none}.toc-list{margin:0;padding-left:10px}a.toc-link{color:currentColor;height:100%}.is-collapsible{max-height:1000px;overflow:hidden;transition:all 300ms ease-in-out}.is-collapsed{max-height:0}.is-position-fixed{position:fixed !important;top:0}.is-active-link{font-weight:700}.toc-link::before{background-color:#EEE;content:' ';display:inline-block;height:inherit;left:0;margin-top:-1px;position:absolute;width:2px}.is-active-link::before{background-color:#54BC4B}</style>
-  <div class="post_page" >
-<div class="post">
-  <div class="post_title sm_margin">
-    <h2><a>关于QW-PR的一部分总结</a>
-    </h2>
-  </div>
-<script>
-function lan(){
-	if (document.getElementById("lan").innerText == "繁"){
-		var s=document.getElementById("tongwenlet_cn");
-		if(s != null){
-		document.body.removeChild(s);
-		}
-		var s = document.createElement("script");
-		s.language = "javascript";
-		s.type = "text/javascript";
-		s.src = "https://git.oschina.net/runningcheese/JiathisQR.js/raw/master/bookmarklet_tw.js";
-		s.id = "tongwenlet_cn";
-		document.body.appendChild(s);
-		document.getElementById("lan").innerHTML = "简"
-	}
-	else if(document.getElementById("lan").innerText == "簡"){
-		var s=document.getElementById("tongwenlet_cn");
-		if(s != null){
-		document.body.removeChild(s);
-		}
-		var s = document.createElement("script");
-		s.language = "javascript";
-		s.type = "text/javascript";
-		s.src = "https://git.oschina.net/runningcheese/JiathisQR.js/raw/master/bookmarklet_cn.js";
-		s.id = "tongwenlet_cn";
-		document.body.appendChild(s);
-		document.getElementById("lan").innerHTML = "繁"
-		}
-}
+    <!--  <a href="#" class="fh5co-post-prev"><span>👈 Prev</span></a>-->
+    <!--  <a href="#" class="fh5co-post-next"><span>Next 👉</span></a>-->
 
-function change(){	
-    var rand = Math.random()*1+1;
-    var num = window.getComputedStyle(document.getElementsByName("show")[0],undefined).fontSize;
-	num = num.slice(0,-2); 
-    document.getElementById("show").style.fontSize = num - rand +'px';
-}
-</script>
-  <div class="post_details">
-    <div class="info"><i class="fa fa-calendar"></i>
-<span class="date_info">2020-01-13</span>
-<i class="fa fa-eye"></i>
-<span class="date_info"><span id="busuanzi_value_page_pv"></span> Views</span>
-<i class="fa fa-bookmark-o"></i>
-<span class="tags_info weaklink">
-	
-	<a href="https://xiangyi715.github.io/tag/yLvwCCc7C" class="tag">原</a>
+    <!-- 等gridea出自定义页面功能再优化一下 -->
+    
+        <div class="container-fluid">
+    <div class="row fh5co-post-entry single-entry">
+        <article class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-12 col-xs-offset-0">
+            <figure class="animate-box">
+                
+                    <img src="https://xiangyi715.github.io//post-images/guan-yu-qw-pr-zong-jie.jpg" alt="关于QW-PR的一部分总结" class="img-responsive">
+                
+            </figure>
+            <span class="fh5co-meta animate-box">
+                
+                    <div class="tag-container">
+                        
+                            <a href="https://xiangyi715.github.io/tag/yLvwCCc7C" class="tag">原, </a>
+                        
+                    </div>
+                
+            </span>
+            <h2 class="fh5co-article-title animate-box">关于QW-PR的一部分总结</h2>
+            <ol class="breadcrumb fh5co-meta fh5co-date animate-box" style="margin-bottom:0; background-color:#f8f9fa">
+                <li>2020-01-13</li>
+                <li>9686字</li>
+                <li>36 min read</li>
+            </ol>
 
-</span>
-<i class="fa fa-anchor"></i>
-<span style="margin-right:15px">
-9686字
-</span>
-<i class="fa fa-clock-o"></i>
-<span style="margin-right:15px">
-36 min read
-</span>
-<span style="margin-right:15px">
-<i class="fa fa-share"></i>
-<a title="QR code" target="_blank" href="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://xiangyi715.github.io/post/guan-yu-qw-pr-zong-jie"><i class="fa fa-qrcode"></i></a>
-<a title="qq share" target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://xiangyi715.github.io/post/guan-yu-qw-pr-zong-jie&sharesource=qzone&title=关于QW-PR的一部分总结&pics=https://blog.blinkstar.cn/images/avatar.png&summary="><i class="fa fa-qq"></i></a>
-<a title="weibo share" target="_blank" href="https://service.weibo.com/share/share.php?url=https://xiangyi715.github.io/post/guan-yu-qw-pr-zong-jie&sharesource=weibo&title=关于QW-PR的一部分总结 + " - " + &pic="https://blog.blinkstar.cn/images/avatar.png"><i class="fa fa-weibo"></i></a>
-</span>
-<span style="margin-right:15px">
-<a id="daxiao" href="javascript:void(0);" onclick="change();" title="调整字体大小"><i class="fa fa-font"></i></a>
-</span>
-<span style="margin-right:15px">
-<a id="lan" href="javascript:void(0);" onclick="lan();" title="调整简繁体">繁</a>
-</span>
-</div>
-  </div>
-
-    <div class="post_content markdown">
-	
-	<div style="background-image: url('https://xiangyi715.github.io//post-images/guan-yu-qw-pr-zong-jie.jpg');background-repeat: no-repeat;background-size:100% auto;margin-top:32px;padding-bottom: 50%;"></div>
-	
-    <div name="show" id="show">
-	<p class="md_block"><span class="md_line md_line_start md_line_end"><p><strong>前言:</strong><br>
+            <div class="col-lg-12 col-lg-offset-0 col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-left content-article">
+                <div class="row">
+                    <div class="col-md-12 animate-box post-content">
+                        <p> <p><strong>前言:</strong><br>
 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>      </mtext></mrow><annotation encoding="application/x-tex">~~~~~~</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0em;vertical-align:0em;"></span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span></span></span></span>车牌识别系统是现代智能交通系统中的重要组成部分之一，应用十分广泛并随着技术的发展日趋完善。它是以数字图像处理、模式识别、计算机视觉等技术为基础，对摄像头所拍摄的车辆图像或者视频序列进行分析得到每一辆汽车唯一的车牌号码，从而完成识别过程。从技术角度来说，汽车牌照自动识别技术是车牌识别系统的核心。<br>
 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>      </mtext></mrow><annotation encoding="application/x-tex">~~~~~~</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0em;vertical-align:0em;"></span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span></span></span></span>QW-PR是基于QT平台开发的中文民用汽车牌照定位、识别的Windows版本应用程序。Opencv算法是其核心。本篇主要介绍其开发要点及部分技术细节。对于一些算法和处理过程本篇都会有详细的介绍，并利于代码维护、更新以及迅速读懂程序。<br>
 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>      </mtext></mrow><annotation encoding="application/x-tex">~~~~~~</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0em;vertical-align:0em;"></span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span></span></span></span>关于车牌识别系统，网上有很多开源的代码比如EasyPR、OpenALPR等。开源程序充分体现了资源的共享性，QW-PR也是其中的受益者同时也希望会对识别小白是施益者，本篇将会以博客叙述的方式来说明。下面即介绍具体步骤。<br>
@@ -609,165 +573,210 @@ bp-&gt;predict(sampleMat,responseMat);   //过调用predict函数，我们得到
 (2)计算机的潜意识博客园相关博客<br>
 Opencv带函数手册<br>
 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>                                                                </mtext></mrow><annotation encoding="application/x-tex">~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0em;vertical-align:0em;"></span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span></span></span></span>原文写于2017年</p>
-</span></p></div><div id = "warn"></div>
-	<br>
-	<hr>
-<div style="color: #ccc;font-size:14px;"><i class="fa fa-user"></i>本文由<a rel="license" href="/">Justin</a>创作</div>	
-<div style="color: #ccc;font-size:14px;"><i class="fa fa-cc"></i>该文章采用<a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可。转载请注明出处！</div>
-<div style="color: #ccc;font-size:14px;"><i class="fa fa-clock-o"></i>发布时间为：2020-01-13</div>    
-<p class="md_block">
-<div class="reward"><div class="reward-button">赏 <span class="reward-code"> <span class="alipay-code"> <img class="alipay-img" alt = "support" src="https://xiangyi715.github.io//media/images/alipay.png"><b>支付宝扫码打赏</b> </span> <span class="wechat-code"> <img alt ="support" class="wechat-img" src="https://xiangyi715.github.io//media/images/wechat.png"><b>微信打赏</b> </span> </span></div></div>
-<div style="text-align:center;color: #ccc;font-size:14px;">如果觉得这篇文章对您有帮助，可以请作者喝一杯饮料哦🥤</div>    
-</p> 
-</div>
-</div>
+ </p>
+                    </div>
+                </div>
 
-<style type="text/css">
-#mememe {
-	border:3px;
-	border-radius:5px;
-    background-repeat: no-repeat;
-    height: 100%;
-	width: 100%;
-	display: inline-block;
-	border-radius:5px; 
-}
-</style>
+                <div class="row">
+                    <div class="col-md-12 animate-box">
+                        
+                            <div class="next-post">
+                                <div class="next">下一篇</div>
+                                <a href="https://xiangyi715.github.io/post/ge-ren-duan-ju-ji">
+                                    <h3 class="post-title">
+                                        个人短句集
+                                    </h3>
+                                </a>
+                            </div>
+                        
+                    </div>
+                </div>
 
-<div style="width:100%;overflow:hidden">
-
-          <div style="float:right;text-align:right;color:#ccc;font-size:18px;width:50%;">
-            下一篇
-            <a href="https://xiangyi715.github.io/post/ge-ren-duan-ju-ji">
-              <p class="post-title">
-                <b>个人短句集</b>
-              </p>
-            </a>
-          </div>
-
-
-
+                <div class="row">
+    <div class="col-md-12 animate-box">
+        
+    </div>
 </div>
 
-<div class="doc_comments">
+            </div>
 
-</div>
-<script>
-var link="";$("img").each((i,o)=>{var o=$(o);if(o.attr("src").indexOf("sinaimg")>0||o.attr("src").indexOf("qpic")>0||o.attr("src").indexOf("baidu")>0||o.attr("src").indexOf("sinaimg")>0){o.attr("referrerpolicy","no-referrer");link=o.attr("src");o.attr("src",link);}});
-imgList = document.querySelectorAll('img')
-imgList.forEach(img => {
-  if (img.alt !== "logo" && img.alt !== "featureimg"){
-  let div1 = document.createElement('div')
-  let div = document.createElement('div')
-  div.className='back';
-  div.setAttribute("data-src",img.src)
-  var figuration = document.createElement("figcaption")
-  figuration.innerHTML = '<a href="' + img.src + '">' + img.alt + '</a>'
-  img.replaceWith(div1)
-  div1.appendChild(div)
-  div.appendChild(img)
-  div1.appendChild(figuration)}
-})
-$('img').on('error',function(){$(this).prop('src','https://xiangyi715.github.io//media/images/broken.jpg')});$("a").attr("rel","external nofollow");$("a[rel='external nofollow']").attr("target","_blank");$("a[href^='#']").removeAttr("target");$("a.ex").removeAttr("rel");$("a.ex").removeAttr("target");
-content="<div class='warn'>本文最后更新于2020-01-13，已超过 1 年没有更新，涉及的内容可能已经失效！</div>";var date1="2020-01-13 20:01:19";date1=date1.replace("-","/");var date2=new Date();var date3=date2.getTime()-new Date(date1).getTime();var days=Math.floor(date3/(24*3600*1000));if(days>=365){document.getElementById("warn").innerHTML=content};
-$('#pjax-container').lightGallery({
-    selector: '.back'
-});
-tocbot.init({
-	tocSelector: '.toc',
-	contentSelector: '.main-inner',
-	headingSelector: 'h1, h2, h3, h4, h5',
-	positionFixedSelector: ".toc",
-	scrollSmooth: true,
-	fixedSidebarOffset: 'auto',
-    scrollSmoothOffset: -80,
-    headingsOffset: -500
-});
-</script>
-  </div>
-</div>
-<div id="vcomments"></div>
-    <script>
+        <div id="vcomments"></div>
+        <script>
         new Valine({
             el: '#vcomments',
             appId: 'PJrodUAmdHhn80brO2RK5krO-gzGzoHsz',
             appKey: 'E0NkdD8su2j25GMaM7qxvwLV',
-	    avatar:'mm',
-            notify:true
+            path: window.location.pathname,
+            pageSize: 30,
+            avatar:'mm',
+            notify:true,
+            placeholder: '请填写好昵称👆 :D'
         })
     </script>
 
-      </div>
-<div class="toc-container">
-
-</div>
+        </article>
     </div>
-	
-   <div class="footer">
-<div class="site_footer_wrap"><div class="site_footer">
-
-      <div class="mysocials"><div class="my_socials">
-		   
-			   
-    
-			   
-    
-			   
-<a href="https://www.weibo.com/xiangyicandy" title="weibo"><i class="fa fa-weibo"></i></a>
+</div>
 
     
-			   
+
+<!--	<div id="vcomments"></div>
+	<script>
+        new Valine({
+            el: '#vcomments',
+            appId: 'PJrodUAmdHhn80brO2RK5krO-gzGzoHsz',
+            appKey: 'E0NkdD8su2j25GMaM7qxvwLV',
+            path: window.location.pathname,
+	    pageSize: 30,
+            avatar:'mm',
+            notify:true,
+            placeholder: ':D'
+        })
+    </script>
+-->
+
+    <!-- 返回顶部 -->
+    <div class="back-to-top">
     
-			   
-    
-			   
+    <a href="#top" class="hidden-xs hidden-sm"><i class="fa fa-paper-plane"></i></a>
+</div>
+
+<div class="post-toc animated fadeInRight hidden-xs hidden-sm" style="display: none;">
     
 </div>
-      </div>
 
-      <div class="copyright" id="copyright">
-	  <script>
-		var date=new Date;
-		var year=date.getFullYear(); 
-		document.write("Copyright © "+year+" " + "Justin. ");
-		</script>
-		Powered by Gridea.
-		<br>
-		本站已稳定运行了
-		<strong><script type="text/javascript">
-		var urodz= new Date("01/03/2020");
-		var now = new Date();
-		var ile = now.getTime() - urodz.getTime();
-		var dni = Math.floor(ile / (1000 * 60 * 60 * 24));
-		document.write(+dni)
-		</script>
-		</strong>天
-		<br>
-		<!--本站总访问量为 <strong><span id="busuanzi_value_site_uv"></span></strong> 次
-	  <font size=1>
+
+    
+<footer id="fh5co-footer">
+  <p><font size=1>
+Link <a href="https://github.com/xiangyi715"
+target="_blank">My github</a></font></p>
+
+<div class="copyright" id="copyright">
+		<font size=1>          
+	<script>
+                var date=new Date;
+                var year=date.getFullYear();
+                document.write("Copyright © "+year+" " + "Justin. ");
+	</script>            
+                Powered by Gridea.
+                <br>
+                本站已稳定运行了
+                <strong><script type="text/javascript">		
+
+                var urodz= new Date("01/03/2020");
+                var now = new Date();
+                var ile = now.getTime() - urodz.getTime();
+                var dni = Math.floor(ile / (1000 * 60 * 60 * 24));
+                document.write(+dni)
+                </script>
+                </strong>天
+		</font>
+                <br>
+                <!--本站总访问量为 <strong><span id="busuanzi_value_site_uv"></span></strong> 次
+          <font size=1>
 Link <a href="https://github.com/xiangyi715"
 target="_blank">My github</a></font>-->
       </div>
-	  <img src="https://xiangyi715.github.io//media/images/font.svg">
-
-    </div>
 
 <script type="text/javascript" src="https://xiangyi715.github.io//media/scripts/love.js"></script>
 <script type="text/javascript" src="https://xiangyi715.github.io//media/scripts/darkmode.js"></script>
 <script>
-new Darkmode({label: '🌓',backgroundColor: '#f7f7f7',time: '0.5s'}).showWidget();
-console.clear();
-console.log("\n %c \u26a1Theme: Bitcron-pro(alter) Author's Blog:https://xiangyi715.github.io/ \n\n", "color: #ffffff; background: rgba(49, 49, 49, 0.85); padding:5px 0;border-radius:5px;", );
-</script>
-<script>
 hljs.initHighlightingOnLoad();
 </script>
 
-<script type="text/javascript">(function($){$.fn.snow=function(options){var $flake=$('<div id="snowbox" />').css({'position':'absolute','z-index':'9999','top':'-50px'}).html('❄'),documentHeight=$(document).height(),documentWidth=$(document).width(),defaults={minSize:10,maxSize:20,newOn:1000,flakeColor:"#AFDAEF"},options=$.extend({},defaults,options);var interval=setInterval(function(){var startPositionLeft=Math.random()*documentWidth-100,startOpacity=0.5+Math.random(),sizeFlake=options.minSize+Math.random()*options.maxSize,endPositionTop=documentHeight-200,endPositionLeft=startPositionLeft-500+Math.random()*500,durationFall=documentHeight*10+Math.random()*5000;$flake.clone().appendTo('body').css({left:startPositionLeft,opacity:startOpacity,'font-size':sizeFlake,color:options.flakeColor}).animate({top:endPositionTop,left:endPositionLeft,opacity:0.2},durationFall,'linear',function(){$(this).remove()})},options.newOn)}})(jQuery);$(function(){$.fn.snow({minSize:5,maxSize:20,newOn:300})});</script>
+</footer>
+<div id="landlord" style="left:5px;bottom:0px;">
+    <div class="message" style="opacity:0"></div>
+    <canvas id="live2d" width="500" height="560" class="live2d"></canvas>
+    <div class="live_talk_input_body">
+        <div class="live_talk_input_name_body">
+            <input name="name" type="text" class="live_talk_name white_input" id="AIuserName" autocomplete="off" placeholder="你的名字" />
+        </div>
+        <div class="live_talk_input_text_body">
+            <input name="talk" type="text" class="live_talk_talk white_input" id="AIuserText" autocomplete="off" placeholder="要和我聊什么呀？"/>
+            <button type="button" class="live_talk_send_btn" id="talk_send">发送</button>
+        </div>
+    </div>
+    <input name="live_talk" id="live_talk" value="1" type="hidden" />
+    <div class="live_ico_box">
+        <div class="live_ico_item type_info" id="showInfoBtn"></div>
+        <div class="live_ico_item type_talk" id="showTalkBtn"></div>
+        <div class="live_ico_item type_music" id="musicButton"></div>
+        <div class="live_ico_item type_youdu" id="youduButton"></div>
+        <div class="live_ico_item type_quit" id="hideButton"></div>
+        <input name="live_statu_val" id="live_statu_val" value="0" type="hidden" />
+        <audio src="" style="display:none;" id="live2d_bgm" data-bgm="0" preload="none"></audio>
+        <input name="live2dBGM" value="http://music.163.com/song/media/outer/url?id=1297742298.mp3" type="hidden">
+
+        <input id="duType" value="douqilai,l2d_caihong" type="hidden">
+    </div>
+</div>
+<div id="open_live2d">召唤伊斯特瓦尔</div>
+<script>
+    var message_Path = '/media/live2d/';//资源目录，如果目录不对请更改
+    var talkAPI = "";//如果有类似图灵机器人的聊天接口请填写接口路径
+</script>
+<!--<script src="/media/js/jquery-3.3.1.min.js"></script>-->
+<script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script type="text/javascript" src="/media/live2d/js/live2d.js"></script>
+<script type="text/javascript" src="/media/live2d/js/message.js"></script>
+
+
+    <!-- jQuery -->
+<script src="https://xiangyi715.github.io//media/scripts/jquery.min.js"></script>
+<!-- img lazy load -->
+<script src="https://xiangyi715.github.io//media/scripts/jquery.lazyload.min.js"></script>
+<!-- jQuery Easing -->
+<script src="https://xiangyi715.github.io//media/scripts/jquery.easing.1.3.js"></script>
+<!-- Bootstrap -->
+<script src="https://xiangyi715.github.io//media/scripts/bootstrap.min.js"></script>
+<!-- Waypoints -->
+<script src="https://xiangyi715.github.io//media/scripts/jquery.waypoints.min.js"></script>
+<!-- Main JS -->
+<script src="https://xiangyi715.github.io//media/scripts/main.js"></script>
+<!-- Md5 Min JS -->
+<script src="https://xiangyi715.github.io//media/scripts/md5.min.js"></script>
+<!-- katex -->
+<!--<script src="https://cdn.bootcss.com/KaTeX/0.11.1/katex.min.js"></script>-->
+<!-- highlight -->
+<script src="https://cdn.bootcss.com/highlight.js/9.15.8/highlight.min.js"></script>
+
+
+<script type="application/javascript">
+    // 代码高亮
+    hljs.initHighlightingOnLoad();
+
+    // img 懒加载
+    $(function () {
+        $("img.lazy").lazyload({
+            effect: "fadeIn",  // 懒加载动画
+            threshold: 180  // 在图片距离屏幕180px时提前载入
+        });
+        // tooltip
+        $('[data-toggle="tooltip"]').tooltip();
+
+        // 目录
+        $('#tool-toc').click(function () {
+            $('.post-toc').toggle();
+        });
+    });
+
+    
+        var allImg = $("img");
+        allImg.on("contextmenu", function () {
+            return false;
+        });
+        allImg.on("dragstart", function () {
+            return false;
+        });
+    
+</script>
 
 
 
-<script src="//instant.page/3.0.0" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
+
+
+    <script src="//instant.page/3.0.0" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
 </body>
-
 </html>
