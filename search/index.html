@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
     <meta charset="utf-8" />
 <title>
@@ -58,10 +59,42 @@ var _hmt = _hmt || [];
 
                     
 
+    <script src="https://xiangyi715.github.io//media/gridea-search/fuse.js"></script>
+    <script src="https://xiangyi715.github.io//media/gridea-search/ejs.min.js"></script>
+    <script src="https://xiangyi715.github.io//media/gridea-search/gridea-search.js"></script>
+    <script src="https://xiangyi715.github.io//media/gridea-search/result-template.ejs" type="text/ejs"></script>
+
     <link rel="stylesheet" href="https://xiangyi715.github.io//media/live2d/css/live2d.css" />
+
+      <style>
+            .main_ {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                height: 90vh;
+            }
+            
+            .result-box {
+                margin-top: 50px;
+                display: flex;
+                border-radius: 5px;
+                box-shadow: 1px 5px 10px -5px #444;
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+                margin-left: auto;
+                margin-right: auto;
+		padding: 7px 0px;
+            }
+        </style>
 </head>
 <body>
-    <div class="wrapper">
+    <style>
+        .searched-keyword {
+            background-color: yellow;
+        }
+    </style>
+    <div class="main_">
         <header>
     <nav class="navbar">
         <div class="container">
@@ -207,27 +240,17 @@ input:focus{
     }
 </script>
 
-        <div class="main">
-            <div class="container">
-                <div class="post-wrap tags">
-                    
-                    <a href="https://xiangyi715.github.io/tag/yLvwCCc7C">
-                        <p class="post-title">
-                            <i class="fa fa-tags" aria-hidden="true"> 原</i>
-                        </p>
-                    </a>
-                    
-                    <a href="https://xiangyi715.github.io/tag/gjkeBIXxE">
-                        <p class="post-title">
-                            <i class="fa fa-tags" aria-hidden="true"> 短句</i>
-                        </p>
-                    </a>
-                    
-                </div>
-            </div>
+	<div class="result-box">
+        <div id="gridea-search-result">
+            <p class="searching">搜索中......</p>
+            <p class="no-result" style="display:none">未搜索到相关文章</p>
         </div>
+	</div>
     </div>
     
+<script src="https://instant.page/1.2.2" type="module" integrity="sha384-2xV8M5griQmzyiY3CDqh1dn4z3llDVqZDqzjzcY+jCBCk/a5fXJmuZ/40JJAPeoU"></script>
+</body>
+
 
     <div id="player"></div>
     
@@ -335,8 +358,5 @@ target="_blank">My github</a></font>
                     console.log("\n %c \u26a1Theme:Chic Author's Blog:https://github.com/xiangyi715  Write By Justin Xu  \n\n", "color: #ffffff; background: rgba(49, 49, 49, 0.85); padding:5px 0;border-radius:5px;");
                 </script>
 
-    </div>
 
-<script src="https://instant.page/1.2.2" type="module" integrity="sha384-2xV8M5griQmzyiY3CDqh1dn4z3llDVqZDqzjzcY+jCBCk/a5fXJmuZ/40JJAPeoU"></script>
-</body>
 </html>
