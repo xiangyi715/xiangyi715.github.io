@@ -97,7 +97,7 @@ var _hmt = _hmt || [];
                         <label for="switch_default" class="toggleBtn"></label>
             </div>
 
-            <form id="gridea-search-form" data-update="1578988026451" action="/search/index.html">
+            <form id="gridea-search-form" data-update="1578990961709" action="/search/index.html">
                 <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="🔍Search..." style = "-webkit-border-radius:8px;
 				   -moz-border-radius:8px;
 				   -ms-border-radius:8px;
@@ -123,7 +123,7 @@ var _hmt = _hmt || [];
                         <!--zh-->
                         <a id="mobile-toggle-theme-zh" class="a zh">&nbsp;\u6697\u9ED1</a>
                     </div>
-                    <form id="gridea-search-form" data-update="1578988026451" action="/search/index.html">
+                    <form id="gridea-search-form" data-update="1578990961709" action="/search/index.html">
                         <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="🔍Search..." style = "-webkit-border-radius:8px;
 				   -moz-border-radius:8px;
 				   -ms-border-radius:8px;
@@ -538,4 +538,49 @@ target="_blank">My github</a></font>
 <script>
     scroll();
 </script>
+<!--返回顶部-->
+<style>
+	.backToTop {
+	display: none;
+	width: 18px;
+	line-height: 1.2;
+	padding: 5px 0;
+	background-color: #000;
+	color: #fff;
+	font-size: 12px;
+	text-align: center;
+	position: fixed;
+	_position: absolute;
+	right: 10px;
+	bottom: 100px;
+	_bottom: "auto";
+	cursor: pointer;
+	opacity: .6;
+	filter: Alpha(opacity = 60);
+}
+</style>
+<script>
+(function() {
+    var $backToTopTxt = "返回顶部"
+    $backToTopEle = $('<div class="backToTop"></div>').appendTo($("body")).text($backToTopTxt)
+	.attr("title", $backToTopTxt).click(function() {
+        $("html, body").animate({
+            scrollTop: 0
+        },120);
+    })
+    $backToTopFun = function() {
+        var st = $(document).scrollTop(),
+        winh = $(window).height(); (st > 0) ? $backToTopEle.show() : $backToTopEle.hide();
+        //IE6下的定位
+        if (!window.XMLHttpRequest) {
+            $backToTopEle.css("top", st + winh - 166);
+        }
+    };
+    $(window).bind("scroll", $backToTopFun);
+    $(function() {
+        $backToTopFun();
+    });
+})();
+</script>
+
 </html>
