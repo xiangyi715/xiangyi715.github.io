@@ -1,9 +1,9 @@
 <?php
 //获得聊天
-$appkey = '958e8037556649a2b7b8619ef6734c67'; //你的appkey
+$appkey = 'e6d35601a6e8aa96b542168aa6b4509e'; //你的appkey
 $talkContent = ""; 
 $info=addslashes($_POST['AIuserText']);
-$userid=addslashes($_POST['547966']);
+$userid=addslashes($_POST['B4H2Bj7L']);
 function send_post($url, $post_data) {  
   
   $postdata = http_build_query($post_data);  
