@@ -10,6 +10,9 @@
     /*transition: all .3s ease-in-out;*/
 	display:none;
 }
+#showInfoBtn{
+	display:none;
+}
 #open_live2d{
 	border: 2px solid rgba(75,127,199,0.9);
     border-radius: 2px;
@@ -25,9 +28,6 @@
 	z-index:10000;
 	cursor:pointer;
 	display:none;
-}
-#showInfoBtn{
- 	display:none;
 }
 #live2d {
 	width: 250px;
@@ -70,7 +70,7 @@
 	display:none;
 	z-index:4;
 }
-.live_talk_input_text_body{
+.live_talk_input_body .live_talk_input_text_body{
 	width:250px;
 	box-sizing:border-box;
 	height:28px;
@@ -78,7 +78,7 @@
     border-radius: 5px;
     background-color: rgba(74, 59, 114,0.9);
 }
-.live_talk_input_name_body{
+.live_talk_input_body .live_talk_input_name_body{
 	width:70px;
 	box-sizing:border-box;
 	height:24px;
@@ -87,7 +87,7 @@
     background-color: rgba(74, 59, 114,0.9);
 	margin-bottom:3px;
 }
-.live_talk_name{
+.live_talk_input_body .live_talk_name{
 	background-color:transparent;
 	border:0px;
 	margin:0;
@@ -101,7 +101,7 @@
 	box-sizing:border-box;
 	padding:0 3px;
 }
-.live_talk_talk{
+.live_talk_input_body .live_talk_talk{
 	background-color:transparent;
 	border:0px;
 	margin:0;
@@ -116,7 +116,7 @@
 	padding:0 3px;
 	float:left;
 }
-.live_talk_send_btn{
+.live_talk_input_body .live_talk_send_btn{
 	background-color:transparent;
 	color:#fff;
 	border:0px;
@@ -439,7 +439,6 @@
         transform: translate(0, 0) rotate(0);
     }
 }
-
 @keyframes quan {
       0%   { transform:rotate(0);
              animation-timing-function:linear; }
