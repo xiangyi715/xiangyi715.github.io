@@ -1,6 +1,6 @@
 <?php
 //获得聊天
-$appkey = '958e8037556649a2b7b8619ef6734c67'; //你的appkey
+$appkey = "958e8037556649a2b7b8619ef6734c67"; //你的appkey
 $talkContent = ""; 
 $info=addslashes($_POST['info']);
 $userid=addslashes($_POST['userid']);
