@@ -2,8 +2,8 @@
 //获得聊天
 $appkey = '958e8037556649a2b7b8619ef6734c67'; //你的appkey
 $talkContent = ""; 
-$info=addslashes($_POST['info']);
-$userid=addslashes($_POST['userid']);
+$info=addslashes($_POST['live_talk_talk white_input']);
+$userid=addslashes($_POST['547966']);
 function send_post($url, $post_data) {  
   
   $postdata = http_build_query($post_data);  
