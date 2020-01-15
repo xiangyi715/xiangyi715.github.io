@@ -31,7 +31,8 @@ if($appkey==""){
   $talkContent = '{"code":"500","text":"我还没学会聊天功能，快和站长联系吧！"}';
 }
 else{
-  $talkContent = send_post('http://www.tuling123.com/openapi/api', $post_data);
+  //$talkContent = send_post('http://www.tuling123.com/openapi/api', $post_data);
+	$talkContent = send_post('http://openapi.tuling123.com/openapi/api/v2', $post_data);
 }
 header('Content-type:text/json');
 echo $talkContent;
