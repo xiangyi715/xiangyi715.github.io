@@ -15,7 +15,7 @@ function action()
 	var args= {
 			type : "get",
 			url:"https://api.ownthink.com/bot",
-			data : {"appid" : "xiaosi", "spoken" : text.val()},
+			data : {"appid" : "e6d35601a6e8aa96b542168aa6b4509e", "spoken" : text.val()},
 			success : function(redata)
 			{
 				var my_data = $.parseJSON(redata)
