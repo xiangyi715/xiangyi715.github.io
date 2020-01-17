@@ -189,9 +189,11 @@ div#comments.comments.v {
 .v .vwrap .vedit .vctrl {
   text-align: left !important;
 }
-.v .vwrap .vedit .vctrl {
-  padding: 0px !important;
-  margin: 0px !important;
+.v .vwrap .vedit .vctrl span {
+  background-color: #7f7f7f !important;
+  color: #fff !important;
+  border-radius: 3px !important;
+  padding: 3px !important;
 }
 .v .vlist .vcard .vquote .vcontent {
   font-size: 15px;
