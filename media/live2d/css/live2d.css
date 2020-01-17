@@ -30,8 +30,6 @@
  	display:none;
 }
 #live2d {
-	right: 5px;
-        position: fixed;
 	width: 250px;
         height: 280px;
         position: relative;
