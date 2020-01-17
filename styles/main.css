@@ -165,6 +165,77 @@ div.vcontrol {
 div#comments.comments.v {
   border: 0px;
 }
+.v .vwrap {
+  border: 2px solid black !important;
+  height: 250px !important;
+  border-radius: 6px !important;
+  overflow: visible !important;
+  counter-reset: avater;
+}
+.v .vwrap .vedit .vpreview {
+  width: 600px !important;
+  background-color: #fff !important;
+  border-radius: 5px !important;
+}
+.v .vbtn {
+  background-color: #971212 !important;
+  color: #fff !important;
+}
+.v .vwrap .vedit .vctrl {
+  text-align: left !important;
+}
+.v .vwrap .vedit .vctrl span {
+  background-color: #7f7f7f !important;
+  color: #fff !important;
+  border-radius: 3px !important;
+  padding: 3px !important;
+}
+.v .vwrap .vedit .vctrl {
+  padding: 0px !important;
+  margin: 0px !important;
+}
+.v .vlist .vcard .vquote .vcontent {
+  font-size: 15px;
+  font-weight: 200;
+}
+div.vedit {
+  height: 120px;
+}
+div.vcontrol {
+  margin-top: 30px;
+}
+.v .veditor {
+  min-height: 70px !important;
+  height: 100px !important;
+}
+.v .vlist .vcard {
+  border: 1px solid #ccc !important;
+  padding-left: 14px !important;
+  padding-right: 14px !important;
+  margin-bottom: 20px !important;
+  border-radius: 10px !important;
+}
+.v .vlist .vquote .vcard {
+  border: 0px !important;
+  margin-bottom: 0px !important;
+  border-radius: 0px !important;
+  padding: 0px !important;
+}
+.v .vlist .vcard .vhead .vsys {
+  display: none !important;
+  background-color: #fff !important;
+}
+.v .vlist .vcard .vh .vmeta .vat {
+  background-color: #177714 !important;
+  color: #fff !important;
+  border-radius: 3px !important;
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+}
+.v .vlist .vcard .vimg {
+  margin: 0 12px 0 0;
+  counter-increment: avater;
+}
 /*设置评论头像旋转*/
 .v .vlist .vcard .vimg:hover {
   -webkit-transform: rotate(360deg);
