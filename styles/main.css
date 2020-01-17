@@ -195,6 +195,10 @@ div#comments.comments.v {
   border-radius: 3px !important;
   padding: 3px !important;
 }
+.v .vwrap .vedit .vctrl {
+  padding: 0px !important;
+  margin: 0px !important;
+}
 .v .vlist .vcard .vquote .vcontent {
   font-size: 15px;
   font-weight: 200;
@@ -225,13 +229,6 @@ div.vcontrol {
 .v .vlist .vcard .vhead .vsys {
   display: none !important;
   background-color: #fff !important;
-}
-.v .vlist .vcard .vh .vmeta .vat {
-  background-color: #177714 !important;
-  color: #fff !important;
-  border-radius: 3px !important;
-  padding-left: 10px !important;
-  padding-right: 10px !important;
 }
 .v .vlist .vcard .vimg {
   margin: 0 12px 0 0;
