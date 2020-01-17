@@ -164,6 +164,12 @@
 .v .vwrap .vedit .vctrl {
   text-align: left !important;
 }
+.v .vwrap .vedit .vctrl span {
+  background-color: #7f7f7f !important;
+  color: #fff !important;
+  border-radius: 3px !important;
+  padding: 3px !important;
+}
 /*Tips*/
 .tip::after {
   background: rgba(79, 89, 95, 0.4);
