@@ -170,6 +170,14 @@
   border-radius: 3px !important;
   padding: 3px !important;
 }
+.v .vwrap .vedit .vctrl {
+  padding: 0px !important;
+  margin: 0px !important;
+}
+.v .vlist .vcard .vquote .vcontent {
+  font-size: 15px;
+  font-weight: 200;
+}
 /*Tips*/
 .tip::after {
   background: rgba(79, 89, 95, 0.4);
