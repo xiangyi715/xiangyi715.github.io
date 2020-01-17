@@ -238,6 +238,54 @@
   border-radius: 50%;
   text-align: center;
 }
+.v .vlist .vcard p {
+  top: -1.5em;
+  position: relative;
+  z-index: 1;
+  margin: unset;
+}
+.v .vlist .vcard .vquote a.at {
+  font-size: 13px;
+  color: #bea124;
+  text-decoration: none;
+  border: unset;
+  position: relative;
+  top: -40px;
+}
+.v .vlist .vcard .vquote .vcontent {
+  font-size: 15px;
+  font-weight: 200;
+}
+.v .vlist .vcard .vcontent {
+  margin-top: 58px !important;
+  font-size: 15px !important;
+  font-weight: 500 !important;
+  padding-top: 0 !important;
+  margin-bottom: unset !important;
+}
+.v .vlist .vcard .vquote .vhead .vnick {
+  color: #5af !important;
+  font-weight: 300 !important;
+  font-size: 15px !important;
+}
+.v .vlist .vcard .vhead .vnick {
+  font-size: 18px !important;
+  font-weight: 500 !important;
+  color: #5b6b68 !important;
+}
+.v .vlist .vcard {
+  padding-top: 8px !important;
+}
+.v .vlist .vcard .vhead {
+  float: left !important;
+}
+.v .vlist .vcard .vh .vmeta {
+  float: right !important;
+}
+.v .vlist .vcard .vcontent.expand:after {
+  content: "点击查看全部" !important;
+  font-weight: 400 !important;
+}
 /*Tips*/
 .tip::after {
   background: rgba(79, 89, 95, 0.4);
