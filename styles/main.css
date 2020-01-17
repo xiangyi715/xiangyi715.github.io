@@ -206,6 +206,22 @@
   margin: 0 12px 0 0;
   counter-increment: avater;
 }
+/*设置评论头像旋转*/
+.v .vlist .vcard .vimg:hover {
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -transform: rotate(360deg);
+}
+.v .vlist .vcard .vquote {
+  margin-left: 40px;
+}
+.v .vlist .vcard .vquote {
+  counter-reset: avaters;
+}
+.v .vlist .vcard .vquote .vimg {
+  display: avaters !important;
+}
 /*Tips*/
 .tip::after {
   background: rgba(79, 89, 95, 0.4);
