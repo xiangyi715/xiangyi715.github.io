@@ -152,6 +152,11 @@
   background-color: #fff !important;
   border-radius: 5px !important;
 }
+.v .vwrap .vedit .vpreview {
+  width: 600px !important;
+  background-color: #fff !important;
+  border-radius: 5px !important;
+}
 /*Tips*/
 .tip::after {
   background: rgba(79, 89, 95, 0.4);
