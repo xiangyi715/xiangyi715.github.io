@@ -173,7 +173,6 @@ div#comments.comments.v {
   counter-reset: avater;
 }
 .v .vwrap .vedit .vemojis {
-  width: 600px !important;
   background-color: #fff !important;
   border-radius: 5px !important;
 }
@@ -225,6 +224,10 @@ div.vcontrol {
   margin-bottom: 0px !important;
   border-radius: 0px !important;
   padding: 0px !important;
+}
+.v .vlist .vcard .vhead .vsys {
+  display: none !important;
+  background-color: #fff !important;
 }
 .v .vlist .vcard .vh .vmeta .vat {
   background-color: #177714 !important;
