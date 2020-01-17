@@ -165,6 +165,13 @@ div.vcontrol {
 div#comments.comments.v {
   border: 0px;
 }
+.v .vwrap {
+  border: 2px solid black !important;
+  height: 250px !important;
+  border-radius: 6px !important;
+  overflow: visible !important;
+  counter-reset: avater;
+}
 .v .vwrap .vedit .vemojis {
   width: 600px !important;
   background-color: #fff !important;
@@ -181,12 +188,6 @@ div#comments.comments.v {
 }
 .v .vwrap .vedit .vctrl {
   text-align: left !important;
-}
-.v .vwrap .vedit .vctrl span {
-  background-color: #7f7f7f !important;
-  color: #fff !important;
-  border-radius: 3px !important;
-  padding: 3px !important;
 }
 .v .vwrap .vedit .vctrl {
   padding: 0px !important;
