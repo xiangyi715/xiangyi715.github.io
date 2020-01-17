@@ -157,6 +157,13 @@
   background-color: #fff !important;
   border-radius: 5px !important;
 }
+.v .vbtn {
+  background-color: #971212 !important;
+  color: #fff !important;
+}
+.v .vwrap .vedit .vctrl {
+  text-align: left !important;
+}
 /*Tips*/
 .tip::after {
   background: rgba(79, 89, 95, 0.4);
