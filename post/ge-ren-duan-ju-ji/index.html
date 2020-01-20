@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+<title>
+    xiangyi
+</title>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+<meta http-equiv="x-dns-prefetch-control" content="on">
+<link rel="dns-prefetch" href="https://xiangyi715.github.io/">
+<link rel="dns-prefetch" href="https://cdn.bootcss.com">
+<link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+<meta name="author" content="xiangyi">
+<meta name="description" content="We are here to put a dent in the universe. Otherwise why else even be here?">
+<meta name="keywords" content="">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/xiangyi715/Gridea-Chic-Unique@1.0.1/assets/media/css/style.min.css" />
+<link rel="stylesheet" href="https://xiangyi715.github.io//styles/main.css" />
+
+<link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.0/dist/APlayer.min.js"></script>
+    <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.0/dist/APlayer.min.css">
+    
+        <script type="text/javascript" src="https://apps.bdimg.com/libs/jquery/1.7.1/jquery.min.js"></script>
+
+	<script src="https://cdn.jsdelivr.net/gh/xiangyi715/Gridea-Chic-Unique@1.0.1/assets/media/script/tocbot.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/xiangyi715/Gridea-Chic-Unique@1.0.1/assets/media/script/script.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/xiangyi715/Gridea-Chic-Unique@1.0.1/assets/media/script/icon.min.js"></script>
+
+        <script src="https://cdn.bootcss.com/highlight.js/9.13.1/highlight.min.js"></script>
+        <link href="https://cdn.bootcss.com/highlight.js/9.13.1/styles/atelier-estuary-dark.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.css">
+        <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.js"></script>
+                
+		    
+                    <!-- 百度统计 -->
+                    <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?1764db0338b3f4daa201a10f8a0cd76f";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+                    
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/xiangyi715/Gridea-Chic-Unique@1.0.1/assets/media/live2d/css/live2d.css" />
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo">
+                <a href="https://xiangyi715.github.io/">
+                    xiangyi
+                </a>
+            </div>
+
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/">
+                        首页
+                    </a>
+                    
+                    <a class="menu-item" href="/posts">
+                        文章列表
+                    </a>
+                    
+                    <a class="menu-item" href="/archives">
+                        归档
+                    </a>
+                    
+                    <a class="menu-item" href="/tags">
+                        标签
+                    </a>
+                    
+                    <a class="menu-item" href="/post/about">
+                        关于
+                    </a>
+                    
+                        <input id="switch_default" type="checkbox" class="switch_default">
+                        <label for="switch_default" class="toggleBtn"></label>
+            </div>
+
+            <form id="gridea-search-form" data-update="1579510129777" action="/search/index.html">
+                <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="🔍Search..." style = "-webkit-border-radius:8px;
+				   -moz-border-radius:8px;
+				   -ms-border-radius:8px;
+				   -o-border-radius:8px;
+				   border-radius:8px;
+				   border:1px solid #e7f3f9;
+				   outline:none;
+				   padding:7px 0px">
+            </form>
+        </div>
+    </nav>
+
+    
+        <nav class="navbar-mobile" id="nav-mobile">
+            <div class="container">
+                <div class="navbar-header">
+                    <div>
+                        <a href="https://xiangyi715.github.io/">
+                            xiangyi
+                        </a>
+                        <!--en-->
+                        <a id="mobile-toggle-theme-en" class="a en">&nbsp;Dark</a>
+                        <!--zh-->
+                        <a id="mobile-toggle-theme-zh" class="a zh">&nbsp;\u6697\u9ED1</a>
+                    </div>
+                    <form id="gridea-search-form" data-update="1579510129777" action="/search/index.html">
+                        <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="🔍Search..." style = "-webkit-border-radius:8px;
+				   -moz-border-radius:8px;
+				   -ms-border-radius:8px;
+				   -o-border-radius:8px;
+				   border-radius:8px;
+				   border:1px solid #62a3d3;
+				   outline:none;
+				   padding:7px 0px">
+                    </form>
+                    <!--en-->
+                    <div class="menu-toggle" id="menu-toggle-en" onclick="mobileBtn()">&#9776; Menu</div>
+                    <!--zh-->
+                    <div class="menu-toggle" id="menu-toggle-zh" onclick="mobileBtn()">&#9776; &#x83DC;&#x5355;</div>
+
+                </div>
+                <div class="menu" id="mobile-menu">
+                    
+                        <a class="menu-item" href="/">
+                            首页
+                        </a>
+                        
+                        <a class="menu-item" href="/posts">
+                            文章列表
+                        </a>
+                        
+                        <a class="menu-item" href="/archives">
+                            归档
+                        </a>
+                        
+                        <a class="menu-item" href="/tags">
+                            标签
+                        </a>
+                        
+                        <a class="menu-item" href="/post/about">
+                            关于
+                        </a>
+                        
+                </div>
+            </div>
+        </nav>
+</header>
+
+<style>
+input:focus{
+/* 
+            outline: 0;
+	    border: 1px solid #f95d5d;
+	    box-shadow: 0px 0px 10px 0px #f95d5d;
+*/
+	    border-style:solid;  
+            border-color: #03a9f4;  
+            box-shadow: 0 0 15px #03a9f4;
+  }
+</style>
+
+<script>
+
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementById("menu-toggle-en");
+        var toggleMenu_zh = document.getElementById("menu-toggle-zh");
+
+        var mobileMenu = document.getElementById("mobile-menu");
+        if (toggleMenu.display != "none") {
+            if (toggleMenu.classList.contains("active")) {
+                toggleMenu.classList.remove("active")
+                mobileMenu.classList.remove("active")
+            } else {
+                toggleMenu.classList.add("active")
+                mobileMenu.classList.add("active")
+            }
+        } else if (toggleMenu_zh.display != "none") {
+            if (toggleMenu_zh.classList.contains("active")) {
+                toggleMenu_zh.classList.remove("active")
+                mobileMenu.classList.remove("active")
+            } else {
+                toggleMenu_zh.classList.add("active")
+                mobileMenu.classList.add("active")
+            }
+        }
+
+    }
+</script>
+
+        <div class="main">
+            <div class="container">
+                <article class="post-wrap">
+                    <header class="post-header">
+                        <h1 class="post-title">
+                            个人短句集
+                        </h1>
+                        <!--en-->
+                        <div class="post-meta en">
+                            Author:
+                            <a itemprop="author" rel="author" href="/">
+                                xiangyi
+                            </a>
+                            <span class="post-time">
+                                Date: <a href="#">2020-01-05</a>
+                            </span>
+				<span class="post-readtime">Reading Time:<a href="#">6.5 mins</a></span>
+                                <span class="post-words">words:<a href="#">1945</a></span>
+                            
+                            <span class="post-category">
+                                Category:
+                                
+                                <a href="https://xiangyi715.github.io/tag/gjkeBIXxE">短句</a>
+                                
+                                <a href="https://xiangyi715.github.io/tag/yLvwCCc7C">原</a>
+                                
+                            </span>
+                            
+
+<!-- 分享 -->
+				<span style="margin-right:15px">
+				<i class="post-share"></i>
+				<span>share:</span>
+				<a title="QR code" target="_blank" href="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://xiangyi715.github.io/post/ge-ren-duan-ju-ji"><i class="fa fa-qrcode"></i></a>
+				<a title="qq share" target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://xiangyi715.github.io/post/ge-ren-duan-ju-ji&sharesource=qzone&title=个人短句集&pics=https://blog.blinkstar.cn/images/avatar.png&summary="><i class="fa fa-qq"></i></a>
+				<a title="weibo share" target="_blank" href="https://service.weibo.com/share/share.php?url=https://xiangyi715.github.io/post/ge-ren-duan-ju-ji&sharesource=weibo&title=个人短句集 + " - " + &pic="https://blog.blinkstar.cn/images/avatar.png"><i class="fa fa-weibo"></i></a>
+				</span>
+
+                        </div>
+                        <!--zh-->
+                        <div class="post-meta zh">
+                            &#x4F5C;&#x8005;:
+                            <a itemprop="author" rel="author" href="/">
+                                xiangyi
+                            </a>
+                            <span class="post-time">&#x65E5;&#x671F;: <a href="#">2020-01-05</a></span>
+			    <span class="post-readtime">&#x9605;&#x8BFB;&#x65F6;&#x95F4;:<a href="#">6.5 &#x5206;&#x949F;</a></span>
+                                <span class="post-words">&#x5B57;&#x6570;:<a href="#">1945</a></span>
+                            
+                            <span class="post-category">&#x5206;&#x7C7B;:
+                                
+                                <a href="https://xiangyi715.github.io/tag/gjkeBIXxE">短句</a>
+                                
+                                <a href="https://xiangyi715.github.io/tag/yLvwCCc7C">原</a>
+                                
+                            </span>
+                            
+<!-- 分享 -->
+				<span style="margin-right:15px">
+				<i class="post-share"></i>
+				<span>&#x5206;&#x4EAB;:</span>
+				<a title="QR 码" target="_blank" href="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://xiangyi715.github.io/post/ge-ren-duan-ju-ji"><i class="fa fa-qrcode"></i></a>
+				<a title="QQ" target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://xiangyi715.github.io/post/ge-ren-duan-ju-ji&sharesource=qzone&title=个人短句集&pics=https://blog.blinkstar.cn/images/avatar.png&summary="><i class="fa fa-qq"></i></a>
+				<a title="新浪微博" target="_blank" href="https://service.weibo.com/share/share.php?url=https://xiangyi715.github.io/post/ge-ren-duan-ju-ji&sharesource=weibo&title=个人短句集 + " - " + &pic="https://blog.blinkstar.cn/images/avatar.png"><i class="fa fa-weibo"></i></a>
+				</span>
+
+                        </div>
+                    </header>
+                    <div class="post-content">
+                        <p>：）只有所感时才写（：<br>
+<strong>追求</strong><br>
+<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>                        </mtext></mrow><annotation encoding="application/x-tex">~~~~~~~~~~~~~~~~~~~~~~~~</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0em;vertical-align:0em;"></span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span></span></span></span>——2009年7月以前<br>
+仰望苍穹席九州，<br>
+俯观品类尽自由，<br>
+一瓣心香淡如她，<br>
+蓦然回首败不休，</p>
+<p>乘风破浪寻追求，<br>
+荆棘密布练春秋,<br>
+光阴雕磨志不变，<br>
+青山依旧永长久。<br>
+<br/><br>
+<strong>离别(其一)</strong><br>
+<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>                        </mtext></mrow><annotation encoding="application/x-tex">~~~~~~~~~~~~~~~~~~~~~~~~</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0em;vertical-align:0em;"></span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span></span></span></span>——2009年7月21日<br>
+昨夜离别今日寒，<br>
+东风无力百花残。<br>
+一瓣馨香淡如她，<br>
+相见时欢别亦难。<br>
+独上高山永无怨，<br>
+一览众山在心间。<br>
+少年壮志不言愁，<br>
+敢教日月换新天。<br>
+<br/><br>
+<strong>离别(其二)</strong><br>
+<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>                        </mtext></mrow><annotation encoding="application/x-tex">~~~~~~~~~~~~~~~~~~~~~~~~</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0em;vertical-align:0em;"></span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span></span></span></span>——2009年7月21日<br>
+一日离别两无言，<br>
+雨水洒遍天地间。<br>
+燕叫春回头不回，<br>
+一心愿为耀天边。<br>
+倾城倾国梦期盼，<br>
+柔璐发丝绕双眸。<br>
+鹰击苍穹冲霄汉，<br>
+千载谁堪伯仲间。<br>
+<br/><br>
+<strong>沁园春  中华魂</strong><br>
+<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>                        </mtext></mrow><annotation encoding="application/x-tex">~~~~~~~~~~~~~~~~~~~~~~~~</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0em;vertical-align:0em;"></span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span></span></span></span>——2009年10月1日<br>
+洪涛东去，<br>
+汹涌澎湃，<br>
+雪浪滔天。<br>
+忆昔年往事，<br>
+不禁慨叹。<br>
+列强侵华，<br>
+撼我江山。<br>
+火烧园林，<br>
+屠杀千万，<br>
+中华儿女痛且坚。<br>
+望天边，<br>
+那晓岸将辉，<br>
+红日送暖。</p>
+<p>曾记神州大地，<br>
+春风吹遍，<br>
+生机盎然。<br>
+看华夏儿女，<br>
+意气风发；<br>
+同甘共苦，<br>
+重整河山。<br>
+改革开放，<br>
+一国两制，<br>
+书宏图巨篇。<br>
+放未来，<br>
+炎黄子孙顶，<br>
+兴我家园。<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>                </mtext></mrow><annotation encoding="application/x-tex">~~~~~~~~~~~~~~~~</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0em;vertical-align:0em;"></span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span></span></span></span>——赠予中华人民共和国诞辰六十周年<br>
+<br/><br>
+<strong>奋斗</strong><br>
+<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>                        </mtext></mrow><annotation encoding="application/x-tex">~~~~~~~~~~~~~~~~~~~~~~~~</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0em;vertical-align:0em;"></span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span></span></span></span>——2009年12月13日<br>
+黑夜，摸索着黎明前行，<br>
+远方的星光，是否为日出而探路?<br>
+古老的长城，沉静的宫殿，<br>
+山间的林荫，城中的小巷。<br>
+是黑暗？是轮廓？是影子？是光明？<br>
+金色的光茫已洒遍神州大地，<br>
+新世纪的中国正巍峨屹立于世界东方。<br>
+<br/><br>
+<strong>去最远的地方</strong><br>
+<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>                        </mtext></mrow><annotation encoding="application/x-tex">~~~~~~~~~~~~~~~~~~~~~~~~</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0em;vertical-align:0em;"></span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span></span></span></span>——2010年2月2日<br>
+时间走得很急，猛然转身。<br>
+摇曳的影子在风中徘徊。<br>
+未知的未来，<br>
+无需谁来编排。<br>
+梦想的色彩，期待主宰，<br>
+不必信守涂改，<br>
+生活依然多姿多彩。<br>
+易逝的韶华轻浮脸颊，<br>
+享受烟雨中的漫步，<br>
+等待晴天时的扬帆远航。<br>
+<br/><br>
+<strong>思</strong><br>
+<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>                        </mtext></mrow><annotation encoding="application/x-tex">~~~~~~~~~~~~~~~~~~~~~~~~</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0em;vertical-align:0em;"></span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span></span></span></span>——2010年2月19日<br>
+回忆，让我们沉思。<br>
+而无边的寂寥，让我们多了一份宁静与清明。<br>
+也许，<br>
+在远方的你，<br>
+有着相同的感受与希望。</p>
+<p>时光回溯到以前的夜晚，<br>
+幽远的星空依旧绚丽夺目，<br>
+久久望着它，<br>
+眼前浮现出清晰的画面，<br>
+你的声音在那飘渺的烟雾中回响。</p>
+<p>只有文字能寄托无奈，<br>
+望着你远去的背影，<br>
+消失在地平线的尽头。<br>
+猛然转身，<br>
+荒凉的田野等待雨露的浇灌。</p>
+<p>行人的足迹是那么错综复杂。<br>
+寻觅着你的足迹，<br>
+憧憬发现后的喜悦。<br>
+期待，摸索，希望，<br>
+编织出相见时的桥梁。<br>
+<br/><br>
+<strong>震动</strong><br>
+<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>                        </mtext></mrow><annotation encoding="application/x-tex">~~~~~~~~~~~~~~~~~~~~~~~~</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0em;vertical-align:0em;"></span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span></span></span></span>——2010年5月1日<br>
+梦回昨天，心亦沉，天色明转灰。<br>
+风啸长空，黄沙卷，难见落英飞。<br>
+春回大地，地微颤，玉树化为悲。<br>
+天意无情，顷刻间，狼籍涟洏飞。</p>
+<p>细听周围，生命脆，脉搏弱而微。<br>
+八方亲友，筑信念，冲破砖石垒。<br>
+缕缕檀香，酒满杯，祭奠亡灵泪。<br>
+看罢疮痍，齐协力，共创家园美。<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>  </mtext></mrow><annotation encoding="application/x-tex">~~</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0em;vertical-align:0em;"></span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span></span></span></span>——纪念玉树地震<br>
+<br/><br>
+<strong>星空</strong><br>
+<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>                        </mtext></mrow><annotation encoding="application/x-tex">~~~~~~~~~~~~~~~~~~~~~~~~</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0em;vertical-align:0em;"></span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span></span></span></span>——2010年7月24日<br>
+极目苍穹，星月轮，斗转随星移。<br>
+天之涯，地之角，谁可与心齐。<br>
+晨星炫目，焕碧空，若近即离。<br>
+此景此理，道似无形却有形，时人知宜。<br>
+华夏大地，风云涌，枝芽屹立。<br>
+看我东方巨龙，惊天地，腾空而起。<br>
+<br/><br>
+<strong>我与你的距离</strong><br>
+<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>                        </mtext></mrow><annotation encoding="application/x-tex">~~~~~~~~~~~~~~~~~~~~~~~~</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0em;vertical-align:0em;"></span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span></span></span></span>——2010年10月2日<br>
+有一个身影，日落了还彷徨。<br>
+无数个梦在心底激荡，<br>
+天空如碧波荡漾。<br>
+我与你的距离，似乎是翘首相望。</p>
+<p>人海茫茫，<br>
+寻找自己的模样，<br>
+我与你的距离，是那样模糊而绵长。</p>
+<p>曾记你，轻轻唱，<br>
+路很长，<br>
+风当作我飞翔的希望，<br>
+天使的翅膀，为你带来无尽的力量。</p>
+<p>空中的楼阁，海中的蜃景，<br>
+企图使你迷失方向，<br>
+细听我的声响，找回自己的芬芳。<br>
+行走的步调正激昂，<br>
+带上行囊，愿你一路飞翔。<br>
+<br/><br>
+<strong>眺望</strong><br>
+<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>                        </mtext></mrow><annotation encoding="application/x-tex">~~~~~~~~~~~~~~~~~~~~~~~~</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0em;vertical-align:0em;"></span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span></span></span></span>——2011年元月<br>
+当我眺望天边，<br>
+似乎听到了晨曦的呢喃。<br>
+欢呼，雀跃。<br>
+又为春的来临祁盼。<br>
+时间的步调是那样轻健，<br>
+眼前的霞光顷刻不见。<br>
+我呆望着天边，<br>
+只有夕阳的余辉撒满金山。</p>
+<p>试图倒转再现，<br>
+但我无能为力。<br>
+沉默的誓言，<br>
+是否还能力挽狂澜。<br>
+哦！不用。<br>
+时间是会变化多端。<br>
+只留下我，<br>
+将期待新的明天！<br>
+<br/><br>
+<strong>问天</strong><br>
+<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>                        </mtext></mrow><annotation encoding="application/x-tex">~~~~~~~~~~~~~~~~~~~~~~~~</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0em;vertical-align:0em;"></span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span></span></span></span>——2011年2月<br>
+忆九天神舟，<br>
+怀今古，<br>
+舜尧谁数？<br>
+故地离兮，<br>
+往事风华注砥柱，<br>
+梦断苍穹旧路。<br>
+聚万里，<br>
+浮云归属。<br>
+天意一向高难问，<br>
+人情似，<br>
+冷暖秋风处。<br>
+同折柳，<br>
+别君去，<br>
+韶华意气趋残暑。<br>
+望星空，<br>
+淡月残云，<br>
+江山万里谁同路？<br>
+目极青天海岸，<br>
+红日朝发，<br>
+敢问天，<br>
+听霜露。<br>
+<br/><br>
+<strong>长大后我就成了你</strong><br>
+<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>                        </mtext></mrow><annotation encoding="application/x-tex">~~~~~~~~~~~~~~~~~~~~~~~~</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0em;vertical-align:0em;"></span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span></span></span></span>——2012年1月16日<br>
+小时，没有长大后的烦恼。<br>
+长大后，，没有小时的快乐。<br>
+只是因为，<br>
+长大后没有成为你。</p>
+<p>希望啊 青春无法用尽，<br>
+盼望啊 再次寻找到你。<br>
+只是因为，<br>
+长大后想成为你。</p>
+<p>有谁能够坚守，<br>
+心中的那份信念。<br>
+无悔的承诺，筑起绚丽的彩练。</p>
+<p>险途，使人斗志昂扬，<br>
+山峰，令人一览群山。<br>
+激荡于心底，<br>
+只是因为，<br>
+长大后我就成了你。<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>         </mtext></mrow><annotation encoding="application/x-tex">~~~~~~~~~</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0em;vertical-align:0em;"></span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span></span></span></span>——由张胜利的事迹想到，送给那些辛勤追寻自己目标的人们！<br>
+<br/><br>
+<strong>沁园春 冬颜</strong><br>
+<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>                        </mtext></mrow><annotation encoding="application/x-tex">~~~~~~~~~~~~~~~~~~~~~~~~</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0em;vertical-align:0em;"></span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span></span></span></span>——2012年1月21日晚<br>
+雪漫北国，<br>
+万里江山，<br>
+意与谁言？<br>
+叹前路漫漫，<br>
+声断九天。<br>
+路转峰回，<br>
+今昔何年？<br>
+春秋华章，<br>
+冬夏依然，<br>
+笑对年华泪与欢。<br>
+雪龙舞，<br>
+看寒意阑珊，<br>
+尽在心间。</p>
+<p>朝夕如此并肩，<br>
+晓看春晖盼团圆。<br>
+惜似水流年，<br>
+又是龙颜。<br>
+万家灯火，<br>
+共展千年。<br>
+神舟平川，<br>
+雪域高原，<br>
+只愿天下共相伴。<br>
+细听声，<br>
+那踏雪绵延，<br>
+重走河山。<br>
+<br/><br>
+<strong>清明月</strong><br>
+<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>                        </mtext></mrow><annotation encoding="application/x-tex">~~~~~~~~~~~~~~~~~~~~~~~~</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0em;vertical-align:0em;"></span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span></span></span></span>——2012年清明<br>
+清明明月，酌月夜，寒光浸杯盏。<br>
+阳春春色，风拂面，绿意满人间。<br>
+纸灰灰飞，烟灭间，化蝶坟碣连。<br>
+檀香燃冉，绕九泉，归路却绵延。<br>
+斟酒满杯，杜鹃啼，梦醒似昨天。<br>
+看罢云烟，争朝夕，前路仍依然。<br>
+<br/><br>
+<strong>《康熙大帝》读后</strong><br>
+<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>                        </mtext></mrow><annotation encoding="application/x-tex">~~~~~~~~~~~~~~~~~~~~~~~~</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0em;vertical-align:0em;"></span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span></span></span></span>——2012年夏<br>
+叶落秋风只三百，<br>
+无限春光待流觞。<br>
+策马奔腾随浪去，<br>
+月梭云影作戎装。<br>
+千古一帝传佳话，<br>
+万里江山美名扬。<br>
+嗟叹残年护风烛，<br>
+唯有日月送流芳。<br>
+<br/><br>
+<strong>寒梅赠友</strong><br>
+唤友寻花花自休，<br>
+粉红零落几时有。<br>
+误入寒梅最深处，<br>
+堪比桃李杏花眸。<br>
+<br/><br>
+<strong>京娘湖记</strong><br>
+<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>                        </mtext></mrow><annotation encoding="application/x-tex">~~~~~~~~~~~~~~~~~~~~~~~~</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0em;vertical-align:0em;"></span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span></span></span></span>——2013年4月5日<br>
+贞义武安京娘湖，<br>
+登高望汴宋太祖。<br>
+拔刀相助结兄妹，<br>
+平生素昧送京娘。<br>
+雾乘风去千年尽，<br>
+祠宇正气伫山墙。<br>
+活水清潭环群山，<br>
+群山揽雾作新装。<br>
+劲松立根岩中青，<br>
+遥望山里人家忙。<br>
+<br/><br>
+<strong>寄·冀·记</strong><br>
+<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>                        </mtext></mrow><annotation encoding="application/x-tex">~~~~~~~~~~~~~~~~~~~~~~~~</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0em;vertical-align:0em;"></span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span></span></span></span>——2014年10月4日<br>
+一脉承太行，紫气映东海。<br>
+辽辽坝上广，故国守南疆。<br>
+对酒与万物，千杯论英雄。<br>
+若为骄阳顾，冷气还旧梦。<br>
+拨云豁开朗，长谈纵豪情。<br>
+乾坤谁主宰，日月令沉浮。<br>
+<br/><br>
+<strong>时月</strong><br>
+<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>                        </mtext></mrow><annotation encoding="application/x-tex">~~~~~~~~~~~~~~~~~~~~~~~~</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0em;vertical-align:0em;"></span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span></span></span></span>——2018年1月9日<br>
+寒风长影非月明，<br>
+高灯流火映苍穹。<br>
+那年清风春不再，<br>
+回首笑谈数星空。</p>
+<p>星空本无流沙狂，<br>
+残云伴影作新裳。<br>
+惜逢此时已深冬，<br>
+月明初探为(wéi)戎装。</p>
+<p>戎装一饮进胸膛，<br>
+侠肝孤胆化惆怅。<br>
+待到春风柳香来，<br>
+化作寒光蝶雁黄。</p>
+
+                    </div>
+                     <div class="post-toc">
+                            
+                     </div>
+                    <section class="post-copyright en">
+                        <!--en-->
+                        <p class="copyright-item">
+                            <span>Author:</span>
+                            <span>xiangyi</span>
+                        </p>
+
+                        <p class="copyright-item">
+                            <span>Permalink:</span>
+                            <span><a href="https://xiangyi715.github.io/post/ge-ren-duan-ju-ji">https://xiangyi715.github.io/post/ge-ren-duan-ju-ji</a></span>
+                        </p>
+
+                        <p class="copyright-item">
+                            <span>License:</span>
+                            <span>MIT License</span>
+                        </p>
+                    </section>
+                    <section class="post-copyright zh">
+                        <!--zh-->
+                        <p class="copyright-item ">
+                            <span>&#x4F5C;&nbsp;&nbsp;&nbsp;&#x8005;:</span>
+                            <span>xiangyi</span>
+                        </p>
+
+                        <p class="copyright-item">
+                            <span>&#x6C38;&#x4E45;&#x94FE;&#x63A5;:</span>
+                            <span><a href="https://xiangyi715.github.io/post/ge-ren-duan-ju-ji">https://xiangyi715.github.io/post/ge-ren-duan-ju-ji</a></span>
+                        </p>
+
+                        <p class="copyright-item">
+                            <span>&#x534F;&nbsp;&nbsp;&nbsp;&#x8BAE;:</span>
+                            <span>MIT License</span>
+                        </p>
+                    </section>
+                    <!--en-->
+                    <section class="post-tags en">
+                        <div>
+                            <span>Tag(s):</span>
+                            <span class="tag">
+                                
+                                
+                                <a href="https://xiangyi715.github.io/tag/gjkeBIXxE"># 短句</a>
+                                
+                                <a href="https://xiangyi715.github.io/tag/yLvwCCc7C"># 原</a>
+                                
+                                
+                            </span>
+                        </div>
+                        <div>
+                            <a href="javascript:window.history.back();">back</a>
+<!--
+                            <span>&dot;</span>
+                            <a href="#">home</a>
+-->
+                        </div>
+                    </section>
+                    <!--zh-->
+                    <section class="post-tags zh">
+                        <div>
+                            <span>&#x6807;&#x7B7E;:</span>
+                            <span class="tag">
+                                
+                                
+                                <a href="https://xiangyi715.github.io/tag/gjkeBIXxE"># 短句</a>
+                                
+                                <a href="https://xiangyi715.github.io/tag/yLvwCCc7C"># 原</a>
+                                
+                                
+                            </span>
+                        </div>
+                        <div>
+                            <a href="javascript:window.history.back();">
+                                &#x8FD4;&#x56DE;</a>
+<!--
+                            <span>&dot;</span>
+                            <a href="#">&#x4E3B;&#x9875;</a>
+-->
+                        </div>
+                    </section>
+
+                    <section class="post-nav">
+	               
+		       <a class="prev" rel="prev" href="https://xiangyi715.github.io/post/guan-yu-qw-pr-zong-jie">
+		           关于QW-PR的一部分总结
+		       </a>
+		       
+                        
+                        <a class="next" rel="next" href="https://xiangyi715.github.io/post/ubuntu-zhong-xiao-er-zhi-ming-de-wen-ti-hui-zong">
+                            ubuntu中遇到的小问题汇总(不定期更新)
+                        </a>
+                        
+                    </section>
+
+	<div class="reward"><div class="reward-button">赏 <span class="reward-code"> <span class="alipay-code"> <img class="alipay-img" alt = "support" src="https://cdn.jsdelivr.net/gh/xiangyi715/Gridea-Chic-Unique@1.0.1/assets/media/images/alipay.png"><b>支付宝扫码打赏</b> </span> <span class="wechat-code"> <img alt ="support" class="wechat-img" src="https://cdn.jsdelivr.net/gh/xiangyi715/Gridea-Chic-Unique@1.0.1/assets/media/images/wechat.png"><b>微信打赏</b> </span> </span></div></div>
+		<div id="vcomments"></div>
+                <script>
+                   new Valine({
+                   el: '#vcomments',
+                   appId: 'PJrodUAmdHhn80brO2RK5krO-gzGzoHsz',
+                   appKey: 'E0NkdD8su2j25GMaM7qxvwLV',
+                   path: window.location.pathname,
+                   pageSize: 30,
+                   avatar:'mm',
+                   notify:true,
+                   placeholder: '评论前请填写好昵称👆生成头像请到https://cn.gravatar.com/官网注册:D'
+                             })
+                   </script>
+
+		</article>
+            </div>
+
+        </div>
+    </div>
+    </div>
+    </div>
+    
+
+    <div id="player"></div>
+    
+        <footer id="footer" class="footer">
+
+            <div class="copyright">
+                <font size=1>
+Link <a href="https://github.com/xiangyi715"
+target="_blank">My github</a></font>
+                    <b id="hitokoto"></b><br>
+                    <svg viewBox="0 0 1024 1024" style="margin-left: 5px;margin-right: 5px;" version="1.0" width="8" height="8" class="my-face">
+            <path
+                d="M863.597631 513.574282l-271.33965-140.213484L729.783667 81.926656c3.583731-7.87141 7.167462-15.742819 7.167462-25.214109C736.887134 25.226908 708.345275 0.012799 672.635953 0.012799a63.611229 63.611229 0 0 0-39.293053 12.607055c-1.791866 1.59988-3.519736 3.19976-5.311602 3.19976L147.87531 418.925381a55.547834 55.547834 0 0 0-19.646527 47.356448c1.791866 17.278704 14.27093 33.021523 32.125591 42.492813l271.33965 141.749369L292.504463 945.221908c-12.479064 25.214109-1.791866 53.563983 23.166262 69.306802 10.751194 6.335525 23.230258 9.47129 35.709322 9.47129 16.062795 0 32.125591-4.735645 44.604655-15.742819l480.091993-403.297753a55.547834 55.547834 0 0 0 19.646526-47.228458 61.243407 61.243407 0 0 0-32.12559-44.156688z"
+                fill="#93b5cf"></path>
+        </svg>
+                    xiangyi &copy;Copyright
+                        <script>
+                            var date = new Date();
+                            document.write("" + date.getFullYear());
+                        </script>
+                        | 本站已经运行了
+                <strong><script type="text/javascript">		
+
+                var urodz= new Date("01/03/2020");
+                var now = new Date();
+                var ile = now.getTime() - urodz.getTime();
+                var dni = Math.floor(ile / (1000 * 60 * 60 * 24));
+                document.write(+dni)
+                </script>
+                </strong>天
+            </div>
+<!--Click loveHeart -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/xiangyi715/Gridea-Chic-Unique@1.0.1/assets/media/script/love.js"></script>
+        </footer>
+
+        
+        <script src='https://cdn.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js'></script> 
+          
+		<div id="landlord" style="right:5px;bottom:120px;">
+    <div class="message" style="opacity:0"></div>
+    <canvas id="live2d" width="500" height="560" class="live2d"></canvas>
+    <div class="live_talk_input_body">
+        <div class="live_talk_input_name_body">
+            <input name="name" type="text" class="live_talk_name white_input" id="AIuserName" autocomplete="off" placeholder="你的名字" />
+        </div>
+        <div class="live_talk_input_text_body">
+            <input name="talk" type="text" class="live_talk_talk white_input" id="AIuserText" autocomplete="off" placeholder="要和我聊什么呀？"/>
+            <button type="button" class="live_talk_send_btn" id="talk_send">发送</button>
+        </div>
+    </div>
+    <input name="live_talk" id="live_talk" value="1" type="hidden" />
+    <div class="live_ico_box">
+        <div class="live_ico_item type_info" id="showInfoBtn"></div>
+        <div class="live_ico_item type_talk" id="showTalkBtn"></div>
+        <div class="live_ico_item type_music" id="musicButton"></div>
+        <div class="live_ico_item type_youdu" id="youduButton"></div>
+        <div class="live_ico_item type_quit" id="hideButton"></div>
+        <input name="live_statu_val" id="live_statu_val" value="0" type="hidden" />
+        <audio src="" style="display:none;" id="live2d_bgm" data-bgm="0" preload="none"></audio>
+	<input name="live2dBGM" value="http://music.163.com/song/media/outer/url?id=421934070.mp3" type="hidden">
+	<input name="live2dBGM" value="http://music.163.com/song/media/outer/url?id=786262.mp3" type="hidden">
+	<input name="live2dBGM" value="http://music.163.com/song/media/outer/url?id=490637664.mp3" type="hidden">
+	<input name="live2dBGM" value="http://music.163.com/song/media/outer/url?id=515450559.mp3" type="hidden">
+        <input id="duType" value="douqilai,l2d_caihong" type="hidden">
+    </div>
+</div>
+<div id="open_live2d">召唤伊斯特瓦尔</div>
+<script>
+    var message_Path = '/media/live2d/';//资源目录，如果目录不对请更改
+    var talkAPI = '';//如果有类似图灵机器人的聊天接口请填写接口路径
+</script>
+
+
+//<script src="https://cdn.jsdelivr.net/gh/xiangyi715/Gridea-Chic-Unique@1.0.1/assets/media/js/jquery-3.3.1.min.js"></script>
+<script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/xiangyi715/Gridea-Chic-Unique@1.0.1/assets/media/live2d/js/live2d.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/xiangyi715/Gridea-Chic-Unique@1.0.1/assets/media/live2d/js/message.js"></script>		
+		
+            
+
+                <script>
+                    
+
+                    function LoadPlayer() {
+                        var audio_name = '让酒';
+                        var audio_artist = '刘宇宁';
+                        var audio_url = 'http://music.163.com/song/media/outer/url?id=1297742298.mp3';
+                        var audio_cover = 'https://i.loli.net/2020/01/11/eqziYLsBHSMcb6U.jpg';
+			var audio_lrc = 'http://music.163.com/api/song/media?id=1297742298'
+                        const ap = new APlayer({
+                            container: document.getElementById('player'),
+                            fixed: true,
+			    lrcType: 3,
+                            audio: [{
+                                name: audio_name,
+                                artist: audio_artist,
+                                url: audio_url,
+                                cover: audio_cover,
+				lrc: audio_lrc,
+                            }]
+                        });
+
+                    }
+                    LoadPlayer();
+                    
+
+                    
+                    loadlive2d();
+                    
+//                    hitokoto();
+                    hljs.initHighlighting();
+		    console.clear();
+                    console.log("\n %c \u26a1Theme:Chic-Unique Author's Blog:https://github.com/xiangyi715  Write By xiangyi  \n\n", "color: #ffffff; background: rgba(49, 49, 49, 0.85); padding:5px 0;border-radius:5px;");
+                </script>
+
+    </div>
+
+<script src="//instant.page/3.0.0" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
+</body>
+<script>
+    scroll();
+</script>
+
+
+<!--返回顶部-->
+<body id="top">
+<p id="back-to-top"><a href="#top"><span></span></a></p>
+</body>
+
+<style>
+	p#back-to-top {
+		position: fixed;
+		bottom: 50px;
+		right: 50px;
+	}
+	
+	p#back-to-top a {
+		text-align: center;
+		text-decoration: none;
+		color: #d1d1d1;
+		display: block;
+		width: 30px;
+	    /*使用CSS3中的transition属性给跳转链接中的文字添加渐变效果*/
+		-moz-transition: color 1s;
+		-webkit-transition: color 1s;
+		-o-transition: color 1s;
+	}
+	p#back-to-top a:hover {
+		color: #87cefa;
+	}
+	p#back-to-top a span {
+		background: #ffffff url(/media/images/returnTop.png) no-repeat center center;
+		border-radius: 6px;
+		display: block;
+		height: 55px;
+		width: 30px;
+		margin-bottom: 5px;
+	      /*使用CSS3中的transition属性给<span>标签背景颜色添加渐变效果*/
+		-moz-transition: background 1s;
+		-webkit-transition: background 1s;
+		-o-transition: background 1s;
+	}
+	
+	#back-to-top a:hover span {
+		background: #87cefa url(/media/images/returnTop.png) no-repeat center center;
+	}
+</style>
+
+<script>
+$(document).ready(function() {
+    //首先将#back-to-top隐藏
+    $("#back-to-top").hide();
+ 
+    //当滚动条的位置处于距顶部100像素以下时，跳转链接出现，否则消失
+    $(function() {
+        $(window).scroll(function() {
+            if ($(window).scrollTop() > 100) {
+                $("#back-to-top").fadeIn(1500);
+            }
+            else {
+                $("#back-to-top").fadeOut(1500);
+            }
+        });
+        //当点击跳转链接后，回到页面顶部位置
+        $("#back-to-top").click(function() {
+            $('body,html').animate({
+                scrollTop: 0
+            },
+            500);
+            return false;
+        });
+    });
+});
+</script>
+
+<!--
+<style>
+	.backToTop {
+	display: none;
+	width: 18px;
+	line-height: 1.2;
+	padding: 5px 0;
+	background-color: #000;
+	color: #fff;
+	font-size: 12px;
+	text-align: center;
+	position: fixed;
+	_position: absolute;
+	right: 10px;
+	bottom: 100px;
+	_bottom: "auto";
+	cursor: pointer;
+	opacity: .6;
+	filter: Alpha(opacity = 60);
+}
+</style>
+<script>
+(function() {
+    var $backToTopTxt = "返回顶部"
+    $backToTopEle = $('<div class="backToTop"></div>').appendTo($("body")).text($backToTopTxt)
+	.attr("title", $backToTopTxt).click(function() {
+        $("html, body").animate({
+            scrollTop: 0
+        },120);
+    })
+    $backToTopFun = function() {
+        var st = $(document).scrollTop(),
+        winh = $(window).height(); (st > 0) ? $backToTopEle.show() : $backToTopEle.hide();
+        //IE6下的定位
+        if (!window.XMLHttpRequest) {
+            $backToTopEle.css("top", st + winh - 166);
+        }
+    };
+    $(window).bind("scroll", $backToTopFun);
+    $(function() {
+        $backToTopFun();
+    });
+})();
+</script>
+-->
+
+</html>
