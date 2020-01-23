@@ -89,7 +89,7 @@ var _hmt = _hmt || [];
                         <label for="switch_default" class="toggleBtn"></label>
             </div>
 
-            <form id="gridea-search-form" data-update="1579747368345" action="/search/index.html">
+            <form id="gridea-search-form" data-update="1579748073701" action="/search/index.html">
                 <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="🔍Search..." style = "-webkit-border-radius:8px;
 				   -moz-border-radius:8px;
 				   -ms-border-radius:8px;
@@ -115,7 +115,7 @@ var _hmt = _hmt || [];
                         <!--zh-->
                         <a id="mobile-toggle-theme-zh" class="a zh">&nbsp;\u6697\u9ED1</a>
                     </div>
-                    <form id="gridea-search-form" data-update="1579747368345" action="/search/index.html">
+                    <form id="gridea-search-form" data-update="1579748073701" action="/search/index.html">
                         <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="🔍Search..." style = "-webkit-border-radius:8px;
 				   -moz-border-radius:8px;
 				   -ms-border-radius:8px;
@@ -264,13 +264,13 @@ input:focus{
                         </div>
                     </header>
                     <div class="post-content">
-                        <p><strong>前言:</strong><br>
-<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>      </mtext></mrow><annotation encoding="application/x-tex">~~~~~~</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0em;vertical-align:0em;"></span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span></span></span></span>车牌识别系统是现代智能交通系统中的重要组成部分之一，应用十分广泛并随着技术的发展日趋完善。它是以数字图像处理、模式识别、计算机视觉等技术为基础，对摄像头所拍摄的车辆图像或者视频序列进行分析得到每一辆汽车唯一的车牌号码，从而完成识别过程。从技术角度来说，汽车牌照自动识别技术是车牌识别系统的核心。<br>
+                        <h2 id="前言"><strong>前言:</strong></h2>
+<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>      </mtext></mrow><annotation encoding="application/x-tex">~~~~~~</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0em;vertical-align:0em;"></span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span></span></span></span>车牌识别系统是现代智能交通系统中的重要组成部分之一，应用十分广泛并随着技术的发展日趋完善。它是以数字图像处理、模式识别、计算机视觉等技术为基础，对摄像头所拍摄的车辆图像或者视频序列进行分析得到每一辆汽车唯一的车牌号码，从而完成识别过程。从技术角度来说，汽车牌照自动识别技术是车牌识别系统的核心。<br>
 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>      </mtext></mrow><annotation encoding="application/x-tex">~~~~~~</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0em;vertical-align:0em;"></span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span></span></span></span>QW-PR是基于QT平台开发的中文民用汽车牌照定位、识别的Windows版本应用程序。Opencv算法是其核心。本篇主要介绍其开发要点及部分技术细节。对于一些算法和处理过程本篇都会有详细的介绍，并利于代码维护、更新以及迅速读懂程序。<br>
 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>      </mtext></mrow><annotation encoding="application/x-tex">~~~~~~</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0em;vertical-align:0em;"></span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span></span></span></span>关于车牌识别系统，网上有很多开源的代码比如EasyPR、OpenALPR等。开源程序充分体现了资源的共享性，QW-PR也是其中的受益者同时也希望会对识别小白是施益者，本篇将会以博客叙述的方式来说明。下面即介绍具体步骤。<br>
-<img src="https://xiangyi715.github.io//post-images/1578917389033.png" alt="" loading="lazy"><br>
-<strong>1.1 车牌粗定位</strong><br>
-<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>      </mtext></mrow><annotation encoding="application/x-tex">~~~~~~</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0em;vertical-align:0em;"></span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span></span></span></span>关于车牌定位，方法有很多，所以一个鲁棒性较强的算法可以体现其能力。较传统的方法是对整幅图像做数字图像处理然后再提取感兴趣区域。此种方法类似于将一幅图像地图化。我们要做的就是如何划分地图，并从地图上找到想要得到的区域。我们用的是Sobel算子方法；其次由于部分车牌与车身颜色是有区别的所以我们加入了车牌颜色定位法；另外Opencv提供了很多机器学习模型，我们用到了训练联级分类器来定位感兴趣区域。<br>
+<img src="https://xiangyi715.github.io//post-images/1578917389033.png" alt="" loading="lazy"></p>
+<h2 id="11-车牌粗定位"><strong>1.1 车牌粗定位</strong></h2>
+<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>      </mtext></mrow><annotation encoding="application/x-tex">~~~~~~</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0em;vertical-align:0em;"></span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span></span></span></span>关于车牌定位，方法有很多，所以一个鲁棒性较强的算法可以体现其能力。较传统的方法是对整幅图像做数字图像处理然后再提取感兴趣区域。此种方法类似于将一幅图像地图化。我们要做的就是如何划分地图，并从地图上找到想要得到的区域。我们用的是Sobel算子方法；其次由于部分车牌与车身颜色是有区别的所以我们加入了车牌颜色定位法；另外Opencv提供了很多机器学习模型，我们用到了训练联级分类器来定位感兴趣区域。<br>
 <strong>1.1.1Sobel 算子法</strong></p>
 <p><strong>1.1.1.1高斯模糊（Gaussian Blur）</strong><br>
 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>      </mtext></mrow><annotation encoding="application/x-tex">~~~~~~</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0em;vertical-align:0em;"></span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span></span></span></span>图像处理中的模糊有很多种，其中有一种叫做高斯模糊（Gaussian Blur），即是正态分布用在了图像处理中。这种数据平滑技术可用在多种场合，其中数字图像处理则更直观的体现了其用处。<br>
@@ -624,7 +624,15 @@ Opencv带函数手册<br>
 
                     </div>
                      <div class="post-toc">
-                            
+                            <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#%E5%89%8D%E8%A8%80"><strong>前言:</strong></a></li>
+<li><a href="#11-%E8%BD%A6%E7%89%8C%E7%B2%97%E5%AE%9A%E4%BD%8D"><strong>1.1 车牌粗定位</strong></a></li>
+</ul>
+</li>
+</ul>
+
                      </div>
                     <section class="post-copyright en">
                         <!--en-->
