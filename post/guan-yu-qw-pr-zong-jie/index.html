@@ -91,7 +91,7 @@ var _hmt = _hmt || [];
                         <label for="switch_default" class="toggleBtn"></label>
             </div>
 
-            <form id="gridea-search-form" data-update="1580872828740" action="/search/index.html">
+            <form id="gridea-search-form" data-update="1580872877025" action="/search/index.html">
                 <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="🔍Search..." style = "-webkit-border-radius:8px;
 				   -moz-border-radius:8px;
 				   -ms-border-radius:8px;
@@ -117,7 +117,7 @@ var _hmt = _hmt || [];
                         <!--zh-->
                         <a id="mobile-toggle-theme-zh" class="a zh">&nbsp;\u6697\u9ED1</a>
                     </div>
-                    <form id="gridea-search-form" data-update="1580872828740" action="/search/index.html">
+                    <form id="gridea-search-form" data-update="1580872877025" action="/search/index.html">
                         <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="🔍Search..." style = "-webkit-border-radius:8px;
 				   -moz-border-radius:8px;
 				   -ms-border-radius:8px;
@@ -425,7 +425,7 @@ pause<br>
 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>      </mtext></mrow><annotation encoding="application/x-tex">~~~~~~</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0em;vertical-align:0em;"></span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span></span></span></span>上面的训练过程摘自自己的博客。当然那时还没有训练出很好的xml，同时也是第一次训练成功，也并非此时用到的文件。<br>
 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>      </mtext></mrow><annotation encoding="application/x-tex">~~~~~~</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0em;vertical-align:0em;"></span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span></span></span></span>此时，我们总结一下以上三种方法：方法1和方法2的最终结果得到的都是后选车牌图片，3得到的是XML文件。对于3，我们用CascadeClassifier 和 detectMultiScale加载读取XML文件并生成后选车牌图像。最终我们将分别可以得到车牌的候选图像。<br>
 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>      </mtext></mrow><annotation encoding="application/x-tex">~~~~~~</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0em;vertical-align:0em;"></span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span></span></span></span>关于三种方法的顺序优先级，我们首先使用的是颜色判断如果失败则进入Sobel方法如果失败则使用LBP方法。这三种方法可根据具体场景做出调优选择处理。我在这里做了一个小小的改进则是如果都没有判断出来则截掉图像的上四分之一，选取下四分之三作为RIO再进行判断，依此类推，如果RIO的高度小于某一数值则判断失败return &amp;errorpicture；此方法有增加判断时间的风险，但在准确度和速度上需要做到一个很好的平衡还要具体场景具体分析。好了，以上三种方法即是得到有可能是车牌的图像：为“车牌粗定位”。最终确定车牌要用到“支持向量机”（support vector machine）将是我们第二部分的内容，接下来会做相应介绍。</p>
-<h3 id="12车牌精定位"><strong>1.2车牌精定位</strong></h3>
+<h2 id="12车牌精定位"><strong>1.2车牌精定位</strong></h2>
 <p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>      </mtext></mrow><annotation encoding="application/x-tex">~~~~~~</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0em;vertical-align:0em;"></span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span></span></span></span>对于车牌精确定位，我们使用的是SVM即支持向量机，是机器学习中的监督学习算法。“支持向量机算法是诞生于统计学习界，同时在机器学习界大放光彩的经典算法。支持向量机算法从某种意义上来说是逻辑回归算法的强化：通过给予逻辑回归算法更严格的优化条件，支持向量机算法可以获得比逻辑回归更好的分类界线。但是如果没有某类函数技术，则支持向量机算法最多算是一种更好的线性分类技术。<br>
 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>      </mtext></mrow><annotation encoding="application/x-tex">~~~~~~</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0em;vertical-align:0em;"></span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span></span></span></span>但是，通过跟高斯“核”的结合，支持向量机可以表达出非常复杂的分类界线，从而达成很好的的分类效果。“核”事实上就是一种特殊的函数，最典型的特征就是可以将低维的空间映射到高维的空间。<br>
 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>      </mtext></mrow><annotation encoding="application/x-tex">~~~~~~</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0em;vertical-align:0em;"></span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span></span></span></span>我们如何在二维平面划分出一个圆形的分类界线？在二维平面可能会很困难，但是通过“核”可以将二维空间映射到三维空间，然后使用一个线性平面就可以达成类似效果。也就是说，二维平面划分出的非线性分类界线可以等价于三维平面的线性分类界线。于是，我们可以通过在三维空间中进行简单的线性划分就可以达到在二维平面中的非线性划分效果。<br>
@@ -630,11 +630,8 @@ Opencv带函数手册<br>
 <li>
 <ul>
 <li><a href="#%E5%89%8D%E8%A8%80"><strong>前言:</strong></a></li>
-<li><a href="#11-%E8%BD%A6%E7%89%8C%E7%B2%97%E5%AE%9A%E4%BD%8D"><strong>1.1 车牌粗定位</strong></a>
-<ul>
+<li><a href="#11-%E8%BD%A6%E7%89%8C%E7%B2%97%E5%AE%9A%E4%BD%8D"><strong>1.1 车牌粗定位</strong></a></li>
 <li><a href="#12%E8%BD%A6%E7%89%8C%E7%B2%BE%E5%AE%9A%E4%BD%8D"><strong>1.2车牌精定位</strong></a></li>
-</ul>
-</li>
 <li><a href="#13%E8%BD%A6%E7%89%8C%E5%A4%84%E7%90%86"><strong>1.3车牌处理</strong></a></li>
 </ul>
 </li>
