@@ -15,7 +15,6 @@
 <meta name="keywords" content="">
 <script src="//instant.page/3.0.0" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
 
-
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/xiangyi715/Gridea-Chic-Unique@latest/assets/media/css/style.min.css" />
 
 <link rel="stylesheet" href="https://xiangyi715.github.io//styles/main.css" />
@@ -23,6 +22,10 @@
 
 <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
+    <script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
+    <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
+    
         <script type="text/javascript" src="https://apps.bdimg.com/libs/jquery/1.7.1/jquery.min.js"></script>
 
 	<script src="https://cdn.jsdelivr.net/gh/xiangyi715/Gridea-Chic-Unique@latest/assets/media/script/tocbot.min.js"></script>
@@ -45,6 +48,7 @@ var _hmt = _hmt || [];
   s.parentNode.insertBefore(hm, s);
 })();
 </script>
+
                     
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/xiangyi715/Gridea-Chic-Unique@latest/assets/media/live2d/css/live2d.css" />
@@ -86,7 +90,7 @@ var _hmt = _hmt || [];
                         <label for="switch_default" class="toggleBtn"></label>
             </div>
 
-            <form id="gridea-search-form" data-update="1580990344197" action="/search/index.html">
+            <form id="gridea-search-form" data-update="1580991043025" action="/search/index.html">
                 <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="🔍Search..." style = "-webkit-border-radius:8px;
 				   -moz-border-radius:8px;
 				   -ms-border-radius:8px;
@@ -112,7 +116,7 @@ var _hmt = _hmt || [];
                         <!--zh-->
                         <a id="mobile-toggle-theme-zh" class="a zh">&nbsp;\u6697\u9ED1</a>
                     </div>
-                    <form id="gridea-search-form" data-update="1580990344197" action="/search/index.html">
+                    <form id="gridea-search-form" data-update="1580991043025" action="/search/index.html">
                         <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="🔍Search..." style = "-webkit-border-radius:8px;
 				   -moz-border-radius:8px;
 				   -ms-border-radius:8px;
@@ -664,7 +668,7 @@ input:focus{
                         
                     </section>
 
-	<div class="reward"><div class="reward-button">赏 <span class="reward-code"> <span class="alipay-code"> <img class="alipay-img" alt = "support" src="https://cdn.jsdelivr.net/gh/xiangyi715/Gridea-Chic-Unique@1.0.1/assets/media/images/alipay.png"><b>支付宝扫码打赏</b> </span> <span class="wechat-code"> <img alt ="support" class="wechat-img" src="https://cdn.jsdelivr.net/gh/xiangyi715/Gridea-Chic-Unique@1.0.1/assets/media/images/wechat.png"><b>微信打赏</b> </span> </span></div></div>
+	<div class="reward"><div class="reward-button">赏 <span class="reward-code"> <span class="alipay-code"> <img class="alipay-img" alt = "support" src="https://cdn.jsdelivr.net/gh/xiangyi715/Gridea-Chic-Unique@latest/assets/media/images/alipay.png"><b>支付宝扫码打赏</b> </span> <span class="wechat-code"> <img alt ="support" class="wechat-img" src="https://cdn.jsdelivr.net/gh/xiangyi715/Gridea-Chic-Unique@latest/assets/media/images/wechat.png"><b>微信打赏</b> </span> </span></div></div>
 		<div id="vcomments"></div>
                 <script>
                    new Valine({
@@ -722,7 +726,7 @@ input:focus{
         
         <script src='https://cdn.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js'></script> 
           
-		<div id="landlord" style="right:5px;bottom:120px;">
+		<div id="landlord" style="right: 5px;bottom: 120px;">
     <div class="message" style="opacity:0"></div>
     <canvas id="live2d" width="500" height="560" class="live2d"></canvas>
     <div class="live_talk_input_body">
@@ -769,10 +773,10 @@ input:focus{
                     
 
                     function LoadPlayer() {
-                        var audio_name = '';
-                        var audio_artist = '';
-                        var audio_url = '';
-                        var audio_cover = '';
+                        var audio_name = '让酒';
+                        var audio_artist = '刘宇宁';
+                        var audio_url = 'http://music.163.com/song/media/outer/url?id=1297742298.mp3';
+                        var audio_cover = 'https://i.loli.net/2020/01/11/eqziYLsBHSMcb6U.jpg';
                         const ap = new APlayer({
                             container: document.getElementById('player'),
                             fixed: true,
@@ -798,8 +802,32 @@ input:focus{
                         music_array.push({
                             name: '让酒',
                             url: 'http://music.163.com/song/media/outer/url?id=1297742298.mp3',
-                            artist: '',
-                            cover: '',
+                            artist: '刘宇宁',
+                            cover: 'https://i.loli.net/2020/02/04/VzrEHyBlS1e5b6f.jpg',
+//			    lrc: "https://xiangyi715.github.io//media/music_lrc/rangjiu.lrc"
+                        });
+                        
+                        music_array.push({
+                            name: '故梦',
+                            url: 'http://music.163.com/song/media/outer/url?id=26830570.mp3',
+                            artist: '橙翼',
+                            cover: 'https://i.loli.net/2020/02/04/5vdkjpiJB8ME6hX.jpg',
+//			    lrc: "https://xiangyi715.github.io//media/music_lrc/rangjiu.lrc"
+                        });
+                        
+                        music_array.push({
+                            name: '昙华愿',
+                            url: 'http://music.163.com/song/media/outer/url?id=554191275.mp3',
+                            artist: '少司命',
+                            cover: 'https://i.loli.net/2020/02/04/JNXwCnuITkbLU73.jpg',
+//			    lrc: "https://xiangyi715.github.io//media/music_lrc/rangjiu.lrc"
+                        });
+                        
+                        music_array.push({
+                            name: '狂浪生',
+                            url: 'http://music.163.com/song/media/outer/url?id=463895473.mp3',
+                            artist: '一颗小葱、李宗楠',
+                            cover: 'https://i.loli.net/2020/02/04/8T5fLNuRnOMCDe4.jpg',
 //			    lrc: "https://xiangyi715.github.io//media/music_lrc/rangjiu.lrc"
                         });
                         
