@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://xiangyi715.github.io/</id>
     <title>xiangyi</title>
-    <updated>2020-02-08T10:05:43.527Z</updated>
+    <updated>2020-02-08T10:08:00.792Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://xiangyi715.github.io/"/>
     <link rel="self" href="https://xiangyi715.github.io/atom.xml"/>
@@ -849,7 +849,7 @@ sudo systemctl reboot
 sudo apt-get remove --purge nvidia-*<br>
 查看系统可以安装的nvidia驱动程序：<br>
 ubuntu-drivers devices 或 sudo dpkg --list | grep nvidia-*<br>
-然后安装相应的驱动。</p>
+然后安装相应的驱动。（<strong>驱动或软件更新需谨慎</strong>）</p>
 ]]></content>
     </entry>
 </feed>
