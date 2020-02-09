@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://xiangyi715.github.io/</id>
     <title>xiangyi</title>
-    <updated>2020-02-08T10:08:00.792Z</updated>
+    <updated>2020-02-09T02:25:20.604Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://xiangyi715.github.io/"/>
     <link rel="self" href="https://xiangyi715.github.io/atom.xml"/>
@@ -843,6 +843,8 @@ sudo systemctl reboot
 </code></pre>
 <p>👉<strong>问题五:</strong><br>
 由于nvidia驱动程序更新失败，导致不能进入Gnome<br>
+started session ... of user gdm.<br>
+started user manager for UID 121<br>
 方法：</p>
 <p>通过ctrl+alt f1—f6进入其他终端<br>
 删除所有nvidia驱动：<br>
