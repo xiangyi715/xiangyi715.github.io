@@ -537,13 +537,6 @@
   font-size: larger;
   background: #ffffff33;
 }
-/*
-@media (max-width: 1150px) {
-  .post-toc {
-    display: none;
-  }
-}
-*/
 @media screen and (max-width: 780px) {
   .Like {
     left: -80%;
