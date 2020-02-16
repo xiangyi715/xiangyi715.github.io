@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://xiangyi715.github.io/</id>
     <title>xiangyi</title>
-    <updated>2020-02-14T03:19:29.336Z</updated>
+    <updated>2020-02-16T09:01:06.382Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://xiangyi715.github.io/"/>
     <link rel="self" href="https://xiangyi715.github.io/atom.xml"/>
@@ -14,8 +14,8 @@
     <rights>All rights reserved 2020, xiangyi</rights>
     <entry>
         <title type="html"><![CDATA[《复杂》——简要总结]]></title>
-        <id>https://xiangyi715.github.io/post/lesslessfu-za-greatergreater-jian-yao-zong-jie</id>
-        <link href="https://xiangyi715.github.io/post/lesslessfu-za-greatergreater-jian-yao-zong-jie">
+        <id>https://xiangyi715.github.io/post/lesslessfu-za-greatergreater-jian-yao-zong-jie/</id>
+        <link href="https://xiangyi715.github.io/post/lesslessfu-za-greatergreater-jian-yao-zong-jie/">
         </link>
         <updated>2020-01-27T05:52:11.000Z</updated>
         <content type="html"><![CDATA[<blockquote>
@@ -101,8 +101,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[关于QW-PR的一部分总结]]></title>
-        <id>https://xiangyi715.github.io/post/guan-yu-qw-pr-zong-jie</id>
-        <link href="https://xiangyi715.github.io/post/guan-yu-qw-pr-zong-jie">
+        <id>https://xiangyi715.github.io/post/guan-yu-qw-pr-zong-jie/</id>
+        <link href="https://xiangyi715.github.io/post/guan-yu-qw-pr-zong-jie/">
         </link>
         <updated>2020-01-13T12:01:19.000Z</updated>
         <content type="html"><![CDATA[<blockquote>
@@ -358,7 +358,7 @@ if ((othernum&gt;yellownum)&amp;&amp;(othernum&gt;bluenum))
     ui-&gt;plateColorLabel-&gt;setText(&quot;其它颜色&quot;);
 }
 </code></pre>
-<p>1.3.2预处理<br>
+<p><strong>1.3.2预处理</strong><br>
 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>      </mtext></mrow><annotation encoding="application/x-tex">~~~~~~</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0em;vertical-align:0em;"></span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span></span></span></span>为了便捷得到字符区域，灰度化—&gt;二值化是必不可少的条件，这里需要注意二值化的时候如果阈值处理类型选择同一个，由于蓝色车牌和黄色车牌得到的结果正好相反，我们应该先做一下判断，如果为黄色则取反，这样才能使得到的效果一致。同时，由于车牌自身可能有铆钉等影响二值化效果，我们做了去除铆钉的处理，具体做法是：计算每行元素的阶跃数，如果小于某一值认为是柳丁所在行，将此行全部填0（涂黑）。到此为止，预处理过程完成，我们将得到一个二值化的车牌图像：<br>
 <img src="https://xiangyi715.github.io//post-images/1578921018250.png" alt="" loading="lazy"><br>
 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>                                                            </mtext></mrow><annotation encoding="application/x-tex">~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0em;vertical-align:0em;"></span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span></span></span></span>图 2.7<br>
@@ -397,7 +397,7 @@ if ((othernum&gt;yellownum)&amp;&amp;(othernum&gt;bluenum))
 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>      </mtext></mrow><annotation encoding="application/x-tex">~~~~~~</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0em;vertical-align:0em;"></span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span></span></span></span>B-P算法由前向传播和反向传播组成。<br>
 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>      </mtext></mrow><annotation encoding="application/x-tex">~~~~~~</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0em;vertical-align:0em;"></span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span></span></span></span>前向传播用于对前向网络进行计算，即对某一输入信息，经过在网络中一层一层传播，直至到达输出层，求出他的输出结果；反向传播用于逐层传递误差，通过比较实际输出与期望输出的误差，逐层反向传播，并修改神经元间的连接权值，以使网络对输入信息经过计算后所得到的输出能达到期望的误差要求。<br>
 <strong>1.3.3.3算法步骤</strong><br>
-在这里简单写一下算法步骤：如需了解更多请参考相关书籍：<br>
+<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>      </mtext></mrow><annotation encoding="application/x-tex">~~~~~~</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0em;vertical-align:0em;"></span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span></span></span></span>在这里简单写一下算法步骤：如需了解更多请参考相关书籍：<br>
 ①变量定义<br>
 ②网络初始化<br>
 ③随机选取第K个样本及对应期望输出<br>
@@ -409,7 +409,7 @@ if ((othernum&gt;yellownum)&amp;&amp;(othernum&gt;bluenum))
 ⑨计算全局误差（算法终止条件判断）<br>
 ⑩判断算法结束条件<br>
 <strong>1.3.3.4算法优缺点</strong><br>
-一般来说具有以下优点：<br>
+<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>      </mtext></mrow><annotation encoding="application/x-tex">~~~~~~</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0em;vertical-align:0em;"></span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span></span></span></span>一般来说具有以下优点：<br>
 (1)非线性映射能力<br>
 (2)自学习和自适应能力<br>
 (3)一定的泛化能力<br>
@@ -469,8 +469,8 @@ Opencv带函数手册<br>
     </entry>
     <entry>
         <title type="html"><![CDATA[个人短句集]]></title>
-        <id>https://xiangyi715.github.io/post/ge-ren-duan-ju-ji</id>
-        <link href="https://xiangyi715.github.io/post/ge-ren-duan-ju-ji">
+        <id>https://xiangyi715.github.io/post/ge-ren-duan-ju-ji/</id>
+        <link href="https://xiangyi715.github.io/post/ge-ren-duan-ju-ji/">
         </link>
         <updated>2020-01-05T11:42:22.000Z</updated>
         <content type="html"><![CDATA[<p>：）只有所感时才写（：</p>
@@ -778,12 +778,12 @@ Opencv带函数手册<br>
     </entry>
     <entry>
         <title type="html"><![CDATA[ubuntu中遇到的小问题汇总(不定期更新)]]></title>
-        <id>https://xiangyi715.github.io/post/ubuntu-zhong-xiao-er-zhi-ming-de-wen-ti-hui-zong</id>
-        <link href="https://xiangyi715.github.io/post/ubuntu-zhong-xiao-er-zhi-ming-de-wen-ti-hui-zong">
+        <id>https://xiangyi715.github.io/post/ubuntu-zhong-xiao-er-zhi-ming-de-wen-ti-hui-zong/</id>
+        <link href="https://xiangyi715.github.io/post/ubuntu-zhong-xiao-er-zhi-ming-de-wen-ti-hui-zong/">
         </link>
         <updated>2020-01-04T08:05:13.000Z</updated>
-        <content type="html"><![CDATA[<p>👉<strong>问题一：</strong><br>
-出现E: Sub-process /usr/bin/dpkg returned an error code<br>
+        <content type="html"><![CDATA[<h2 id="问题一dpkg问题">👉<strong>问题一：(dpkg问题)</strong></h2>
+<p>出现E: Sub-process /usr/bin/dpkg returned an error code<br>
 当使用apt-get安装软件时有时会发生类似于<br>
 Errors were encountered while processing:<br>
 ...(一些软件包)...</p>
@@ -810,8 +810,8 @@ done
 <pre><code>sudo apt-get update --fix-missing
 sudo apt-get autoremove &amp;&amp; sudo apt-get clean &amp;&amp; sudo apt-get install -f
 </code></pre>
-<p>👉<strong>问题二：</strong><br>
-不能访问部分手机的存储。<br>
+<h2 id="问题二挂载手机存储">👉<strong>问题二：(挂载手机存储)</strong></h2>
+<p>不能访问部分手机的存储。<br>
 方法：（使用jmtpfs）<br>
 安装：</p>
 <pre><code>sudo apt-get install mtp-tools jmtpfs
@@ -826,8 +826,8 @@ sudo chmod 755 /media/mtp
 <p>卸载：</p>
 <pre><code>sudo umount /media/mtp
 </code></pre>
-<p>👉<strong>问题三：</strong><br>
-E: Could not get lock /var/lib/dpkg/lock - open (11: Resource temporarily unavailable)<br>
+<h2 id="问题三dpkg锁">👉<strong>问题三：(dpkg锁)</strong></h2>
+<p>E: Could not get lock /var/lib/dpkg/lock - open (11: Resource temporarily unavailable)<br>
 E: Unable to lock the administration directory (/var/lib/dpkg/)<br>
 原因：<br>
 其实这是因为有另外一个程序在运行，导致锁不可用。原因可能是上次运行更新或安装没有正常完成。解决办法是杀死此进程。<br>
@@ -838,24 +838,26 @@ sudo rm /var/lib/dpkg/lock
 sudo dpkg --configure -a
 sudo apt-get update
 </code></pre>
-<p>👉<strong>问题四:</strong><br>
-打开Ubuntu软件中心无图标，不显示软件。<br>
+<h2 id="问题四软件中心不显示图标">👉<strong>问题四:(软件中心不显示图标)</strong></h2>
+<p>打开Ubuntu软件中心无图标，不显示软件。<br>
 方法：</p>
 <pre><code>sudo apt update
 sudo apt upgrade
 sudo systemctl reboot
 </code></pre>
-<p>👉<strong>问题五:</strong><br>
-由于nvidia驱动程序更新失败，导致不能进入Gnome<br>
+<h2 id="问题五nvidia驱动无法进入gnome">👉<strong>问题五:(nvidia驱动无法进入Gnome)</strong></h2>
+<p>由于nvidia驱动程序更新失败，导致不能进入Gnome<br>
 started session ... of user gdm.<br>
 started user manager for UID 121<br>
 方法：</p>
 <p>通过ctrl+alt f1—f6进入其他终端<br>
-删除所有nvidia驱动：<br>
-sudo apt-get remove --purge nvidia-*<br>
-查看系统可以安装的nvidia驱动程序：<br>
-ubuntu-drivers devices 或 sudo dpkg --list | grep nvidia-*<br>
-然后安装相应的驱动。（<strong>驱动或软件更新需谨慎</strong>）</p>
+删除所有nvidia驱动：</p>
+<pre><code>sudo apt-get remove --purge nvidia-*
+</code></pre>
+<p>查看系统可以安装的nvidia驱动程序：</p>
+<pre><code>ubuntu-drivers devices 或 sudo dpkg --list | grep nvidia-*
+</code></pre>
+<p>然后安装相应的驱动。（<strong>驱动或软件更新需谨慎</strong>）</p>
 ]]></content>
     </entry>
 </feed>
