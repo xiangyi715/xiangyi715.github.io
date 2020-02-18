@@ -115,7 +115,7 @@ var _hmt = _hmt || [];
                         <label for="switch_default" class="toggleBtn"></label>
             </div>
 
-            <form id="gridea-search-form" data-update="1582020602774" action="/search/index.html">
+            <form id="gridea-search-form" data-update="1582034571067" action="/search/index.html">
                 <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="🔍Search..." style = "-webkit-border-radius:8px;
 				   -moz-border-radius:8px;
 				   -ms-border-radius:8px;
@@ -141,7 +141,7 @@ var _hmt = _hmt || [];
                         <!--zh-->
                         <a id="mobile-toggle-theme-zh" class="a zh">&nbsp;\u6697\u9ED1</a>
                     </div>
-                    <form id="gridea-search-form" data-update="1582020602774" action="/search/index.html">
+                    <form id="gridea-search-form" data-update="1582034571067" action="/search/index.html">
                         <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="🔍Search..." style = "-webkit-border-radius:8px;
 				   -moz-border-radius:8px;
 				   -ms-border-radius:8px;
@@ -245,8 +245,8 @@ input:focus{
                             <span class="post-time">
                                 Date: <a href="#">2020-01-13</a>
                             </span>
-				<span class="post-readtime">Reading Time:<a href="#">35.5 mins</a></span>
-                                <span class="post-words">words:<a href="#">9692</a></span>
+				<span class="post-readtime">Reading Time:<a href="#">35.6 mins</a></span>
+                                <span class="post-words">words:<a href="#">9694</a></span>
                             
                             <span class="post-category">
                                 Category:
@@ -273,8 +273,8 @@ input:focus{
                                 xiangyi 黑板报
                             </a>
                             <span class="post-time">&#x65E5;&#x671F;: <a href="#">2020-01-13</a></span>
-			    <span class="post-readtime">&#x9605;&#x8BFB;&#x65F6;&#x95F4;:<a href="#">35.5 &#x5206;&#x949F;</a></span>
-                                <span class="post-words">&#x5B57;&#x6570;:<a href="#">9692</a></span>
+			    <span class="post-readtime">&#x9605;&#x8BFB;&#x65F6;&#x95F4;:<a href="#">35.6 &#x5206;&#x949F;</a></span>
+                                <span class="post-words">&#x5B57;&#x6570;:<a href="#">9694</a></span>
                             
                             <span class="post-category">&#x5206;&#x7C7B;:
                                 
@@ -305,7 +305,7 @@ input:focus{
 <h2 id="11-车牌粗定位"><strong>1.1 车牌粗定位</strong></h2>
 <p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>      </mtext></mrow><annotation encoding="application/x-tex">~~~~~~</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0em;vertical-align:0em;"></span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span></span></span></span>关于车牌定位，方法有很多，所以一个鲁棒性较强的算法可以体现其能力。较传统的方法是对整幅图像做数字图像处理然后再提取感兴趣区域。此种方法类似于将一幅图像地图化。我们要做的就是如何划分地图，并从地图上找到想要得到的区域。我们用的是Sobel算子方法；其次由于部分车牌与车身颜色是有区别的所以我们加入了车牌颜色定位法；另外Opencv提供了很多机器学习模型，我们用到了训练联级分类器来定位感兴趣区域。<br>
 <strong>1.1.1Sobel 算子法</strong></p>
-<p><strong>1.1.1.1高斯模糊（Gaussian Blur）</strong><br>
+<p><strong>1.1.1.1 高斯模糊（Gaussian Blur）</strong><br>
 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>      </mtext></mrow><annotation encoding="application/x-tex">~~~~~~</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0em;vertical-align:0em;"></span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span></span></span></span>图像处理中的模糊有很多种，其中有一种叫做高斯模糊（Gaussian Blur），即是正态分布用在了图像处理中。这种数据平滑技术可用在多种场合，其中数字图像处理则更直观的体现了其用处。<br>
 模糊可以形象的理解为每一个像素都取周边像素的平均值。在数值上这是一种平滑，在图像中可令中间点失去细节，则造成了一种模糊的效果。模糊半径越大造成的效果越明显。<br>
 既然每一个像素都取平均值，分配权重则成为一个重要的合理性判断标准。显然加权平均要比简单平均好些。我们用到正态分布模式来分配权重。<br>
@@ -335,9 +335,9 @@ input:focus{
 关于为什么要用到高斯模糊<br>
 (1) 便于后续图像的边缘检测处理；<br>
 (2) 便于后续车牌判断，因为如果没有此步骤，后选车牌将会大大增加，会增大判断难度。<br>
-<strong>1.1.1.2灰度化（gray）</strong><br>
+<strong>1.1.1.2 灰度化（gray）</strong><br>
 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>      </mtext></mrow><annotation encoding="application/x-tex">~~~~~~</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0em;vertical-align:0em;"></span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span></span></span></span>图像的灰度化单单对计算机而言要比彩色图像信息处理要简单，而且后面用到的Opencv的Sobel算子输入图像也必须是灰度化的。虽然此步骤会令图像失去部分信息，但要保证Sobel的输入必须用到此步骤。<br>
-<strong>1.1.1.3Sobel算子（Sobel operator）</strong><br>
+<strong>1.1.1.3 Sobel算子（Sobel operator）</strong><br>
 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>      </mtext></mrow><annotation encoding="application/x-tex">~~~~~~</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0em;vertical-align:0em;"></span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span></span></span></span>即垂直边缘检测，此算法的核心。边缘(edge)是指图像局部强度变化最显著的部分。主要存在于目标与目标、目标与背景、区域与区域(包括不同色彩)之间，是图像分割、纹理特征和形状特征等图像分析的重要基础。图像的边缘有方向和幅度两个属性,沿边缘方向像素变化平缓,垂直于边缘方向像素变化剧烈.边缘上的这种变化我们可以用微分算子检测出来,通常用一阶或二阶导数来检测边缘。<br>
 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>      </mtext></mrow><annotation encoding="application/x-tex">~~~~~~</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0em;vertical-align:0em;"></span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span></span></span></span>该算子包含两组3x3的矩阵，分别为横向和纵向，将之与图像作平面卷积[ 卷积：简单来说就是对周边值加权求和，权值称为卷积模板。</p>
 <p>通过卷积模板，原始图像红色的像素点原本是5的值，经过卷积计算即可分别得出横向及纵向的亮度差分近似值。如果以A代表原始图像，Gx及Gy分别代表经横向及纵向边缘检测的图像，其公式如下：<br>
@@ -352,11 +352,11 @@ convertScaleAbs(grad_x,abs_grad_x);<br>
 Sobel(gray,grad_y,CV_32F,0,1,3,1,0,BORDER_DEFAULT );<br>
 convertScaleAbs(grad_y,abs_grad_y);<br>
 addWeighted(abs_grad_x,0.5,abs_grad_y,0.5,0,sobel);<br>
-<strong>1.1.1.4二值化（Binarization）</strong><br>
+<strong>1.1.1.4 二值化（Binarization）</strong><br>
 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>      </mtext></mrow><annotation encoding="application/x-tex">~~~~~~</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0em;vertical-align:0em;"></span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span></span></span></span>顾名思义，就是对每一个灰度像素设定一个阈值，高于此阈值的置为255，低于此阈值的置为0。Opencv中的二值化函数可以加上一个自适应阈值参数：<br>
 CV_THRESH_OTSU+CV_THRESH_BINARY<br>
 我们可以直接使用。局部自适应阈值则是根据像素的邻域块的像素值分布来确定该像素位置上的二值化阈值。这样做的好处在于每个像素位置处的二值化阈值不是固定不变的，而是由其周围邻域像素的分布来决定的。亮度较高的图像区域的二值化阈值通常会较高，而亮度较低的图像区域的二值化阈值则会相适应地变小。不同亮度、对比度、纹理的局部图像区域将会拥有相对应的局部二值化阈值。常用的局部自适应阈值有：1）局部邻域块的均值；2）局部邻域块的高斯加权和。关于Opencv中更详细的二值化介绍请参照“Opencv函手册”。<br>
-<strong>1.1.1.5闭运算（Close operation）</strong><br>
+<strong>1.1.1.5 闭运算（Close operation）</strong><br>
 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>      </mtext></mrow><annotation encoding="application/x-tex">~~~~~~</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0em;vertical-align:0em;"></span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span></span></span></span>即将车牌部分连成一个连通区域，便于后面的检测、提取操作。<br>
 有闭操作就有相应的开操作。开操作就是对图像先腐蚀，再膨胀而闭操作是对图像先膨胀，再腐蚀。关于图像的腐蚀膨胀，这里不再做描述。<br>
 <img src="https://xiangyi715.github.io//post-images/1578919515784.png" alt="" loading="lazy"><br>
@@ -367,10 +367,10 @@ Opencv中的闭操作为我们提供了函数：<br>
 Mat element = getStructuringElement(MORPH_RECT,Size(18,3));   //宽度推荐18或18+<br>
 morphologyEx(two_value,two_value,MORPH_CLOSE,element);<br>
 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>      </mtext></mrow><annotation encoding="application/x-tex">~~~~~~</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0em;vertical-align:0em;"></span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span></span></span></span>矩形模板宽度在代码中有注释：推荐18或18+。更多的函数相关请查看“Opencv函数手册”。<br>
-<strong>1.1.1.6取轮廓（Contour）</strong><br>
+<strong>1.1.1.6 取轮廓（Contour）</strong><br>
 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>      </mtext></mrow><annotation encoding="application/x-tex">~~~~~~</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0em;vertical-align:0em;"></span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span></span></span></span>即将连通域的外轮廓画出来，便于形成矩形区域并尺寸判断。<br>
 我们用到的函数是findContours()；<br>
-<strong>1.1.1.7尺寸判断（Size judgment）</strong><br>
+<strong>1.1.1.7 尺寸判断（Size judgment）</strong><br>
 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>      </mtext></mrow><annotation encoding="application/x-tex">~~~~~~</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0em;vertical-align:0em;"></span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span></span></span></span>尺寸判断中我们使用自己的函数：judgementsize();<br>
 float error = m_error;<br>
 float aspect = m_aspect;</p>
@@ -399,7 +399,7 @@ return true;
 </code></pre>
 <p>由于图像近景远景的影响，车牌的大小也会不一。我们定义最大尺寸为44<em>14</em>200最小尺寸为 44<em>14</em>1。<br>
 此处把面积和宽高比作为尺寸判断的两个标准。<br>
-<strong>1.1.1.8角度判断（Angle judgment）</strong><br>
+<strong>1.1.1.8 角度判断（Angle judgment）</strong><br>
 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>      </mtext></mrow><annotation encoding="application/x-tex">~~~~~~</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0em;vertical-align:0em;"></span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span></span></span></span>角度判断有两方面的标准：<br>
 (1) 判断此矩形大于某一角度则认为不是车牌。<br>
 (2) 小角度偏斜扭转为正车牌矩形。<br>
@@ -407,7 +407,7 @@ return true;
 <strong>1.1.1.9 大小归一化（normalization）</strong><br>
 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>      </mtext></mrow><annotation encoding="application/x-tex">~~~~~~</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0em;vertical-align:0em;"></span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span></span></span></span>即得令到的是尺寸大小相同的候选车牌。为下一步的SVM判断处理提供一个统一模板。同时也为训练数据集提供了样本。<br>
 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>      </mtext></mrow><annotation encoding="application/x-tex">~~~~~~</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0em;vertical-align:0em;"></span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span></span></span></span>以上即为Sobel方法提取候选车牌的简要介绍，我们在QW-PR中使用了三种方法来提取后选车牌分别是 Sobel方法、颜色判断法、LBP检测法。下面我们来介绍第二种方法：“颜色判断法”。关于这几种方法的顺序优先级，在介绍完提取候选车牌后会详细介绍。<br>
-<strong>1.1.2颜色定位法</strong><br>
+<strong>1.1.2 颜色定位法</strong><br>
 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>      </mtext></mrow><annotation encoding="application/x-tex">~~~~~~</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0em;vertical-align:0em;"></span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span></span></span></span>由于Sobel方法的局限性，会导致很多车牌不能很好检测出并由于用到灰度化，使原本带有颜色信息的图像少了一定的信息量，同时也不很好的符合我们人类判断的标准。因此我们引入了颜色判断的方法来提取候选车牌。<br>
 <strong>1.1.2.1 颜色空间</strong><br>
 我们使用HSV模型而不是RGB模型。<br>
@@ -456,7 +456,7 @@ pause<br>
 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>      </mtext></mrow><annotation encoding="application/x-tex">~~~~~~</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0em;vertical-align:0em;"></span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span></span></span></span>上面的训练过程摘自自己的博客。当然那时还没有训练出很好的xml，同时也是第一次训练成功，也并非此时用到的文件。<br>
 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>      </mtext></mrow><annotation encoding="application/x-tex">~~~~~~</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0em;vertical-align:0em;"></span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span></span></span></span>此时，我们总结一下以上三种方法：方法1和方法2的最终结果得到的都是后选车牌图片，3得到的是XML文件。对于3，我们用CascadeClassifier 和 detectMultiScale加载读取XML文件并生成后选车牌图像。最终我们将分别可以得到车牌的候选图像。<br>
 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>      </mtext></mrow><annotation encoding="application/x-tex">~~~~~~</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0em;vertical-align:0em;"></span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span></span></span></span>关于三种方法的顺序优先级，我们首先使用的是颜色判断如果失败则进入Sobel方法如果失败则使用LBP方法。这三种方法可根据具体场景做出调优选择处理。我在这里做了一个小小的改进则是如果都没有判断出来则截掉图像的上四分之一，选取下四分之三作为RIO再进行判断，依此类推，如果RIO的高度小于某一数值则判断失败return &amp;errorpicture；此方法有增加判断时间的风险，但在准确度和速度上需要做到一个很好的平衡还要具体场景具体分析。好了，以上三种方法即是得到有可能是车牌的图像：为“车牌粗定位”。最终确定车牌要用到“支持向量机”（support vector machine）将是我们第二部分的内容，接下来会做相应介绍。</p>
-<h2 id="12车牌精定位"><strong>1.2车牌精定位</strong></h2>
+<h2 id="12-车牌精定位"><strong>1.2 车牌精定位</strong></h2>
 <p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>      </mtext></mrow><annotation encoding="application/x-tex">~~~~~~</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0em;vertical-align:0em;"></span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span></span></span></span>对于车牌精确定位，我们使用的是SVM即支持向量机，是机器学习中的监督学习算法。“支持向量机算法是诞生于统计学习界，同时在机器学习界大放光彩的经典算法。支持向量机算法从某种意义上来说是逻辑回归算法的强化：通过给予逻辑回归算法更严格的优化条件，支持向量机算法可以获得比逻辑回归更好的分类界线。但是如果没有某类函数技术，则支持向量机算法最多算是一种更好的线性分类技术。<br>
 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>      </mtext></mrow><annotation encoding="application/x-tex">~~~~~~</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0em;vertical-align:0em;"></span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span></span></span></span>但是，通过跟高斯“核”的结合，支持向量机可以表达出非常复杂的分类界线，从而达成很好的的分类效果。“核”事实上就是一种特殊的函数，最典型的特征就是可以将低维的空间映射到高维的空间。<br>
 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>      </mtext></mrow><annotation encoding="application/x-tex">~~~~~~</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0em;vertical-align:0em;"></span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span></span></span></span>我们如何在二维平面划分出一个圆形的分类界线？在二维平面可能会很困难，但是通过“核”可以将二维空间映射到三维空间，然后使用一个线性平面就可以达成类似效果。也就是说，二维平面划分出的非线性分类界线可以等价于三维平面的线性分类界线。于是，我们可以通过在三维空间中进行简单的线性划分就可以达到在二维平面中的非线性划分效果。<br>
@@ -531,8 +531,8 @@ testD-&gt;getTestPlate();
 
 return a.exec();
 </code></pre>
-<h2 id="13车牌处理"><strong>1.3车牌处理</strong></h2>
-<p><strong>1.3.1颜色判断</strong><br>
+<h2 id="13-车牌处理"><strong>1.3 车牌处理</strong></h2>
+<p><strong>1.3.1 颜色判断</strong><br>
 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>      </mtext></mrow><annotation encoding="application/x-tex">~~~~~~</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0em;vertical-align:0em;"></span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span></span></span></span>判断车牌颜色我们使用的是HSV颜色空间。遍历像素点后分别计算像素点的HSV颜色值的总和，符合蓝色、黄色或其它颜色的我们分别判断：</p>
 <pre><code>if ((bluenum&gt;yellownum)&amp;&amp;(bluenum&gt;othernum))
 {
@@ -547,7 +547,7 @@ if ((othernum&gt;yellownum)&amp;&amp;(othernum&gt;bluenum))
     ui-&gt;plateColorLabel-&gt;setText(&quot;其它颜色&quot;);
 }
 </code></pre>
-<p><strong>1.3.2预处理</strong><br>
+<p><strong>1.3.2 预处理</strong><br>
 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>      </mtext></mrow><annotation encoding="application/x-tex">~~~~~~</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0em;vertical-align:0em;"></span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span></span></span></span>为了便捷得到字符区域，灰度化—&gt;二值化是必不可少的条件，这里需要注意二值化的时候如果阈值处理类型选择同一个，由于蓝色车牌和黄色车牌得到的结果正好相反，我们应该先做一下判断，如果为黄色则取反，这样才能使得到的效果一致。同时，由于车牌自身可能有铆钉等影响二值化效果，我们做了去除铆钉的处理，具体做法是：计算每行元素的阶跃数，如果小于某一值认为是柳丁所在行，将此行全部填0（涂黑）。到此为止，预处理过程完成，我们将得到一个二值化的车牌图像：<br>
 <img src="https://xiangyi715.github.io//post-images/1578921018250.png" alt="" loading="lazy"><br>
 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>                                                            </mtext></mrow><annotation encoding="application/x-tex">~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0em;vertical-align:0em;"></span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span></span></span></span>图 2.7<br>
@@ -585,7 +585,7 @@ if ((othernum&gt;yellownum)&amp;&amp;(othernum&gt;bluenum))
 <strong>1.3.3.2 BP算法的原理</strong><br>
 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>      </mtext></mrow><annotation encoding="application/x-tex">~~~~~~</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0em;vertical-align:0em;"></span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span></span></span></span>B-P算法由前向传播和反向传播组成。<br>
 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>      </mtext></mrow><annotation encoding="application/x-tex">~~~~~~</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0em;vertical-align:0em;"></span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span></span></span></span>前向传播用于对前向网络进行计算，即对某一输入信息，经过在网络中一层一层传播，直至到达输出层，求出他的输出结果；反向传播用于逐层传递误差，通过比较实际输出与期望输出的误差，逐层反向传播，并修改神经元间的连接权值，以使网络对输入信息经过计算后所得到的输出能达到期望的误差要求。<br>
-<strong>1.3.3.3算法步骤</strong><br>
+<strong>1.3.3.3 算法步骤</strong><br>
 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>      </mtext></mrow><annotation encoding="application/x-tex">~~~~~~</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0em;vertical-align:0em;"></span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span></span></span></span>在这里简单写一下算法步骤：如需了解更多请参考相关书籍：<br>
 ①变量定义<br>
 ②网络初始化<br>
@@ -597,7 +597,7 @@ if ((othernum&gt;yellownum)&amp;&amp;(othernum&gt;bluenum))
 ⑧利用输出层个神经元的偏导和输入层各神经元的输入修正连接权值<br>
 ⑨计算全局误差（算法终止条件判断）<br>
 ⑩判断算法结束条件<br>
-<strong>1.3.3.4算法优缺点</strong><br>
+<strong>1.3.3.4 算法优缺点</strong><br>
 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>      </mtext></mrow><annotation encoding="application/x-tex">~~~~~~</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0em;vertical-align:0em;"></span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span></span></span></span>一般来说具有以下优点：<br>
 (1)非线性映射能力<br>
 (2)自学习和自适应能力<br>
@@ -611,7 +611,7 @@ if ((othernum&gt;yellownum)&amp;&amp;(othernum&gt;bluenum))
 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>      </mtext></mrow><annotation encoding="application/x-tex">~~~~~~</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0em;vertical-align:0em;"></span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span></span></span></span>关于神经网络先介绍到这里。然而在我们使用Opencv的时候调用相应函数即可使用行对应的神经网络。我们的QW-PR通过训练字符样本（汉字、数字+字母）最终判断所产成字符是什么。要想得到我们想要的字符我把车牌字符区域分成了两类：简称区和数字字母区。<br>
 <strong>1.3.4 字符分割（并归一化）</strong><br>
 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>      </mtext></mrow><annotation encoding="application/x-tex">~~~~~~</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0em;vertical-align:0em;"></span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span></span></span></span>得到二值化的车牌图像后我们同样用取轮廓、加外接矩形的方式来分割字符。但是在分割时会遇到有的汉字字符会被分割成两部分（上下或左右），鉴于车牌中每一个字符的面积和间距基本相同，我们这里用到了先找出第二个字符即市级字符，然后通过框出的矩形左移一定间距来框选出第一个即省级简称字符，其它后续字符根据间距不同统一框选出排序即可。需要注意的是，由于测试在此阶段出现过bug，1字符在代码中有一个特殊的处理（保一处理）。具体详细请查看相应代码。<br>
-<strong>1.3.5ANN网络识别</strong><br>
+<strong>1.3.5 ANN网络识别</strong><br>
 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>      </mtext></mrow><annotation encoding="application/x-tex">~~~~~~</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0em;vertical-align:0em;"></span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span></span></span></span>Opencv2.X与Opencv3.X调用ANN不太相同，我们使用的是3层网络，这里给出部分代码：<br>
 Ptr&lt;ANN_MLP&gt; bp = ANN_MLP::create();<br>
 Mat layerSizes = (Mat_<int>(1,3) &lt;&lt; input_number,first_hidden_neurons,output_number);   //设置输入，输出及隐藏层数量及隐藏层个数<br>
@@ -662,8 +662,8 @@ Opencv带函数手册<br>
 <ul>
 <li><a href="#%E5%89%8D%E8%A8%80"><strong>前言:</strong></a></li>
 <li><a href="#11-%E8%BD%A6%E7%89%8C%E7%B2%97%E5%AE%9A%E4%BD%8D"><strong>1.1 车牌粗定位</strong></a></li>
-<li><a href="#12%E8%BD%A6%E7%89%8C%E7%B2%BE%E5%AE%9A%E4%BD%8D"><strong>1.2车牌精定位</strong></a></li>
-<li><a href="#13%E8%BD%A6%E7%89%8C%E5%A4%84%E7%90%86"><strong>1.3车牌处理</strong></a></li>
+<li><a href="#12-%E8%BD%A6%E7%89%8C%E7%B2%BE%E5%AE%9A%E4%BD%8D"><strong>1.2 车牌精定位</strong></a></li>
+<li><a href="#13-%E8%BD%A6%E7%89%8C%E5%A4%84%E7%90%86"><strong>1.3 车牌处理</strong></a></li>
 </ul>
 </li>
 </ul>
