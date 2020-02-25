@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://xiangyi715.github.io/</id>
     <title>xiangyi 黑板报</title>
-    <updated>2020-02-25T11:43:08.880Z</updated>
+    <updated>2020-02-25T11:47:29.542Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://xiangyi715.github.io/"/>
     <link rel="self" href="https://xiangyi715.github.io/atom.xml"/>
@@ -13,7 +13,7 @@
     <icon>https://xiangyi715.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, xiangyi 黑板报</rights>
     <entry>
-        <title type="html"><![CDATA[英语口语800句(沪江)]]></title>
+        <title type="html"><![CDATA[美语必备口语800句(沪江)]]></title>
         <id>https://xiangyi715.github.io/post/dw7PcxSU9/</id>
         <link href="https://xiangyi715.github.io/post/dw7PcxSU9/">
         </link>
