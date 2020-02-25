@@ -10,15 +10,15 @@
 }
 .deng-box {
   position: fixed;
-  top: -30px;
+  top: 150px;
   z-index: 999;
   right: 9px;
 }
 .deng-box1 {
   position: fixed;
-  top: -30px;
-  right: 45px;
+  top: 150px;
   z-index: 999;
+  right: 45px;
 }
 .deng-box1 .deng {
   position: relative;
