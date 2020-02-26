@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://xiangyi715.github.io/</id>
-    <title>xiangyi</title>
-    <updated>2020-02-26T07:37:04.662Z</updated>
+    <title>xiangyi 黑板报</title>
+    <updated>2020-02-26T08:08:58.514Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://xiangyi715.github.io/"/>
     <link rel="self" href="https://xiangyi715.github.io/atom.xml"/>
@@ -11,7 +11,7 @@
 老天的事 好好配合</subtitle>
     <logo>https://xiangyi715.github.io/images/avatar.png</logo>
     <icon>https://xiangyi715.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2020, xiangyi</rights>
+    <rights>All rights reserved 2020, xiangyi 黑板报</rights>
     <entry>
         <title type="html"><![CDATA[美语必备口语800句(沪江)]]></title>
         <id>https://xiangyi715.github.io/post/dw7PcxSU9/</id>
