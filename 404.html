@@ -1,89 +1,40 @@
-<!DOCTYPE html>
+
+<!doctype html>
 <html lang="en">
-<head>
+ <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Page Not Found</title>
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>404</title>
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-    }
-    body {
-      display: flex;
-      flex-direction: column;
-      height: 100vh;
-      text-align: center;
-    }
-    .box {
-      flex: 1;
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-    }
-    .number {
-      font-size: 80px;
-      color: #666;
-      font-weight: bold;
-    }
-    .text {
-      font-size: 14px;
-      margin: 24px;
-      color: #333;
-    }
-    .btn-container {
-      display: flex;
-      justify-content: center;
-    }
-    .btn {
-      padding: 8px 24px;
-      display: inline-block;
-      text-decoration: none;
-      background: #fff;
-      border: 2px solid #efefef;
-      color: #333;
-      margin: 24px;
-      border-radius: 20px;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-    }
-    .footer {
-      padding: 16px;
-      border-top: 1px solid #efefef;
-      color: #777;
-      font-weight: lighter;
-    }
-    .footer a {
-      text-decoration: none;
-      font-weight: bold;
-      color: #000;
-    }
-  </style>
+*{ padding:0;margin:0;box-sizing:border-box;font-family:"微软雅黑";}
+body,html{width:100%;height:100%;}
+.container{max-width:90%;margin:0 auto;padding:80px 0px; }
+img{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;}
+.bg{display:block;max-width:100%;margin:0px auto;margin:40px auto;}
+.btn{width:400px;margin:0 auto;max-width:100%;margin-top:40px;}
+.btn a{float:left;text-decoration:none;width:46.5%;border:1px solid #5298ff;background:#5298ff;color:#FFF;display:block;height:46px; line-height:44px;text-align:center;font-size:16px;border-radius:3px;overflow:hidden;}
+.btn .goindex{margin-right:7%;}
+.btn .lx{border: 1px solid #d8d8d8;background:#ffffff;color:#8c8c8c;}
+@media screen and (max-width: 500px){
+.btn{ width:85%; }
+.btn a{ width:100%; font-size:15px; height:42px; line-height:42px; }
+.btn .goindex{ margin-right:0; margin-bottom:20px; }
+
+</style>
 </head>
 <body>
-  <div class="box">
-    <div class="number">4 0 4</div>
-    <div class="text">
-      Page not found
-    </div>
-    <div class="btn-container">
-      <a class="btn" id="back">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" style="margin-right: 8px;">
-          <path fill="none" d="M0 0h24v24H0z"/>
-          <path d="M5.828 7l2.536 2.536L6.95 10.95 2 6l4.95-4.95 1.414 1.414L5.828 5H13a8 8 0 1 1 0 16H4v-2h9a6 6 0 1 0 0-12H5.828z"/>
-        </svg>
-        Back
-      </a>
-    </div>
-  </div>
-  <footer class="footer">
-    Powered by <a href="https://gridea.dev" target="_blank">Gridea</a>
-  </footer>
-  <script>
-    var back = document.getElementById('back')
-    back.onclick = function() { console.log('run...'); history.back() }
-  </script>
+
+<div class="container">
+	<img class="bg" src="https://i.loli.net/2020/03/17/xoEtRYlZWTeuSO8.png"/>
+	<div class="btn">
+		<a href="#" class="goindex">返回首页</a>
+		<a style="cursor:pointer" onClick="history.back()" class="lx">返回上页</a>
+	<div style="clear:both;"></div>
+	</div>
+</div>
+
 </body>
 </html>
