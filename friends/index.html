@@ -57,9 +57,45 @@ var _hmt = _hmt || [];
 
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/xiangyi715/Gridea-Chic-Unique@1.0.3/assets/media/live2d/css/live2d.css" />
+<!------------->
+<style type="text/css">
+
+#nav ul li{list-style:none;background:rgba(0,0,0,.5);height:56px;width:100px;float:left;margin:30px 5px;position:relative;}
+#nav ul li:before{
+	content:"";height:56px;width:100px;background:rgba(0,0,0,.5);position:absolute;top:0px;left:0px;
+	transform:rotate(60deg);
+	-webkit-transform:rotate(60deg);
+	-moz-transform:rotate(60deg);
+}
+#nav ul li:after{
+	content:"";height:56px;width:100px;background:rgba(0,0,0,.5);position:absolute;top:0px;left:0px;z-index:1;
+	transform:rotate(-60deg);
+	-webkit-transform:rotate(-60deg);
+	-moz-transform:rotate(-60deg);
+}
+#nav ul li.mar{margin-left:100px;}
+#nav ul li img{
+	top:-7.5px;left:15px;right:0px;bottom:0px;margin:auto;z-index:2;position:absolute;
+	transition:1s;
+	-webkit-transition:1s;
+	-moz-transition:1s;
+}
+#nav ul li img:hover{
+	-webkit-transform:rotate(360deg) scale(1.5); 
+	-moz-transform:rotate(360deg) scale(1.5);
+	-ms-transform:rotate(360deg) scale(1.5);
+	-o-transform:rotate(360deg) scale(1.5);
+}
+</style>
+<script type="text/javascript">
+</script>
+<!------------->
+
+
+
 </head>
 <body>
-    <div class="wrapper">
+    <div class="wrapper" id="nav">
         <header>
     <nav class="navbar">
         <div class="container">
@@ -99,7 +135,7 @@ var _hmt = _hmt || [];
                         <label for="switch_default" class="toggleBtn"></label>
             </div>
 
-            <form id="gridea-search-form" data-update="1585643767869" action="/search/index.html">
+            <form id="gridea-search-form" data-update="1585651062385" action="/search/index.html">
                 <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="🔍Search..." style = "-webkit-border-radius:8px;
 				   -moz-border-radius:8px;
 				   -ms-border-radius:8px;
@@ -127,7 +163,7 @@ var _hmt = _hmt || [];
                         <!--zh-->
                         <a id="mobile-toggle-theme-zh" class="a zh">&nbsp;\u6697\u9ED1</a>
                     </div>
-                    <form id="gridea-search-form" data-update="1585643767869" action="/search/index.html">
+                    <form id="gridea-search-form" data-update="1585651062385" action="/search/index.html">
                         <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="🔍Search..." style = "-webkit-border-radius:8px;
 				   -moz-border-radius:8px;
 				   -ms-border-radius:8px;
@@ -230,8 +266,16 @@ input:focus{
                 <div class="post-content">
                     
                     
+
                     <div class="friend-box">
+			<ul>
+			<li>
+			<a href="https://blog.itjoker.cn" target="_blank">
+
                         <img class="friend-avatar" src="https://blog.itjoker.cn/images/avatar.png">
+			</a>
+			</li>
+			</ul>
                         <div class="flink-info">
                             <a href="https://blog.itjoker.cn" target="_blank">
                                 ITJoker
@@ -241,8 +285,16 @@ input:focus{
                         </div>
                     </div>
                     
+
                     <div class="friend-box">
+			<ul>
+			<li>
+			<a href="https://www.konekomoe.com" target="_blank">
+
                         <img class="friend-avatar" src="https://img.konekomoe.com/favicon.ico">
+			</a>
+			</li>
+			</ul>
                         <div class="flink-info">
                             <a href="https://www.konekomoe.com" target="_blank">
                                 春の猫
@@ -252,8 +304,16 @@ input:focus{
                         </div>
                     </div>
                     
+
                     <div class="friend-box">
+			<ul>
+			<li>
+			<a href="https://mxecy.cn" target="_blank">
+
                         <img class="friend-avatar" src="https://mxecy.cn/images/avatar.png">
+			</a>
+			</li>
+			</ul>
                         <div class="flink-info">
                             <a href="https://mxecy.cn" target="_blank">
                                 萌新的后宫
@@ -263,8 +323,16 @@ input:focus{
                         </div>
                     </div>
                     
+
                     <div class="friend-box">
+			<ul>
+			<li>
+			<a href="https://www.fghrsh.net" target="_blank">
+
                         <img class="friend-avatar" src="https://fp1.fghrsh.net/2017/10/11/d383a9ad4318c5b4332fe02845f5323a.jpg">
+			</a>
+			</li>
+			</ul>
                         <div class="flink-info">
                             <a href="https://www.fghrsh.net" target="_blank">
                                 FGHRSH
@@ -274,8 +342,16 @@ input:focus{
                         </div>
                     </div>
                     
+
                     <div class="friend-box">
+			<ul>
+			<li>
+			<a href="https://cungudafa.top" target="_blank">
+
                         <img class="friend-avatar" src="https://cdn.jsdelivr.net/gh/cungudafa/cdn/img/custom/cungudafa.jpg">
+			</a>
+			</li>
+			</ul>
                         <div class="flink-info">
                             <a href="https://cungudafa.top" target="_blank">
                                 cungudafa
