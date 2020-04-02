@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://xiangyi715.github.io/</id>
     <title>xiangyi 黑板报</title>
-    <updated>2020-04-01T13:12:48.211Z</updated>
+    <updated>2020-04-02T09:23:53.617Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://xiangyi715.github.io/"/>
     <link rel="self" href="https://xiangyi715.github.io/atom.xml"/>
@@ -46,46 +46,32 @@ Chic—优雅；Unique—独特。<br>
 <p><strong>·</strong> 其他一些小的改动。</p>
 <h2 id="支持插件">支持插件</h2>
 <p>1️⃣天气<br>
-</br><br>
 2️⃣QQ邮我<br>
-</br><br>
 3️⃣Live2D 看板娘<br>
-</br><br>
-4️⃣Valine 评论</p>
+4️⃣Valine 评论<br>
+5️⃣Aplayer 音乐播放器</p>
 <h2 id="当前版本104">当前版本：1.0.4</h2>
 <p>1️⃣支持显示更多社交图标。<br>
-</br><br>
 2️⃣修复文章右侧目录点击跳转bug。<br>
-</br><br>
 3️⃣美化返回顶部按钮。<br>
-</br><br>
 4️⃣新增主页预加载动画效果。<br>
-</br><br>
 5️⃣优化标签页显示。<br>
-</br><br>
 6️⃣将建站日期，添加到自定义配置——&gt;网站信息中。（2020.03.07）<br>
-</br><br>
 7️⃣文章评论打字特效。<br>
-</br><br>
 8️⃣QQ邮我邮箱发送邮件更方便！<br>
-</br><br>
 9️⃣美化归档页</p>
 <h2 id="下载地址">下载地址</h2>
 <p><a href="https://github.com/xiangyi715/Gridea-Chic-Unique/releases/tag/1.0.4">v1.0.4</a></p>
 <h2 id="安装">安装</h2>
-<p>下载好放入Gridea/themes文件夹下，启动Gridea客户端选择此主题Chic-Unique即可。<br>
-</br></p>
+<p>下载好放入Gridea/themes文件夹下，启动Gridea客户端选择此主题Chic-Unique即可。</p>
 <h2 id="ps对于优化github-pages网站加载速度的建议">ps:对于优化Github Pages网站加载速度的建议：</h2>
 <p>1️⃣ Live2d看板娘会影响网页加载速度，建议关闭。<br>
-</br><br>
 2️⃣ 头像设置已经更改到主题自定义配置中的网站信息中，对于Gridea客户端的头像配置可忽略。（建议头像尺寸664×664）<br>
-</br><br>
 3️⃣ 使用zeit.co网站<br>
 <strong>.</strong> 用自己的 Github 账户登陆，给zeit自己的静态网页repo的read权限<br>
 <strong>.</strong> 等几秒，importing<br>
 <strong>.</strong> 部署成功！<br>
 <strong>.</strong> 生成一个类似于xxxxxxx.now.sh的链接，点击即可访问，静态资源已经部署到了他们的边缘CDN节点上。<br>
-</br><br>
 <img src="https://i.loli.net/2020/03/27/cLSJ8QA4Wq7txzY.jpg" alt="网站测速" loading="lazy"></p>
 <h1 id="如果喜欢出门转至github欢迎star如有问题请发邮箱或评论">如果喜欢，出门转至Github欢迎Star,如有问题请发邮箱或评论。</h1>
 ]]></content>
