@@ -1,4 +1,12 @@
 @charset "UTF-8";
+/*shuoshuo*/
+.html_shuoshuo {
+  padding-left: 20%;
+  padding-right: 20%;
+}
+.img_shuoshuo {
+  max-width: 100%;
+}
 /*QQ mail*/
 #QQmail {
   position: absolute;

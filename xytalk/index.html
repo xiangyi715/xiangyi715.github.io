@@ -60,6 +60,7 @@ var _hmt = _hmt || [];
 
   <meta charset="UTF-8">
 
+<!--
 <style>
     html{
       padding-left: 20%;
@@ -68,14 +69,191 @@ var _hmt = _hmt || [];
     img{
       max-width: 100%;
     }
-    </style>
+    </style>  
+-->   
 
   <script src="https://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
 
 	 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/xiangyi715/Gridea-Chic-Unique@1.0.3/assets/media/live2d/css/live2d.css" />
 
 </head>
-  <body>
+
+<body>
+
+<div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo">
+                <a href="https://xiangyi715.github.io/">
+                    xiangyi 黑板报
+                </a>
+            </div>
+
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/">
+                         🎏 首页
+                    </a>
+                    
+                    <a class="menu-item" href="/posts">
+                         📃 文章列表
+                    </a>
+                    
+                    <a class="menu-item" href="/archives">
+                         📔 归档
+                    </a>
+                    
+                    <a class="menu-item" href="/tags">
+                         🔖 标签
+                    </a>
+                    
+                    <a class="menu-item" href="/friends">
+                        🥂 友链
+                    </a>
+                    
+                    <a class="menu-item" href="/post/about">
+                         👦 关于
+                    </a>
+                    
+                    <a class="menu-item" href="/xytalk">
+                        📝 说说
+                    </a>
+                    
+                    <a class="menu-item" href="/anotherHome">
+                        🏡 后院
+                    </a>
+                    
+                        <input id="switch_default" type="checkbox" class="switch_default">
+                        <label for="switch_default" class="toggleBtn"></label>
+            </div>
+
+            <form id="gridea-search-form" data-update="1591364214048" action="/search/index.html">
+                <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="🔍Search..." style = "-webkit-border-radius:8px;
+				   -moz-border-radius:8px;
+				   -ms-border-radius:8px;
+				   -o-border-radius:8px;
+				   border-radius:8px;
+				   border:1px solid #e7f3f9;
+				   outline:none;
+				   padding:7px 0px;
+				   BACKGROUND-COLOR: transparent">
+            </form>
+        </div>
+
+    </nav>
+
+    
+        <nav class="navbar-mobile" id="nav-mobile">
+            <div class="container">
+                <div class="navbar-header">
+                    <div>
+                        <a href="https://xiangyi715.github.io/">
+                            xiangyi 黑板报
+                        </a>
+                        <!--en-->
+                        <a id="mobile-toggle-theme-en" class="a en">&nbsp;Dark</a>
+                        <!--zh-->
+                        <a id="mobile-toggle-theme-zh" class="a zh">&nbsp;\u6697\u9ED1</a>
+                    </div>
+                    <form id="gridea-search-form" data-update="1591364214048" action="/search/index.html">
+                        <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="🔍Search..." style = "-webkit-border-radius:8px;
+				   -moz-border-radius:8px;
+				   -ms-border-radius:8px;
+				   -o-border-radius:8px;
+				   border-radius:8px;
+				   border:1px solid #62a3d3;
+				   outline:none;
+				   padding:7px 0px;
+				   BACKGROUND-COLOR: transparent">
+                    </form>
+                    <!--en-->
+                    <div class="menu-toggle" id="menu-toggle-en" onclick="mobileBtn()">&#9776; Menu</div>
+                    <!--zh-->
+                    <div class="menu-toggle" id="menu-toggle-zh" onclick="mobileBtn()">&#9776; &#x83DC;&#x5355;</div>
+
+                </div>
+                <div class="menu" id="mobile-menu">
+                    
+                        <a class="menu-item" href="/">
+                             🎏 首页
+                        </a>
+                        
+                        <a class="menu-item" href="/posts">
+                             📃 文章列表
+                        </a>
+                        
+                        <a class="menu-item" href="/archives">
+                             📔 归档
+                        </a>
+                        
+                        <a class="menu-item" href="/tags">
+                             🔖 标签
+                        </a>
+                        
+                        <a class="menu-item" href="/friends">
+                            🥂 友链
+                        </a>
+                        
+                        <a class="menu-item" href="/post/about">
+                             👦 关于
+                        </a>
+                        
+                        <a class="menu-item" href="/xytalk">
+                            📝 说说
+                        </a>
+                        
+                        <a class="menu-item" href="/anotherHome">
+                            🏡 后院
+                        </a>
+                        
+                </div>
+            </div>
+        </nav>
+</header>
+
+<style>
+input:focus{
+/* 
+            outline: 0;
+	    border: 1px solid #f95d5d;
+	    box-shadow: 0px 0px 10px 0px #f95d5d;
+*/
+	    border-style:solid;  
+            border-color: #03a9f4;  
+            box-shadow: 0 0 15px #03a9f4;
+  }
+</style>
+
+<script>
+
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementById("menu-toggle-en");
+        var toggleMenu_zh = document.getElementById("menu-toggle-zh");
+
+        var mobileMenu = document.getElementById("mobile-menu");
+        if (toggleMenu.display != "none") {
+            if (toggleMenu.classList.contains("active")) {
+                toggleMenu.classList.remove("active")
+                mobileMenu.classList.remove("active")
+            } else {
+                toggleMenu.classList.add("active")
+                mobileMenu.classList.add("active")
+            }
+        } else if (toggleMenu_zh.display != "none") {
+            if (toggleMenu_zh.classList.contains("active")) {
+                toggleMenu_zh.classList.remove("active")
+                mobileMenu.classList.remove("active")
+            } else {
+                toggleMenu_zh.classList.add("active")
+                mobileMenu.classList.add("active")
+            }
+        }
+
+    }
+</script>
+
+<div class="html_shuoshuo">
 
       <script>
 /*      var img="https://i.loli.net/2020/06/05/jS2EABouDlUiW9d.png";
@@ -90,6 +268,8 @@ var _hmt = _hmt || [];
       <div id="lazy"></div>
       <div id="artitalk"></div>
       <script type="text/javascript" src="https://unpkg.com/artitalk"></script>
+</div>
+</div>
     <!-- tips -->
 <!-- Personality customization -->
 <h1>🌼个性定制</h1>
